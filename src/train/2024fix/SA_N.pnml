@@ -1,0 +1,32 @@
+//-- Standard Gauge, Low Axle Load Tracks
+	if ((param_axle_weight == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_mal_selfpower) {
+			property {
+				label:							"SA_N";
+			//-- Railtypes that locomotives of this railtype can be pulled over by a non-electric locomotive;
+			//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
+				compatible_railtype_list:		[
+												#include "src/tracktype_standards_module/2024fix/1_compatible/SA_N.pnml"
+												];
+		//-- Railtypes that locomotives of this railtype can travel on under its own power;
+		//-- If the locomotive is not electric, all railtypes listed in "compatible_railtype_list", must be listed here as well, plus the railtype the lists are for itself
+				powered_railtype_list:			[
+												#include "src/tracktype_standards_module/2024fix/2_powered/SA_N.pnml"
+												];
+		//---
+		//		railtype_flags:					bitmask(RAILTYPE_FLAG_PRECOMBINED);
+		//		curve_speed_multiplier:			?;
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+		//		construction_cost:				16; //double the rail cost
+		//		speed_limit:					200 mph;
+		//		acceleration_model:				ACC_MODEL_RAIL;
+		//		map_colour:						?;
+		//		requires_railtype_list:			?;
+		//		introduces_railtype_list:		?;
+		//		sort_order:						37;
+		//		maintenance_cost:				16;//double the rail cost
+				alternative_railtype_list:		[
+												#include "src/tracktype_standards_module/2024fix/3_alternative/SA_N.pnml"
+												];
+			}
+		}

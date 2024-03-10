@@ -1,0 +1,14 @@
+/* IH_Qicksilver 6.1 will dummy out several locomotives. Dummied out locos will return when Iron Horse 2.0 is released. Cargo Sprinter will return because the Iron Horse Sprinter wasn't a dual-headed locomotive. */
+#include "src/00_header.pnml"
+
+//Track Module, 2012 OG Standard
+#include "src/tracktype_standards_module/train/2012std/SADN.pnml"
+
+//Track Module, 2022 Innsbruck Convention
+#include "src/tracktype_standards_module/train/2022con/SAAN.pnml"
+
+//Track Module, 2024 Standard Repair
+#include "src/tracktype_standards_module/train/2024fix/SA_N.pnml"
+#include "src/01_ironhorse3_compat.pnml"
+
+

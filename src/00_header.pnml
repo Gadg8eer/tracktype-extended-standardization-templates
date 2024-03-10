@@ -1,0 +1,180 @@
+grf {
+    grfid: "G8R\00";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 0;
+    min_compatible_version: 0;
+	url: string(STR_WEBSITE);
+    param {
+		param_colour_scheme {
+		type: int;
+		name: string(STR_PARAM_COLOUR_SCHEME_NAME);
+		desc: string(STR_PARAM_COLOUR_SCHEME_DESC);
+		min_value: 0;
+		max_value: 2;
+		def_value: 1;
+			names: {
+				0: string(STR_PARAM_COLOUR_SCHEME_1CC);
+				1: string(STR_PARAM_COLOUR_SCHEME_2CC);
+				2: string(STR_PARAM_COLOUR_SCHEME_REAL);
+			};
+		}
+	}
+    param {
+		param_axle_weight {
+		type: int;
+		name: string(STR_PARAM_AXLE_WEIGHT_NAME);
+		desc: string(STR_PARAM_AXLE_WEIGHT_DESC);
+		min_value: 0;
+		max_value: 4;
+		def_value: 1;
+			names: {
+				0: string(STR_PARAM_AXLE_WEIGHT_NONE);
+				1: string(STR_PARAM_AXLE_WEIGHT_STANDARD_2012);
+				2: string(STR_PARAM_AXLE_WEIGHT_CONVENTION_2022);
+				3: string(STR_PARAM_AXLE_WEIGHT_OUTATIME);
+				4: string(STR_PARAM_AXLE_WEIGHT_PONY);
+				5: string(STR_PARAM_AXLE_WEIGHT_CLYDESDALE);
+			};
+        }
+    }
+}
+
+/*
+ * *********************
+ * Define railtype table
+ * *********************
+ */
+ 
+ // Third letter is axle load; The following is only a set of guidelines, not a prescribed value for axle weight classes
+ // SAbN [WWAY] (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
+ // SAaN [LTRL] (Plateway) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+ // SAAN is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
+ // SABN [RAIL] (Rail) is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968, meant to also be a tramtype if the two systems are ever unified
+ // SA_N would be maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978, not based on any real rail axle load class
+ // SACN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
+ // SADN is maximum 45 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
+ // SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
+ // SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
+
+ railtypetable {
+//--- Wagonway
+	//WWAY, WGWY,
+	SAbN,
+//--- Prototype Rail
+ 	//LTRL, LIHT,
+	SAaN,
+//--- Rail
+	RAIL,
+	SAAN, SABN, SACN, SADN, SAEN, SAFN,
+//	SBAN, SBBN, SBCN, SBDN, SBEN,
+//	SCAN, SCBN, SCCN, SCDN, SCEN,
+//	SDAN, SDBN, SDCN, SDDN, SDEN,
+//	SEAN, SEBN, SECN, SEDN, SEEN,
+//	SFAN, SFBN, SFCN, SFDN, SFEN,
+//	SGAN, SGBN, SGCN, SGDN, SGEN,
+//	SHAN, SHBN, SHCN, SHDN, SHEN,
+//--- Electrified Rail
+//	ELRL,
+//	SAAE, SABE, SACE, SADE, SAEE,
+//	SBAE, SBBE, SBCE, SBDE, SBEE,
+//	SCAE, SCBE, SCCE, SCDE, SCEE,
+//	SDAE, SDBE, SDCE, SDDE, SDEE,
+//	SEAE, SEBE, SECE, SEDE, SEEE,
+//	SFAE, SFBE, SFCE, SFDE, SFEE,
+//	SGAE, SGBE, SGCE, SGDE, SGEE,
+//	SHAE, SHBE, SHCE, SHDE, SHEE,
+//--- Third Rail
+	//SAA3, SAB3, SAC3, SAD3, SAE3,
+//--- Third Rail and Catenary
+//	SAAZ, SABZ, SACZ, SADZ, SAEZ,
+//	SAA4, SAB4, SAC4, SAD4, SAE4,
+//	SAAY, SABY, SACY, SADY, SAEY,
+//	SAAT, SABT, SACT, SADT, SAET,
+//	SAA3, SAB3, SAC3, SAD3, SAE3,
+//	SAAD, SABD, SACD, SADD, SAED,
+//	SAAd, SABd, SACd, SADd, SAEd,
+//	SAAA, SABA, SACA, SADA, SAEA,
+//	SAAa, SABa, SACa, SADa, SAEa,
+//	sAAN, sABN, sACN, sADN, sAEN,
+//	sAAE, sABE, sACE, sADE, saEE,
+//--- Futuristic Types
+//	MONO,
+//	MGLV, 
+
+
+//	VOLO,
+//	VOLE,
+//	VOLOS: [NG6R, NG60, NAAN, RAIL],
+//	EVOLOS: [NG6R, NG60, NAAN, NAAE, RAIL, ELRL],
+	}
+ 
+ /*
+ * ********************************************
+ * Define cargo translation table and refits
+ * ********************************************
+ */
+ 
+ cargotable {
+//Default cargos
+   PASS, MAIL, COAL, FOOD, GOLD, GOOD, GRAI, IORE, LVST, OIL_, PAPR, STEL, VALU, WHEA, WOOD,
+
+//Tropical cargos
+   CORE, DIAM, FRUT, MAIZ, RUBR, WATR, 
+
+//ECS
+   AORE, BDMT, BRCK, CERA, CERE, CMNT, DYES, FERT, FICR, FISH, GLAS, LIME, OLSD, PETR, PLAS, POTA, RFPR, SAND, SULP, TOUR, VEHI, WDPR, WOOL, 
+
+//FIRS
+   BEER, CLAY, ENSP, FMSP, FRVG, GRVL, MILK, MNSP, PHOS, PORE, RCYC, SCMT, SGBT, SGCN, JAVA, COPR, SUGR,
+ }
+ 
+ /*
+ * ********************************************
+ * Define vehicle views (Abandoned plans roster)
+ * ********************************************
+ */
+
+template spriteset_template_double_juice(y, adjust_xoffs) {
+	//[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
+	[60,        y,          8,         25,          -3, -17 ]
+	[76,        y,          22,        22,          -10, -15 ]
+	[107,       y,          32,        15,          -8, -11 ]
+	[156,       y,          22,        22,          -4, -13 ]
+	[188,       y,          8,         25,          -3, -10 ]
+	[204,       y,          22,        22,          -17, -12 ]
+	[235,       y,          32,        15,          -24 + adjust_xoffs, -11 ]
+	[284,       y,          22,        22,          -10, -16 ]
+}
+
+template spriteset_template_purchase_double_juice() {
+	//[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
+	[60,    10, 1, 1, 0, 0]
+	[60,    10, 1, 1, 0, 0]
+	[107,   10, 1, 1, 0, 0]
+	[60,    10, 1, 1, 0, 0]
+	[60,    10, 1, 1, 0, 0]
+	[60,    10, 1, 1, 0, 0]
+	[316,   10, 32, 15, -16, -10 ]
+	[60,    10, 1, 1, 0, 0]
+}
+
+template template_electrostar(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -8]
+    [ x+9, y, 22, 19, -14, -11]
+    [ x+32, y, 32, 15, -16, -11]
+    [ x+65, y, 22, 19, -6, -11]
+    [ x+88, y, 8, 24, -3, -8]
+    [ x+97, y, 22, 19, -16, -11]
+    [ x+120, y, 32, 15, -16, -11]
+    [ x+153, y, 22, 19, -7, -11]
+}
+
+template tmpl_vehicle_1_views_purchase_acs(x,y){
+    [ x, y, 41, 13, -20, -8]
+}
+
+
+traininfo_y_offset = 2;
+train_width_32_px = 1;
