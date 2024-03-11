@@ -2224,7 +2224,7 @@
 												/*------------------*/
 												/* YOU MAY CONTINUE */
 												/*------------------*/
-												"_R_t",,
+												"_R_t",
 												/*==============*/
 												/* CHEAT RAILS! */
 												/*--------------++-*/
@@ -2280,34 +2280,34 @@
 												"_R_N",
 												"_RAN", "_RBN", "_RCN", "_RDN", "_REN",// "_RFN",
 												// (Universal Catenary) CHEAT RAILS!
-												"_R_E",,
+												"_R_E",
 												"_RAE", "_RBE", "_RCE", "_RDE", "_REE",// "_RFE",
 												// (Universal 3rd Rail) CHEAT RAILS!
-												"_R_3",,
+												"_R_3",
 												"_RA3", "_RB3", "_RC3", "_RD3", "_RE3"//,
 												// (Universal 3rd Rail & Universal Catenary) CHEAT RAILS!
-												"_R_Z",,
+												"_R_Z",
 												"_RAZ", "_RBZ", "_RCZ", "_RDZ", "_REZ",// "_RFZ",
 												// (Universal 4th Rail) CHEAT RAILS!
-												"_R_4",,
+												"_R_4",
 												"_RA4", "_RB4", "_RC4", "_RD4", "_RE4",// "_RF4",
 												// (Universal 4th Rail & Universal Catenary) CHEAT RAILS!
-												"_R_Y",,
+												"_R_Y",
 												"_RAY", "_RBY", "_RCY", "_RDY", "_REY",// "_RFY",
 												// (Universal Voltage Three-phase AC Catenary) CHEAT RAILS!
-												"_R_T",,
+												"_R_T",
 												"_RAT", "_RBT", "_RCT", "_RDT", "_RET",// "_RFT",
 												// (3kV DC) CHEAT RAILS!
-												"_R_D",,
+												"_R_D",
 												"_RAD", "_RBD", "_RCD", "_RDD", "_RED",// "_RFD",
 												// (1.5kV DC) CHEAT RAILS!
-												"_R_d",,
+												"_R_d",
 												"_RAd", "_RBd", "_RCd", "_RDd", "_REd",// "_RFd",
 												// (25kV AC) CHEAT RAILS!
-												"_R_A",,
+												"_R_A",
 												"_RAA", "_RBA", "_RCA", "_RDA", "_REA",// "_RFA",
 												// (15kV AC) CHEAT RAILS!
-												"_R_a",,
+												"_R_a",
 												"_RAa", "_RBa", "_RCa", "_RDa", "_REa",// "_RFa",
 												// (25kV/15kV AC & 3kV/1.5kV DC) CHEAT RAILS!
 												"_R_*",
