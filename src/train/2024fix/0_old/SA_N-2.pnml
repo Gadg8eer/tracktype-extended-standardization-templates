@@ -1,0 +1,4 @@
+];
+		//-- Railtypes that locomotives of this railtype can travel on under its own power;
+		//-- If the locomotive is not electric, all railtypes listed in "compatible_railtype_list", must be listed here as well, plus the railtype the lists are for itself
+				powered_railtype_list:			[

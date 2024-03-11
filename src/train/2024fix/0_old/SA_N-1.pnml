@@ -1,0 +1,8 @@
+//-- Standard Gauge, Low Axle Load Tracks
+	if ((param_axle_weight == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_mal_selfpower) {
+			property {
+				label:							"SA_N";
+			//-- Railtypes that locomotives of this railtype can be pulled over by a non-electric locomotive;
+			//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
+				compatible_railtype_list:		[
