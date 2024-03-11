@@ -2,13 +2,13 @@
 #include "src/00_header.pnml"
 
 //Track Module, 2012 OG Standard
-#include "src/tracktype_standards_module/train/2012std/SADN.pnml"
+#include "src/routetype_standards_module/train/2012std/SADN.pnml"
 
 //Track Module, 2022 Innsbruck Convention
-#include "src/tracktype_standards_module/train/2022con/SAAN.pnml"
+#include "src/routetype_standards_module/train/2022con/SAAN.pnml"
 
 //Track Module, 2024 Standard Repair
-#include "src/tracktype_standards_module/train/2024fix/SA_N.pnml"
+#include "src/routetype_standards_module/train/2024fix/SA_N.pnml"
 #include "src/01_ironhorse3_compat.pnml"
 
 
