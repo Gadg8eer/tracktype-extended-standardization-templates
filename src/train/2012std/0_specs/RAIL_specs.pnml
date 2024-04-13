@@ -34,14 +34,14 @@
 		//		requires_railtype_list:			?;
 		//		introduces_railtype_list:		"RAIL", "SA_N";
 				compatible_railtype_list:		[
-												"SA_N"
+												"SAEN"
 												];
 				powered_railtype_list:			[
-												"SA_N", "SA_E", "XREp"
+												"SAEN", "SAEE"
 												];
-				alternative_railtype_list:		[
-												"SA_N"
-												];
+			//	alternative_railtype_list:		[
+			//									"SA_N"
+			//									];
 				sort_order:						07;
 				
 			// .662 loaves of bread per 70 feet per period
