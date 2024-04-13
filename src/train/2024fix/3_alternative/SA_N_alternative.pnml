@@ -1,16 +1,29 @@
- // Third letter is axle load; The following is my personal guidelines, not a prescribed value for axle weight classes
- // SAbN (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
- // SAaN (Light Metal) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
- // SAAN (Rail) is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
- // SABN is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968
- // SACN maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978 but not based on any real rail axle load class 
- // SADN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
- // SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
- // SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
- 
-			//-- Railtypes that locomotives of this railtype can be pulled over by a non-electric locomotive;
-			//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
-														"SABN", "SACN", "SADN", "SAEN", "SAFN",
+	if ((param_axle_weight == 3 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_unspecified_selfpower) {
+		// Third letter is axle load; The following is my personal guidelines, not a prescribed value for axle weight classes
+		// SAbN (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
+		// SAaN (Light Metal) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+		// SAAN (Rail) is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
+		// SABN is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968
+		// SACN maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978 but not based on any real rail axle load class 
+		// SADN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
+		// SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
+		// SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
+			alternative_railtype_list:			[
+		//-- Railtypes that locomotives of this railtype can travel on under its own power;
+		//-- If the locomotive is not electric, all railtypes listed in "compatible_railtype_list", must be listed here as well, plus the railtype the lists are for itself
+												// 1435mm: Default Railtype, RAIL
+												"RAIL",
+												// Slowrails, SwedishRails
+												//"_040", "_080",
+												// NuTracks, SwedishRails, Japanese Track Set
+												//"RLOW", "RMED", "RHIG",
+												// DBRails
+												//"DBNN", "DBHN",
+												// ToyTrax
+												//"TYTX", "ELTX",
+												// "SA_N",
+												"SAAN", "SABN", "SACN", "SADN", "SAEN", "SAFN",
 												"SBAN", "SBBN", "SBCN", "SBDN", "SBEN", "SBFN",
 												"SCAN", "SCBN", "SCCN", "SCDN", "SCEN", "SCFN",
 												"SDAN", "SDBN", "SDCN", "SDDN", "SDEN", "SDFN",
@@ -29,7 +42,7 @@
 												//"ELOW", "EMED", "EHIG",
 												// DBRails
 												//"DBNE", "DBHE", "DBHS",
-												//"SA_E",
+												// "SA_E",
 												//"SAAE", "SABE", "SACE", "SADE", "SAEE", "SAFE",
 												//"SBAE", "SBBE", "SBCE", "SBDE", "SBEE", "SBFE",
 												//"SCAE", "SCBE", "SCCE", "SCDE", "SCEE", "SCFE",
@@ -191,7 +204,7 @@
 												//"SSA-", "SSB-", "SSC-", "SSD-", "SSE-", "SSF-",
 												//"SUA-", "SUB-", "SUC-", "SUD-", "SUE-", "SUF-",
 												// 1435mm: Standard Gauge with Pneumatic Propulsion
-												// "SA_P",
+												// "SA_P",												
 												//"SAAP", "SABP", "SACP", "SADP", "SAEP", "SAFP",
 												//"SBAP", "SBBP", "SBCP", "SBDP", "SBEP", "SAFP",
 												//"SCAP", "SCBP", "SCCP", "SCDP", "SCEP", "SAFP",
@@ -204,7 +217,7 @@
 												//"SSAP", "SSBP", "SSCP", "SSDP", "SSEP", "SAFP",
 												//"SUAP", "SUBP", "SUCP", "SUDP", "SUEP", "SAFP",
 												// 1435mm: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "SA_p",
+												// "SA_p",												
 												//"SAAp", "SABp", "SACp", "SADp", "SAEp", "SAFp",
 												//"SBAp", "SBBp", "SBCp", "SBDp", "SBEp", "SBFp",
 												//"SCAp", "SCBp", "SCCp", "SCDp", "SCEp", "SCFp",
@@ -217,7 +230,7 @@
 												//"SSAp", "SSBp", "SSCp", "SSDp", "SSEp", "SAFp",
 												//"SUAp", "SUBp", "SUCp", "SUDp", "SUEp", "SAFp",
 												// 1435mm: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "SA_*",
+												// "SA_*",												
 												//"SAA*", "SAB*", "SAC*", "SAD*", "SAE*", "SAF*",
 												//"SBA*", "SBB*", "SBC*", "SBD*", "SBE*", "SBF*",
 												//"SCA*", "SCB*", "SCC*", "SCD*", "SCE*", "SCF*",
@@ -230,7 +243,7 @@
 												//"SSA*", "SSB*", "SSC*", "SSD*", "SSE*", "SAF*",
 												//"SUA*", "SUB*", "SUC*", "SUD*", "SUE*", "SAF*",
 												// 1435mm: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "SA_'",
+												// "SA_'",												
 												//"SAA'", "SAB'", "SAC'", "SAD'", "SAE'", "SAF'",
 												//"SBA'", "SBB'", "SBC'", "SBD'", "SBE'", "SBF'",
 												//"SCA'", "SCB'", "SCC'", "SCD'", "SCE'", "SCF'",
@@ -243,7 +256,7 @@
 												//"SSA'", "SSB'", "SSC'", "SSD'", "SSE'", "SAF'",
 												//"SUA'", "SUB'", "SUC'", "SUD'", "SUE'", "SAF'",
 												// 1435mm: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "SA_^",
+												// "SA_^",												
 												//"SAA^", "SAB^", "SAC^", "SAD^", "SAE^", "SAF^",
 												//"SBA^", "SBB^", "SBC^", "SBD^", "SBE^", "SBF^",
 												//"SCA^", "SCB^", "SCC^", "SCD^", "SCE^", "SCF^",
@@ -258,7 +271,7 @@
 												// 1435mm: Standard Gauge with 25kV/15kV AC
 												// Standardized Multi-voltage International Track Set
 												//"NORD",
-												// "SA_$",
+												// "SA_$",												
 												//"SAA$", "SAB$", "SAC$", "SAD$", "SAE$", "SAF$",
 												//"SBA$", "SBB$", "SBC$", "SBD$", "SBE$", "SBF$",
 												//"SCA$", "SCB$", "SCC$", "SCD$", "SCE$", "SCF$",
@@ -284,7 +297,7 @@
 												//"SSA=", "SSB=", "SSC=", "SSD=", "SSE=", "SAF=",
 												//"SUA=", "SUB=", "SUC=", "SUD=", "SUE=", "SAF=",
 												// 1435mm: Standard Gauge with 25kV AC and 3kV DC
-												// "SA_)",
+												// "SA_)",												
 												//"SAA)", "SAB)", "SAC)", "SAD)", "SAE)", "SAF)",
 												//"SBA)", "SBB)", "SBC)", "SBD)", "SBE)", "SBF)",
 												//"SCA)", "SCB)", "SCC)", "SCD)", "SCE)", "SCF)",
@@ -297,7 +310,7 @@
 												//"SSA)", "SSB)", "SSC)", "SSD)", "SSE)", "SAF)",
 												//"SUA)", "SUB)", "SUC)", "SUD)", "SUE)", "SAF)",
 												// 1435mm: Standard Gauge with 25kV AC and 1.5kV DC
-												// "SA_(",
+												// "SA_(",												
 												//"SAA(", "SAB(", "SAC(", "SAD(", "SAE(", "SAF(",
 												//"SBA(", "SBB(", "SBC(", "SBD(", "SBE(", "SBF(",
 												//"SCA(", "SCB(", "SCC(", "SCD(", "SCE(", "SCF(",
@@ -310,7 +323,7 @@
 												//"SSA(", "SSB(", "SSC(", "SSD(", "SSE(", "SAF(",
 												//"SUA(", "SUB(", "SUC(", "SUD(", "SUE(", "SAF(",
 												// 1435mm: Standard Gauge with 15kV AC and 3kV DC
-												// "SA_]",
+												// "SA_]",												
 												//"SAA]", "SAB]", "SAC]", "SAD]", "SAE]", "SAF]",
 												//"SBA]", "SBB]", "SBC]", "SBD]", "SBE]", "SBF]",
 												//"SCA]", "SCB]", "SCC]", "SCD]", "SCE]", "SCF]",
@@ -323,7 +336,7 @@
 												//"SSA]", "SSB]", "SSC]", "SSD]", "SSE]", "SAF]",
 												//"SUA]", "SUB]", "SUC]", "SUD]", "SUE]", "SAF]",
 												// 1435mm: Standard Gauge with 15kV AC and 1.5kV DC
-												// "SA_[",
+												// "SA_[",												
 												//"SAA[", "SAB[", "SAC[", "SAD[", "SAE[", "SAF[",
 												//"SBA[", "SBB[", "SBC[", "SBD[", "SBE[", "SBF[",
 												//"SCA[", "SCB[", "SCC[", "SCD[", "SCE[", "SCF[",
@@ -534,7 +547,7 @@
 												//"XSAP", "XSBP", "XSCP", "XSDP", "XSEP", "XAFP",
 												//"XUAP", "XUBP", "XUCP", "XUDP", "XUEP", "XAFP",
 												// Omni-Gauge:  Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "XA_p",
+												// "XA_p",												
 												//"XAAp", "XABp", "XACp", "XADp", "XAEp", "XAFp",
 												//"XBAp", "XBBp", "XBCp", "XBDp", "XBEp", "XBFp",
 												//"XCAp", "XCBp", "XCCp", "XCDp", "XCEp", "XCFp",
@@ -547,7 +560,7 @@
 												//"XSAp", "XSBp", "XSCp", "XSDp", "XSEp", "XAFp",
 												//"XUAp", "XUBp", "XUCp", "XUDp", "XUEp", "XAFp",
 												// Omni-Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "XA_*",
+												// "XA_*",												
 												//"XAA*", "XAB*", "XAC*", "XAD*", "XAE*", "XAF*",
 												//"XBA*", "XBB*", "XBC*", "XBD*", "XBE*", "XBF*",
 												//"XCA*", "XCB*", "XCC*", "XCD*", "XCE*", "XCF*",
@@ -560,7 +573,7 @@
 												//"XSA*", "XSB*", "XSC*", "XSD*", "XSE*", "XAF*",
 												//"XUA*", "XUB*", "XUC*", "XUD*", "XUE*", "XAF*",
 												// Omni-Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "XA_'",
+												// "XA_'",												
 												//"XAA'", "XAB'", "XAC'", "XAD'", "XAE'", "XAF'",
 												//"XBA'", "XBB'", "XBC'", "XBD'", "XBE'", "XBF'",
 												//"XCA'", "XCB'", "XCC'", "XCD'", "XCE'", "XCF'",
@@ -573,7 +586,7 @@
 												//"XSA'", "XSB'", "XSC'", "XSD'", "XSE'", "XAF'",
 												//"XUA'", "XUB'", "XUC'", "XUD'", "XUE'", "XAF'",
 												// Omni-Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "XA_^",
+												// "XA_^",												
 												//"XAA^", "XAB^", "XAC^", "XAD^", "XAE^", "XAF^",
 												//"XBA^", "XBB^", "XBC^", "XBD^", "XBE^", "XBF^",
 												//"XCA^", "XCB^", "XCC^", "XCD^", "XCE^", "XCF^",
@@ -586,7 +599,7 @@
 												//"XSA^", "XSB^", "XSC^", "XSD^", "XSE^", "XAF^",
 												//"XUA^", "XUB^", "XUC^", "XUD^", "XUE^", "XAF^",
 												// Omni-Gauge: Standard Gauge with 25kV/15kV AC
-												// "XA_$",
+												// "XA_$",												
 												//"XAA$", "XAB$", "XAC$", "XAD$", "XAE$", "XAF$",
 												//"XBA$", "XBB$", "XBC$", "XBD$", "XBE$", "XBF$",
 												//"XCA$", "XCB$", "XCC$", "XCD$", "XCE$", "XCF$",
@@ -599,7 +612,7 @@
 												//"XSA$", "XSB$", "XSC$", "XSD$", "XSE$", "XAF$",
 												//"XUA$", "XUB$", "XUC$", "XUD$", "XUE$", "XAF$",
 												// Omni-Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "XA_=",
+												// "XA_=",												
 												//"XAA=", "XAB=", "XAC=", "XAD=", "XAE=", "XAF=",
 												//"XBA=", "XBB=", "XBC=", "XBD=", "XBE=", "XBF=",
 												//"XCA=", "XCB=", "XCC=", "XCD=", "XCE=", "XCF=",
@@ -612,7 +625,7 @@
 												//"XSA=", "XSB=", "XSC=", "XSD=", "XSE=", "XAF=",
 												//"XUA=", "XUB=", "XUC=", "XUD=", "XUE=", "XAF=",
 												// Omni-Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "XA_)",
+												// "XA_)",												
 												//"XAA)", "XAB)", "XAC)", "XAD)", "XAE)", "XAF)",
 												//"XBA)", "XBB)", "XBC)", "XBD)", "XBE)", "XBF)",
 												//"XCA)", "XCB)", "XCC)", "XCD)", "XCE)", "XCF)",
@@ -625,7 +638,7 @@
 												//"XSA)", "XSB)", "XSC)", "XSD)", "XSE)", "XAF)",
 												//"XUA)", "XUB)", "XUC)", "XUD)", "XUE)", "XAF)",
 												// Omni-Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "XA_(",
+												// "XA_(",												
 												//"XAA(", "XAB(", "XAC(", "XAD(", "XAE(", "XAF(",
 												//"XBA(", "XBB(", "XBC(", "XBD(", "XBE(", "XBF(",
 												//"XCA(", "XCB(", "XCC(", "XCD(", "XCE(", "XCF(",
@@ -638,7 +651,7 @@
 												//"XSA(", "XSB(", "XSC(", "XSD(", "XSE(", "XAF(",
 												//"XUA(", "XUB(", "XUC(", "XUD(", "XUE(", "XAF(",
 												// Omni-Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "XA_]",
+												// "XA_]",												
 												//"XAA]", "XAB]", "XAC]", "XAD]", "XAE]", "XAF]",
 												//"XBA]", "XBB]", "XBC]", "XBD]", "XBE]", "XBF]",
 												//"XCA]", "XCB]", "XCC]", "XCD]", "XCE]", "XCF]",
@@ -846,7 +859,7 @@
 												//"xSAP", "xSBP", "xSCP", "xSDP", "xSEP", "xAFP",
 												//"xUAP", "xUBP", "xUCP", "xUDP", "xUEP", "xAFP",
 												// Multi-Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "xA_p",
+												// "xA_p",												
 												//"xAAp", "xABp", "xACp", "xADp", "xAEp", "xAFp",
 												//"xBAp", "xBBp", "xBCp", "xBDp", "xBEp", "xBFp",
 												//"xCAp", "xCBp", "xCCp", "xCDp", "xCEp", "xCFp",
@@ -859,7 +872,7 @@
 												//"xSAp", "xSBp", "xSCp", "xSDp", "xSEp", "xAFp",
 												//"xUAp", "xUBp", "xUCp", "xUDp", "xUEp", "xAFp",
 												// Multi-Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "xA_*",
+												// "xA_*",												
 												//"xAA*", "xAB*", "xAC*", "xAD*", "xAE*", "xAF*",
 												//"xBA*", "xBB*", "xBC*", "xBD*", "xBE*", "xBF*",
 												//"xCA*", "xCB*", "xCC*", "xCD*", "xCE*", "xCF*",
@@ -872,7 +885,7 @@
 												//"xSA*", "xSB*", "xSC*", "xSD*", "xSE*", "xAF*",
 												//"xUA*", "xUB*", "xUC*", "xUD*", "xUE*", "xAF*",
 												// Multi-Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "xA_'",
+												// "xA_'",												
 												//"xAA'", "xAB'", "xAC'", "xAD'", "xAE'", "xAF'",
 												//"xBA'", "xBB'", "xBC'", "xBD'", "xBE'", "xBF'",
 												//"xCA'", "xCB'", "xCC'", "xCD'", "xCE'", "xCF'",
@@ -885,7 +898,7 @@
 												//"xSA'", "xSB'", "xSC'", "xSD'", "xSE'", "xAF'",
 												//"xUA'", "xUB'", "xUC'", "xUD'", "xUE'", "xAF'",
 												// Multi-Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "xA_^",
+												// "xA_^",												
 												//"xAA^", "xAB^", "xAC^", "xAD^", "xAE^", "xAF^",
 												//"xBA^", "xBB^", "xBC^", "xBD^", "xBE^", "xBF^",
 												//"xCA^", "xCB^", "xCC^", "xCD^", "xCE^", "xCF^",
@@ -898,7 +911,7 @@
 												//"xSA^", "xSB^", "xSC^", "xSD^", "xSE^", "xAF^",
 												//"xUA^", "xUB^", "xUC^", "xUD^", "xUE^", "xAF^",
 												// Multi-Gauge: Standard Gauge with 25kV/15kV AC
-												// "xA_$",
+												// "xA_$",												
 												//"xAA$", "xAB$", "xAC$", "xAD$", "xAE$", "xAF$",
 												//"xBA$", "xBB$", "xBC$", "xBD$", "xBE$", "xBF$",
 												//"xCA$", "xCB$", "xCC$", "xCD$", "xCE$", "xCF$",
@@ -911,7 +924,7 @@
 												//"xSA$", "xSB$", "xSC$", "xSD$", "xSE$", "xAF$",
 												//"xUA$", "xUB$", "xUC$", "xUD$", "xUE$", "xAF$",
 												// Multi-Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "xA_=",
+												// "xA_=",												
 												//"xAA=", "xAB=", "xAC=", "xAD=", "xAE=", "xAF=",
 												//"xBA=", "xBB=", "xBC=", "xBD=", "xBE=", "xBF=",
 												//"xCA=", "xCB=", "xCC=", "xCD=", "xCE=", "xCF=",
@@ -924,7 +937,7 @@
 												//"xSA=", "xSB=", "xSC=", "xSD=", "xSE=", "xAF=",
 												//"xUA=", "xUB=", "xUC=", "xUD=", "xUE=", "xAF=",
 												// Multi-Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "xA_)",
+												// "xA_)",												
 												//"xAA)", "xAB)", "xAC)", "xAD)", "xAE)", "xAF)",
 												//"xBA)", "xBB)", "xBC)", "xBD)", "xBE)", "xBF)",
 												//"xCA)", "xCB)", "xCC)", "xCD)", "xCE)", "xCF)",
@@ -937,7 +950,7 @@
 												//"xSA)", "xSB)", "xSC)", "xSD)", "xSE)", "xAF)",
 												//"xUA)", "xUB)", "xUC)", "xUD)", "xUE)", "xAF)",
 												// Multi-Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "xA_(",
+												// "xA_(",												
 												//"xAA(", "xAB(", "xAC(", "xAD(", "xAE(", "xAF(",
 												//"xBA(", "xBB(", "xBC(", "xBD(", "xBE(", "xBF(",
 												//"xCA(", "xCB(", "xCC(", "xCD(", "xCE(", "xCF(",
@@ -950,7 +963,7 @@
 												//"xSA(", "xSB(", "xSC(", "xSD(", "xSE(", "xAF(",
 												//"xUA(", "xUB(", "xUC(", "xUD(", "xUE(", "xAF(",
 												// Multi-Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "xA_]",
+												// "xA_]",												
 												//"xAA]", "xAB]", "xAC]", "xAD]", "xAE]", "xAF]",
 												//"xBA]", "xBB]", "xBC]", "xBD]", "xBE]", "xBF]",
 												//"xCA]", "xCB]", "xCC]", "xCD]", "xCE]", "xCF]",
@@ -963,7 +976,7 @@
 												//"xSA]", "xSB]", "xSC]", "xSD]", "xSE]", "xAF]",
 												//"xUA]", "xUB]", "xUC]", "xUD]", "xUE]", "xAF]",
 												// Multi-Gauge: Standard Gauge with 15kV AC and 1.5kV DC
-												// "xA_[",
+												// "xA_[",												
 												//"xAA[", "xAB[", "xAC[", "xAD[", "xAE[", "xAF[",
 												//"xBA[", "xBB[", "xBC[", "xBD[", "xBE[", "xBF[",
 												//"xCA[", "xCB[", "xCC[", "xCD[", "xCE[", "xCF[",
@@ -1169,7 +1182,7 @@
 												//"+SAP", "+SBP", "+SCP", "+SDP", "+SEP", "+AFP",
 												//"+UAP", "+UBP", "+UCP", "+UDP", "+UEP", "+AFP",
 												// Quad-Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "+A_p",
+												// "+A_p",												
 												//"+AAp", "+ABp", "+ACp", "+ADp", "+AEp", "+AFp",
 												//"+BAp", "+BBp", "+BCp", "+BDp", "+BEp", "+BFp",
 												//"+CAp", "+CBp", "+CCp", "+CDp", "+CEp", "+CFp",
@@ -1182,7 +1195,7 @@
 												//"+SAp", "+SBp", "+SCp", "+SDp", "+SEp", "+AFp",
 												//"+UAp", "+UBp", "+UCp", "+UDp", "+UEp", "+AFp",
 												// Quad-Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "+A_*",
+												// "+A_*",												
 												//"+AA*", "+AB*", "+AC*", "+AD*", "+AE*", "+AF*",
 												//"+BA*", "+BB*", "+BC*", "+BD*", "+BE*", "+BF*",
 												//"+CA*", "+CB*", "+CC*", "+CD*", "+CE*", "+CF*",
@@ -1195,7 +1208,7 @@
 												//"+SA*", "+SB*", "+SC*", "+SD*", "+SE*", "+AF*",
 												//"+UA*", "+UB*", "+UC*", "+UD*", "+UE*", "+AF*",
 												// Quad-Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "+A_'",
+												// "+A_'",												
 												//"+AA'", "+AB'", "+AC'", "+AD'", "+AE'", "+AF'",
 												//"+BA'", "+BB'", "+BC'", "+BD'", "+BE'", "+BF'",
 												//"+CA'", "+CB'", "+CC'", "+CD'", "+CE'", "+CF'",
@@ -1208,7 +1221,7 @@
 												//"+SA'", "+SB'", "+SC'", "+SD'", "+SE'", "+AF'",
 												//"+UA'", "+UB'", "+UC'", "+UD'", "+UE'", "+AF'",
 												// Quad-Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "+A_^",
+												// "+A_^",												
 												//"+AA^", "+AB^", "+AC^", "+AD^", "+AE^", "+AF^",
 												//"+BA^", "+BB^", "+BC^", "+BD^", "+BE^", "+BF^",
 												//"+CA^", "+CB^", "+CC^", "+CD^", "+CE^", "+CF^",
@@ -1221,7 +1234,7 @@
 												//"+SA^", "+SB^", "+SC^", "+SD^", "+SE^", "+AF^",
 												//"+UA^", "+UB^", "+UC^", "+UD^", "+UE^", "+AF^",
 												// Quad-Gauge: Standard Gauge with 25kV/15kV AC
-												// "+A_$",
+												// "+A_$",												
 												//"+AA$", "+AB$", "+AC$", "+AD$", "+AE$", "+AF$",
 												//"+BA$", "+BB$", "+BC$", "+BD$", "+BE$", "+BF$",
 												//"+CA$", "+CB$", "+CC$", "+CD$", "+CE$", "+CF$",
@@ -1234,7 +1247,7 @@
 												//"+SA$", "+SB$", "+SC$", "+SD$", "+SE$", "+AF$",
 												//"+UA$", "+UB$", "+UC$", "+UD$", "+UE$", "+AF$",
 												// Quad-Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "+A_=",
+												// "+A_=",												
 												//"+AA=", "+AB=", "+AC=", "+AD=", "+AE=", "+AF=",
 												//"+BA=", "+BB=", "+BC=", "+BD=", "+BE=", "+BF=",
 												//"+CA=", "+CB=", "+CC=", "+CD=", "+CE=", "+CF=",
@@ -1247,7 +1260,7 @@
 												//"+SA=", "+SB=", "+SC=", "+SD=", "+SE=", "+AF=",
 												//"+UA=", "+UB=", "+UC=", "+UD=", "+UE=", "+AF=",
 												// Quad-Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "+A_)",
+												// "+A_)",												
 												//"+AA)", "+AB)", "+AC)", "+AD)", "+AE)", "+AF)",
 												//"+BA)", "+BB)", "+BC)", "+BD)", "+BE)", "+BF)",
 												//"+CA)", "+CB)", "+CC)", "+CD)", "+CE)", "+CF)",
@@ -1260,7 +1273,7 @@
 												//"+SA)", "+SB)", "+SC)", "+SD)", "+SE)", "+AF)",
 												//"+UA)", "+UB)", "+UC)", "+UD)", "+UE)", "+AF)",
 												// Quad-Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "+A_(",
+												// "+A_(",												
 												//"+AA(", "+AB(", "+AC(", "+AD(", "+AE(", "+AF(",
 												//"+BA(", "+BB(", "+BC(", "+BD(", "+BE(", "+BF(",
 												//"+CA(", "+CB(", "+CC(", "+CD(", "+CE(", "+CF(",
@@ -1273,7 +1286,7 @@
 												//"+SA(", "+SB(", "+SC(", "+SD(", "+SE(", "+AF(",
 												//"+UA(", "+UB(", "+UC(", "+UD(", "+UE(", "+AF(",
 												// Quad-Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "+A_]",
+												// "+A_]",												
 												//"+AA]", "+AB]", "+AC]", "+AD]", "+AE]", "+AF]",
 												//"+BA]", "+BB]", "+BC]", "+BD]", "+BE]", "+BF]",
 												//"+CA]", "+CB]", "+CC]", "+CD]", "+CE]", "+CF]",
@@ -1286,7 +1299,7 @@
 												//"+SA]", "+SB]", "+SC]", "+SD]", "+SE]", "+AF]",
 												//"+UA]", "+UB]", "+UC]", "+UD]", "+UE]", "+AF]",
 												// Quad-Gauge: Standard Gauge with 15kV AC and 1.5kV DC
-												// "+A_[",
+												// "+A_[",												
 												//"+AA[", "+AB[", "+AC[", "+AD[", "+AE[", "+AF[",
 												//"+BA[", "+BB[", "+BC[", "+BD[", "+BE[", "+BF[",
 												//"+CA[", "+CB[", "+CC[", "+CD[", "+CE[", "+CF[",
@@ -1489,7 +1502,7 @@
 												//"-SAP", "-SBP", "-SCP", "-SDP", "-SEP", "-AFP",
 												//"-UAP", "-UBP", "-UCP", "-UDP", "-UEP", "-AFP",
 												// Four-Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "-A_p",
+												// "-A_p",												
 												//"-AAp", "-ABp", "-ACp", "-ADp", "-AEp", "-AFp",
 												//"-BAp", "-BBp", "-BCp", "-BDp", "-BEp", "-BFp",
 												//"-CAp", "-CBp", "-CCp", "-CDp", "-CEp", "-CFp",
@@ -1502,7 +1515,7 @@
 												//"-SAp", "-SBp", "-SCp", "-SDp", "-SEp", "-AFp",
 												//"-UAp", "-UBp", "-UCp", "-UDp", "-UEp", "-AFp",
 												// Four-Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "-A_*",
+												// "-A_*",												
 												//"-AA*", "-AB*", "-AC*", "-AD*", "-AE*", "-AF*",
 												//"-BA*", "-BB*", "-BC*", "-BD*", "-BE*", "-BF*",
 												//"-CA*", "-CB*", "-CC*", "-CD*", "-CE*", "-CF*",
@@ -1515,7 +1528,7 @@
 												//"-SA*", "-SB*", "-SC*", "-SD*", "-SE*", "-AF*",
 												//"-UA*", "-UB*", "-UC*", "-UD*", "-UE*", "-AF*",
 												// Four-Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "-A_'",
+												// "-A_'",												
 												//"-AA'", "-AB'", "-AC'", "-AD'", "-AE'", "-AF'",
 												//"-BA'", "-BB'", "-BC'", "-BD'", "-BE'", "-BF'",
 												//"-CA'", "-CB'", "-CC'", "-CD'", "-CE'", "-CF'",
@@ -1528,7 +1541,7 @@
 												//"-SA'", "-SB'", "-SC'", "-SD'", "-SE'", "-AF'",
 												//"-UA'", "-UB'", "-UC'", "-UD'", "-UE'", "-AF'",
 												// Four-Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "-A_^",
+												// "-A_^",												
 												//"-AA^", "-AB^", "-AC^", "-AD^", "-AE^", "-AF^",
 												//"-BA^", "-BB^", "-BC^", "-BD^", "-BE^", "-BF^",
 												//"-CA^", "-CB^", "-CC^", "-CD^", "-CE^", "-CF^",
@@ -1541,7 +1554,7 @@
 												//"-SA^", "-SB^", "-SC^", "-SD^", "-SE^", "-AF^",
 												//"-UA^", "-UB^", "-UC^", "-UD^", "-UE^", "-AF^",
 												// Four-Gauge: Standard Gauge with 25kV/15kV AC
-												// "-A_$",
+												// "-A_$",												
 												//"-AA$", "-AB$", "-AC$", "-AD$", "-AE$", "-AF$",
 												//"-BA$", "-BB$", "-BC$", "-BD$", "-BE$", "-BF$",
 												//"-CA$", "-CB$", "-CC$", "-CD$", "-CE$", "-CF$",
@@ -1554,7 +1567,7 @@
 												//"-SA$", "-SB$", "-SC$", "-SD$", "-SE$", "-AF$",
 												//"-UA$", "-UB$", "-UC$", "-UD$", "-UE$", "-AF$",
 												// Four-Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "-A_=",
+												// "-A_=",												
 												//"-AA=", "-AB=", "-AC=", "-AD=", "-AE=", "-AF=",
 												//"-BA=", "-BB=", "-BC=", "-BD=", "-BE=", "-BF=",
 												//"-CA=", "-CB=", "-CC=", "-CD=", "-CE=", "-CF=",
@@ -1567,7 +1580,7 @@
 												//"-SA=", "-SB=", "-SC=", "-SD=", "-SE=", "-AF=",
 												//"-UA=", "-UB=", "-UC=", "-UD=", "-UE=", "-AF=",
 												// Four-Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "-A_)",
+												// "-A_)",												
 												//"-AA)", "-AB)", "-AC)", "-AD)", "-AE)", "-AF)",
 												//"-BA)", "-BB)", "-BC)", "-BD)", "-BE)", "-BF)",
 												//"-CA)", "-CB)", "-CC)", "-CD)", "-CE)", "-CF)",
@@ -1580,7 +1593,7 @@
 												//"-SA)", "-SB)", "-SC)", "-SD)", "-SE)", "-AF)",
 												//"-UA)", "-UB)", "-UC)", "-UD)", "-UE)", "-AF)",
 												// Four-Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "-A_(",
+												// "-A_(",												
 												//"-AA(", "-AB(", "-AC(", "-AD(", "-AE(", "-AF(",
 												//"-BA(", "-BB(", "-BC(", "-BD(", "-BE(", "-BF(",
 												//"-CA(", "-CB(", "-CC(", "-CD(", "-CE(", "-CF(",
@@ -1593,7 +1606,7 @@
 												//"-SA(", "-SB(", "-SC(", "-SD(", "-SE(", "-AF(",
 												//"-UA(", "-UB(", "-UC(", "-UD(", "-UE(", "-AF(",
 												// Four-Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "-A_]",
+												// "-A_]",												
 												//"-AA]", "-AB]", "-AC]", "-AD]", "-AE]", "-AF]",
 												//"-BA]", "-BB]", "-BC]", "-BD]", "-BE]", "-BF]",
 												//"-CA]", "-CB]", "-CC]", "-CD]", "-CE]", "-CF]",
@@ -1606,7 +1619,7 @@
 												//"-SA]", "-SB]", "-SC]", "-SD]", "-SE]", "-AF]",
 												//"-UA]", "-UB]", "-UC]", "-UD]", "-UE]", "-AF]",
 												// Four-Gauge: Standard Gauge with 15kV AC and 1.5kV DC
-												// "-A_[",
+												// "-A_[",												
 												//"-AA[", "-AB[", "-AC[", "-AD[", "-AE[", "-AF[",
 												//"-BA[", "-BB[", "-BC[", "-BD[", "-BE[", "-BF[",
 												//"-CA[", "-CB[", "-CC[", "-CD[", "-CE[", "-CF[",
@@ -1810,7 +1823,7 @@
 												//"DSAP", "DSBP", "DSCP", "DSDP", "DSEP", "DAFP",
 												//"DUAP", "DUBP", "DUCP", "DUDP", "DUEP", "DAFP",
 												// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "DA_p",
+												// "DA_p",												
 												//"DAAp", "DABp", "DACp", "DADp", "DAEp", "DAFp",
 												//"DBAp", "DBBp", "DBCp", "DBDp", "DBEp", "DBFp",
 												//"DCAp", "DCBp", "DCCp", "DCDp", "DCEp", "DCFp",
@@ -1823,7 +1836,7 @@
 												//"DSAp", "DSBp", "DSCp", "DSDp", "DSEp", "DAFp",
 												//"DUAp", "DUBp", "DUCp", "DUDp", "DUEp", "DAFp",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "DA_*",
+												// "DA_*",												
 												//"DAA*", "DAB*", "DAC*", "DAD*", "DAE*", "DAF*",
 												//"DBA*", "DBB*", "DBC*", "DBD*", "DBE*", "DBF*",
 												//"DCA*", "DCB*", "DCC*", "DCD*", "DCE*", "DCF*",
@@ -1836,7 +1849,7 @@
 												//"DSA*", "DSB*", "DSC*", "DSD*", "DSE*", "DAF*",
 												//"DUA*", "DUB*", "DUC*", "DUD*", "DUE*", "DAF*",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "DA_'",
+												// "DA_'",												
 												//"DAA'", "DAB'", "DAC'", "DAD'", "DAE'", "DAF'",
 												//"DBA'", "DBB'", "DBC'", "DBD'", "DBE'", "DBF'",
 												//"DCA'", "DCB'", "DCC'", "DCD'", "DCE'", "DCF'",
@@ -1849,7 +1862,7 @@
 												//"DSA'", "DSB'", "DSC'", "DSD'", "DSE'", "DAF'",
 												//"DUA'", "DUB'", "DUC'", "DUD'", "DUE'", "DAF'",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "DA_^",
+												// "DA_^",												
 												//"DAA^", "DAB^", "DAC^", "DAD^", "DAE^", "DAF^",
 												//"DBA^", "DBB^", "DBC^", "DBD^", "DBE^", "DBF^",
 												//"DCA^", "DCB^", "DCC^", "DCD^", "DCE^", "DCF^",
@@ -1862,7 +1875,7 @@
 												//"DSA^", "DSB^", "DSC^", "DSD^", "DSE^", "DAF^",
 												//"DUA^", "DUB^", "DUC^", "DUD^", "DUE^", "DAF^",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC
-												// "DA_$",
+												// "DA_$",												
 												//"DAA$", "DAB$", "DAC$", "DAD$", "DAE$", "DAF$",
 												//"DBA$", "DBB$", "DBC$", "DBD$", "DBE$", "DBF$",
 												//"DCA$", "DCB$", "DCC$", "DCD$", "DCE$", "DCF$",
@@ -1875,7 +1888,7 @@
 												//"DSA$", "DSB$", "DSC$", "DSD$", "DSE$", "DAF$",
 												//"DUA$", "DUB$", "DUC$", "DUD$", "DUE$", "DAF$",
 												// Anti-Dueling Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "DA_=",
+												// "DA_=",												
 												//"DAA=", "DAB=", "DAC=", "DAD=", "DAE=", "DAF=",
 												//"DBA=", "DBB=", "DBC=", "DBD=", "DBE=", "DBF=",
 												//"DCA=", "DCB=", "DCC=", "DCD=", "DCE=", "DCF=",
@@ -1888,7 +1901,7 @@
 												//"DSA=", "DSB=", "DSC=", "DSD=", "DSE=", "DAF=",
 												//"DUA=", "DUB=", "DUC=", "DUD=", "DUE=", "DAF=",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "DA_)",
+												// "DA_)",												
 												//"DAA)", "DAB)", "DAC)", "DAD)", "DAE)", "DAF)",
 												//"DBA)", "DBB)", "DBC)", "DBD)", "DBE)", "DBF)",
 												//"DCA)", "DCB)", "DCC)", "DCD)", "DCE)", "DCF)",
@@ -1901,7 +1914,7 @@
 												//"DSA)", "DSB)", "DSC)", "DSD)", "DSE)", "DAF)",
 												//"DUA)", "DUB)", "DUC)", "DUD)", "DUE)", "DAF)",
 												// Anti-Dueling Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "DA_(",
+												// "DA_(",												
 												//"DAA(", "DAB(", "DAC(", "DAD(", "DAE(", "DAF(",
 												//"DBA(", "DBB(", "DBC(", "DBD(", "DBE(", "DBF(",
 												//"DCA(", "DCB(", "DCC(", "DCD(", "DCE(", "DCF(",
@@ -1914,7 +1927,7 @@
 												//"DSA(", "DSB(", "DSC(", "DSD(", "DSE(", "DAF(",
 												//"DUA(", "DUB(", "DUC(", "DUD(", "DUE(", "DAF(",
 												// Anti-Dueling Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "DA_]",
+												// "DA_]",												
 												//"DAA]", "DAB]", "DAC]", "DAD]", "DAE]", "DAF]",
 												//"DBA]", "DBB]", "DBC]", "DBD]", "DBE]", "DBF]",
 												//"DCA]", "DCB]", "DCC]", "DCD]", "DCE]", "DCF]",
@@ -1927,7 +1940,7 @@
 												//"DSA]", "DSB]", "DSC]", "DSD]", "DSE]", "DAF]",
 												//"DUA]", "DUB]", "DUC]", "DUD]", "DUE]", "DAF]",
 												// Anti-Dueling Gauge: Standard Gauge with 15kV AC and 1.5kV DC
-												// "DA_[",
+												// "DA_[",												
 												//"DAA[", "DAB[", "DAC[", "DAD[", "DAE[", "DAF[",
 												//"DBA[", "DBB[", "DBC[", "DBD[", "DBE[", "DBF[",
 												//"DCA[", "DCB[", "DCC[", "DCD[", "DCE[", "DCF[",
@@ -2131,7 +2144,7 @@
 												//"dSAP", "dSBP", "dSCP", "dSDP", "dSEP", "dAFP",
 												//"dUAP", "dUBP", "dUCP", "dUDP", "dUEP", "dAFP",
 												// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
-												// "dA_p",
+												// "dA_p",												
 												//"dAAp", "dABp", "dACp", "dADp", "dAEp", "dAFp",
 												//"dBAp", "dBBp", "dBCp", "dBDp", "dBEp", "dBFp",
 												//"dCAp", "dCBp", "dCCp", "dCDp", "dCEp", "dCFp",
@@ -2144,7 +2157,7 @@
 												//"dSAp", "dSBp", "dSCp", "dSDp", "dSEp", "dAFp",
 												//"dUAp", "dUBp", "dUCp", "dUDp", "dUEp", "dAFp",
 												// Dual Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
-												// "dA_*",
+												// "dA_*",												
 												//"dAA*", "dAB*", "dAC*", "dAD*", "dAE*", "dAF*",
 												//"dBA*", "dBB*", "dBC*", "dBD*", "dBE*", "dBF*",
 												//"dCA*", "dCB*", "dCC*", "dCD*", "dCE*", "dCF*",
@@ -2157,7 +2170,7 @@
 												//"dSA*", "dSB*", "dSC*", "dSD*", "dSE*", "dAF*",
 												//"dUA*", "dUB*", "dUC*", "dUD*", "dUE*", "dAF*",
 												// Dual Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
-												// "dA_'",
+												// "dA_'",												
 												//"dAA'", "dAB'", "dAC'", "dAD'", "dAE'", "dAF'",
 												//"dBA'", "dBB'", "dBC'", "dBD'", "dBE'", "dBF'",
 												//"dCA'", "dCB'", "dCC'", "dCD'", "dCE'", "dCF'",
@@ -2170,7 +2183,7 @@
 												//"dSA'", "dSB'", "dSC'", "dSD'", "dSE'", "dAF'",
 												//"dUA'", "dUB'", "dUC'", "dUD'", "dUE'", "dAF'",
 												// Dual Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
-												// "dA_^",
+												// "dA_^",												
 												//"dAA^", "dAB^", "dAC^", "dAD^", "dAE^", "dAF^",
 												//"dBA^", "dBB^", "dBC^", "dBD^", "dBE^", "dBF^",
 												//"dCA^", "dCB^", "dCC^", "dCD^", "dCE^", "dCF^",
@@ -2183,7 +2196,7 @@
 												//"dSA^", "dSB^", "dSC^", "dSD^", "dSE^", "dAF^",
 												//"dUA^", "dUB^", "dUC^", "dUD^", "dUE^", "dAF^",
 												// Dual Gauge: Standard Gauge with 25kV/15kV AC
-												// "dA_$",
+												// "dA_$",												
 												//"dAA$", "dAB$", "dAC$", "dAD$", "dAE$", "dAF$",
 												//"dBA$", "dBB$", "dBC$", "dBD$", "dBE$", "dBF$",
 												//"dCA$", "dCB$", "dCC$", "dCD$", "dCE$", "dCF$",
@@ -2196,7 +2209,7 @@
 												//"dSA$", "dSB$", "dSC$", "dSD$", "dSE$", "dAF$",
 												//"dUA$", "dUB$", "dUC$", "dUD$", "dUE$", "dAF$",
 												// Dual Gauge: Standard Gauge with 3kV/1.5kV DC
-												// "dA_=",
+												// "dA_=",												
 												//"dAA=", "dAB=", "dAC=", "dAD=", "dAE=", "dAF=",
 												//"dBA=", "dBB=", "dBC=", "dBD=", "dBE=", "dBF=",
 												//"dCA=", "dCB=", "dCC=", "dCD=", "dCE=", "dCF=",
@@ -2209,7 +2222,7 @@
 												//"dSA=", "dSB=", "dSC=", "dSD=", "dSE=", "dAF=",
 												//"dUA=", "dUB=", "dUC=", "dUD=", "dUE=", "dAF=",
 												// Dual Gauge: Standard Gauge with 25kV AC and 3kV DC
-												// "dA_)",
+												// "dA_)",												
 												//"dAA)", "dAB)", "dAC)", "dAD)", "dAE)", "dAF)",
 												//"dBA)", "dBB)", "dBC)", "dBD)", "dBE)", "dBF)",
 												//"dCA)", "dCB)", "dCC)", "dCD)", "dCE)", "dCF)",
@@ -2222,7 +2235,7 @@
 												//"dSA)", "dSB)", "dSC)", "dSD)", "dSE)", "dAF)",
 												//"dUA)", "dUB)", "dUC)", "dUD)", "dUE)", "dAF)",
 												// Dual Gauge: Standard Gauge with 25kV AC and 1.5kV DC
-												// "dA_(",
+												// "dA_(",												
 												//"dAA(", "dAB(", "dAC(", "dAD(", "dAE(", "dAF(",
 												//"dBA(", "dBB(", "dBC(", "dBD(", "dBE(", "dBF(",
 												//"dCA(", "dCB(", "dCC(", "dCD(", "dCE(", "dCF(",
@@ -2235,7 +2248,7 @@
 												//"dSA(", "dSB(", "dSC(", "dSD(", "dSE(", "dAF(",
 												//"dUA(", "dUB(", "dUC(", "dUD(", "dUE(", "dAF(",
 												// Dual Gauge: Standard Gauge with 15kV AC and 3kV DC
-												// "dA_]",
+												// "dA_]",												
 												//"dAA]", "dAB]", "dAC]", "dAD]", "dAE]", "dAF]",
 												//"dBA]", "dBB]", "dBC]", "dBD]", "dBE]", "dBF]",
 												//"dCA]", "dCB]", "dCC]", "dCD]", "dCE]", "dCF]",
@@ -2248,7 +2261,7 @@
 												//"dSA]", "dSB]", "dSC]", "dSD]", "dSE]", "dAF]",
 												//"dUA]", "dUB]", "dUC]", "dUD]", "dUE]", "dAF]",
 												// Dual Gauge: Standard Gauge with 15kV AC and 1.5kV DC
-												// "dA_[",
+												// "dA_[",												
 												//"dAA[", "dAB[", "dAC[", "dAD[", "dAE[", "dAF[",
 												//"dBA[", "dBB[", "dBC[", "dBD[", "dBE[", "dBF[",
 												//"dCA[", "dCB[", "dCC[", "dCD[", "dCE[", "dCF[",
@@ -2400,4 +2413,7 @@
 												//"_R_P",
 												//"_RAP", "_RBP", "_RCP", "_RDP", "_REP", "_RFP",
 												//"_R_p",
-												//"_RAp", "_RBp", "_RCp", "_RDp", "_REp"//, "_RFp",
+												//"_RAp", "_RBp", "_RCp", "_RDp", "_REp", "_RFp"
+												];
+		}
+	}

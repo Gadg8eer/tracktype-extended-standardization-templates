@@ -1,0 +1,100 @@
+grf {
+    grfid: "TEST";
+    name: string(STR_GRF_BASECOST_NAME);
+    desc: string(STR_GRF_BASECOST_DESC);
+    version: 0;
+    min_compatible_version: 0;
+	url: string(STR_WEBSITE);
+    param {
+		param_colour_scheme {
+		type: int;
+		name: string(STR_PARAM_COLOUR_SCHEME_NAME);
+		desc: string(STR_PARAM_COLOUR_SCHEME_DESC);
+		min_value: 0;
+		max_value: 2;
+		def_value: 1;
+			names: {
+				0: string(STR_PARAM_COLOUR_SCHEME_1CC);
+				1: string(STR_PARAM_COLOUR_SCHEME_2CC);
+				2: string(STR_PARAM_COLOUR_SCHEME_REAL);
+			};
+		}
+	}
+    param {
+		param_axle_weight {
+		type: int;
+		name: string(STR_PARAM_AXLE_WEIGHT_NAME);
+		desc: string(STR_PARAM_AXLE_WEIGHT_DESC);
+		min_value: 0;
+		max_value: 4;
+		def_value: 1;
+			names: {
+				0: string(STR_PARAM_AXLE_WEIGHT_NONE);
+				1: string(STR_PARAM_AXLE_WEIGHT_STANDARD_2012);
+				2: string(STR_PARAM_AXLE_WEIGHT_CONVENTION_2022);
+				3: string(STR_PARAM_AXLE_WEIGHT_OUTATIME);
+				4: string(STR_PARAM_AXLE_WEIGHT_PONY);
+				5: string(STR_PARAM_AXLE_WEIGHT_CLYDESDALE);
+			};
+        }
+    }
+	param {
+		param_realism {
+		type: int;
+		name: string(STR_PARAM_FORCE_REALISM_NAME);
+		desc: string(STR_PARAM_FORCE_REALISM_DESC);
+		min_value: 0;
+		max_value: 1;
+		def_value: 0;
+			names: {
+				0: string(STR_PARAM_NOT_FORCE_REALISM);
+				1: string(STR_PARAM_FORCE_REALISM);
+			};
+        }
+    }
+}
+
+	if (param_realism == 1) {
+		basecost {
+			PR_STATION_VALUE: 1;
+			PR_BUILD_RAIL: 1;
+			PR_BUILD_SIGNALS: 1;
+			PR_BUILD_BRIDGE: 1;
+			PR_BUILD_DEPOT_TRAIN: 1;
+			PR_BUILD_TUNNEL: 1;
+			PR_BUILD_STATION_RAIL: 1;
+			PR_BUILD_STATION_RAIL_LENGTH: 1;
+			PR_CLEAR_RAIL: 1;
+			PR_CLEAR_SIGNALS: 1;
+			PR_CLEAR_BRIDGE: 1;
+			PR_CLEAR_DEPOT_TRAIN: 1;
+			PR_CLEAR_TUNNEL: 1;
+			PR_CLEAR_STATION_RAIL: 1;
+			PR_BUILD_WAYPOINT_RAIL: 1;
+			PR_CLEAR_WAYPOINT_RAIL: 1;
+			PR_BUILD_FOUNDATION: 1;
+			PR_MAINTENANCE_RAIL: 1;
+			PR_MAINTENANCE_STATION: 1;
+		}
+		//-- Standard Gauge, Very Low Axle Load Tracks
+		// 2682 COINs
+
+		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+			property {
+				label:							"RAIL";
+				introduction_date:				1825/04/01;
+		//---
+		//		railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				curve_speed_multiplier:			0.75;
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+				construction_cost:				99.75;
+				speed_limit:					15 mph;
+				acceleration_model:				ACC_MODEL_RAIL;
+		//		map_colour:						?;
+		//		requires_railtype_list:			?;
+		//		introduces_railtype_list:		"RAIL", "SA_N";
+				sort_order:						07;
+				maintenance_cost:				0.55;
+			}
+		}
+	}

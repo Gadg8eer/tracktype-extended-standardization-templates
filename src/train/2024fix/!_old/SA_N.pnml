@@ -6,7 +6,7 @@
 			//-- Railtypes that locomotives of this railtype can be pulled over by a non-electric locomotive;
 			//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
 				compatible_railtype_list:		[
-												
+#insert "src/train/train2024fix/1_compatible/SA_N.pnml"
 												];
 		//-- Railtypes that locomotives of this railtype can travel on under its own power;
 		//-- If the locomotive is not electric, all railtypes listed in "compatible_railtype_list", must be listed here as well, plus the railtype the lists are for itself

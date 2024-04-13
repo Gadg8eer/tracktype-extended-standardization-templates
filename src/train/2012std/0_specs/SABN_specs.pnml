@@ -1,0 +1,60 @@
+ // Third letter is axle load; The following is my personal guidelines, not a prescribed value for axle weight classes
+ // SAbN (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
+ // SAaN (Light Metal) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+ // SAAN (Rail) is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
+ // SABN is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968
+ // SACN maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978 but not based on any real rail axle load class 
+ // SADN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
+ // SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
+ // SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
+ 
+ // Costs are meant to be played with inflation OFF and Wallclock mode set to 8760 minutes per year, equivalent to 1 irl minute per in-game hour or 24 irl minutes per in-game day. Base costs are linked to US bread prices between 2001 and a given year. One loaf in 2001 = 100 "Custom Omnichronological Interaction Negotiables" or COINs. One loaf in 1828 (The earliest standard gauge railway for steam engines) was $0.055 USD (yes, five-and-a-half cents) so that should be taken into account when adjusting a currency. If starting in 1828, the exchange rate should be ¢14 COINs = £1; ¢1260 COINs to build 70 feet of SAAN and ¢4200 to maintain it for a single day.
+ // Designed for the assumption that 1 irl second = 1 in-game minute; that's 60 real-seconds in a game hour, 24 real-minutes per game day, and ~6 real-days or 8,760 real-minutes per game year.
+ // Tile size is assumed to be 70' x 70' judging by the size of a passenger bus or a house.
+ // As the default railtype's standardized equivalent, SAAN is the "anchor" by which the "realistic" values are judged by. Said "realism" is entirely optional, feel free to remove or change the values as you find is most fitting of your creation! ^_^
+
+//-- Standard Gauge, Very Low Axle Load Tracks
+	if ((param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+			property {
+				label:							"SABN";
+				introduction_date:				1968/01/01;
+		//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				curve_speed_multiplier:			1.0;
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+				construction_cost:				0; // 10 loaves of bread per 70 feet
+				speed_limit:					15 mph;
+				acceleration_model:				ACC_MODEL_RAIL;
+		//		map_colour:						?;
+		//		requires_railtype_list:			?;
+		//		introduces_railtype_list:		"RAIL", "SA_N";
+		//		sort_order:						07;
+				maintenance_cost:				0; // 1 loaves of bread per 70 feet per period
+		}
+	}
+}
+
+if (param_realism == 1) {
+		//-- Standard Gauge, Very Low Axle Load Tracks
+		// 50,000 COINs per 
+
+		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+			property {
+				label:							"RAIL";
+				introduction_date:				1825/04/01;
+		//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_HIDDEN);
+				curve_speed_multiplier:			0.75;
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+				construction_cost:				99.75; // 6.62 loaves of bread per 70 feet
+				speed_limit:					15 mph;
+				acceleration_model:				ACC_MODEL_RAIL;
+		//		map_colour:						?;
+		//		requires_railtype_list:			?;
+				introduces_railtype_list:		"RAIL", "SA_N";
+				sort_order:						07;
+				maintenance_cost:				0.55; // .662 loaves of bread per 70 feet per period
+			}
+		}
+	}

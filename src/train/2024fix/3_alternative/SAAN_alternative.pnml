@@ -1,13 +1,15 @@
- // Third letter is axle load; The following is my personal guidelines, not a prescribed value for axle weight classes
- // SAbN (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
- // SAaN (Light Metal) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
- // SAAN (Rail) is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
- // SABN is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968
- // SACN maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978 but not based on any real rail axle load class 
- // SADN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
- // SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
- // SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
-
+	if ((param_axle_weight == 3 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+		// Third letter is axle load; The following is my personal guidelines, not a prescribed value for axle weight classes
+		// SAbN (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
+		// SAaN (Light Metal) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+		// SAAN (Rail) is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
+		// SABN is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968
+		// SACN maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978 but not based on any real rail axle load class 
+		// SADN is maximum 40 metric tonnes/megagrams, 44.09245 short tons, 40000 kg per axle; available in 1988
+		// SAdN is maximum 50 metric tonnes/megagrams, 55.11557 short tons, 50000 kg per axle; first available in 2008 but only for unpowered rolling stock, as the axle load of SADN is normally 40 megagrams, but by making the trucks on the cars lighter at least 50 Mg is apparently attainable in 2023
+		// SAEN is maximum 60 metric tonnes/megagrams or more (unlimited) axle load for future-proofing; available in 2028
+			alternative_railtype_list:			[
 		//-- Railtypes that locomotives of this railtype can travel on under its own power;
 		//-- If the locomotive is not electric, all railtypes listed in "compatible_railtype_list", must be listed here as well, plus the railtype the lists are for itself
 												// 1435mm: Default Railtype, RAIL
@@ -15,7 +17,7 @@
 												// Slowrails, SwedishRails
 												"_040", "_080",
 												// NuTracks, SwedishRails, Japanese Track Set
-												"RLOW", "RMED",// "RHIG",
+												"RLOW", "RMED", "RHIG",
 												// DBRails
 												"DBNN", "DBHN",
 												// ToyTrax
@@ -188,7 +190,7 @@
 												"SRAt", "SRBt", "SRCt", "SRDt", "SREt",// "SRFt",
 												"SSAt", "SSBt", "SSCt", "SSDt", "SSEt",// "SSFt",
 												"SUAt", "SUBt", "SUCt", "SUDt", "SUEt",// "SUFt",
-												// 1435mm: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// 1435mm: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "SA_-",
 												"SAA-", "SAB-", "SAC-", "SAD-", "SAE-",// "SAF-",
 												"SBA-", "SBB-", "SBC-", "SBD-", "SBE-",// "SBF-",
@@ -518,7 +520,7 @@
 												"XRAt", "XRBt", "XRCt", "XRDt", "XREt",// "XRFt",
 												"XSAt", "XSBt", "XSCt", "XSDt", "XSEt",// "XSFt",
 												"XUAt", "XUBt", "XUCt", "XUDt", "XUEt",// "XUFt",
-												// Omni-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Omni-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "XAA-",
 												"XAA-", "XAB-", "XAC-", "XAD-", "XAE-",// "XAF-",
 												"XBA-", "XBB-", "XBC-", "XBD-", "XBE-",// "XBF-",
@@ -821,7 +823,7 @@
 												"xRAt", "xRBt", "xRCt", "xRDt", "xREt",// "xRFt",
 												"xSAt", "xSBt", "xSCt", "xSDt", "xSEt",// "xSFt",
 												"xUAt", "xUBt", "xUCt", "xUDt", "xUEt",// "xUFt",
-												// Multi-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Multi-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "xAA-",
 												"xAA-", "xAB-", "xAC-", "xAD-", "xAE-",// "xAF-",
 												"xBA-", "xBB-", "xBC-", "xBD-", "xBE-",// "xBF-",
@@ -1134,7 +1136,7 @@
 												"+RAt", "+RBt", "+RCt", "+RDt", "+REt",// "+RFt",
 												"+SAt", "+SBt", "+SCt", "+SDt", "+SEt",// "+SFt",
 												"+UAt", "+UBt", "+UCt", "+UDt", "+UEt",// "+UFt",
-												// Quad-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Quad-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "+AA-",
 												"+AA-", "+AB-", "+AC-", "+AD-", "+AE-",// "+AF-",
 												"+BA-", "+BB-", "+BC-", "+BD-", "+BE-",// "+BF-",
@@ -1444,7 +1446,7 @@
 												"-RAt", "-RBt", "-RCt", "-RDt", "-REt",// "-RFt",
 												"-SAt", "-SBt", "-SCt", "-SDt", "-SEt",// "-SFt",
 												"-UAt", "-UBt", "-UCt", "-UDt", "-UEt",// "-UFt",
-												// Four-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Four-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "-AA-",
 												"-AA-", "-AB-", "-AC-", "-AD-", "-AE-",// "-AF-",
 												"-BA-", "-BB-", "-BC-", "-BD-", "-BE-",// "-BF-",
@@ -1755,7 +1757,7 @@
 												"DRAt", "DRBt", "DRCt", "DRDt", "DREt",// "DRFt",
 												"DSAt", "DSBt", "DSCt", "DSDt", "DSEt",// "DSFt",
 												"DUAt", "DUBt", "DUCt", "DUDt", "DUEt",// "DUFt",
-												// Anti-Dueling Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "DAA-",
 												"DAA-", "DAB-", "DAC-", "DAD-", "DAE-",// "DAF-",
 												"DBA-", "DBB-", "DBC-", "DBD-", "DBE-",// "DBF-",
@@ -2066,7 +2068,7 @@
 												"dRAt", "dRBt", "dRCt", "dRDt", "dREt",// "dRFt",
 												"dSAt", "dSBt", "dSCt", "dSDt", "dSEt",// "dSFt",
 												"dUAt", "dUBt", "dUCt", "dUDt", "dUEt",// "dUFt",
-												// Anti-Dueling Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "dAA-",
 												"dAA-", "dAB-", "dAC-", "dAD-", "dAE-",// "dAF-",
 												"dBA-", "dBB-", "dBC-", "dBD-", "dBE-",// "dBF-",
@@ -2353,3 +2355,6 @@
 												"_RAP", "_RBP", "_RCP", "_RDP", "_REP",// "_RFP",
 												"_R_p",
 												"_RAp", "_RBp", "_RCp", "_RDp", "_REp"//, "_RFp",
+												];
+		}
+	}
