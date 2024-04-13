@@ -1,14 +1,113 @@
 /* IH_Qicksilver 6.1 will dummy out several locomotives. Dummied out locos will return when Iron Horse 2.0 is released. Cargo Sprinter will return because the Iron Horse Sprinter wasn't a dual-headed locomotive. */
 #include "src/00_header.pnml"
+#include "src/01_railtypetable.pnml"
 
-//Track Module, 2012 OG Standard
-#include "src/tracktype_standards_module/train/2012std/SADN.pnml"
+//=======================================================================
+//               Track Module, 2012 OG Standard
+//=======================================================================
+#include "src/train/2012std/0_specs/RAIL_specs.pnml"
+//#include "src/train/2012std/1_compatible/RAIL_compatible.pnml"
+//#include "src/train/2012std/2_powered/RAIL_powered.pnml"
+//#include "src/train/2012std/3_alternative/RAIL_alternative.pnml"
 
-//Track Module, 2022 Innsbruck Convention
-#include "src/tracktype_standards_module/train/2022con/SAAN.pnml"
+//#include "src/train/2012std/0_specs/SAAN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SAAN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SAAN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SAAN_alternative.pnml"
 
-//Track Module, 2024 Standard Repair
-#include "src/tracktype_standards_module/train/2024fix/SA_N.pnml"
-#include "src/01_ironhorse3_compat.pnml"
+//#include "src/train/2012std/0_specs/SABN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SABN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SABN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SABN_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SACN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SACN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SACN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SACN_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SADN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SADN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SADN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SADN_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SAEN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SAEN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SAEN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SAEN_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/ELRL_specs.pnml"
+//#include "src/train/2012std/1_compatible/ELRL_compatible.pnml"
+//#include "src/train/2012std/2_powered/ELRL_powered.pnml"
+//#include "src/train/2012std/3_alternative/ELRL_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SAAE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SAAE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SAAE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SAAE_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SABE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SABE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SABE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SABE_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SACE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SACE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SACE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SACE_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SADE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SADE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SADE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SADE_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SAEE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SAEE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SAEE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SAEE_alternative.pnml"
+
+//=======================================================================
+//              Track Module, 2022 Innsbruck Convention
+//=======================================================================
+//#include "src/train/2022con/0_specs/RAIL_specs.pnml"
+//#include "src/train/2022con/1_compatible/RAIL_compatible.pnml"
+//#include "src/train/2022con/2_powered/RAIL_powered.pnml"
+//#include "src/train/2022con/3_alternative/RAIL_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/SAAN_specs.pnml"
+//#include "src/train/2022con/1_compatible/SAAN_compatible.pnml"
+//#include "src/train/2022con/2_powered/SAAN_powered.pnml"
+//#include "src/train/2022con/3_alternative/SAAN_alternative.pnml"
 
 
+//=======================================================================
+//				Track Module, 2024 Standard Revision
+//=======================================================================
+//#include "src/train/2024fix/0_specs/SA_N_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SA_N_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SA_N_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SA_N_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SAAN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SAAN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SAAN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SAAN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SABN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SABN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SABN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SABN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SACN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SACN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SACN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SACN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SADN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SADN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SADN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SADN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SAEN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SAEN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SAEN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SAEN_alternative.pnml"

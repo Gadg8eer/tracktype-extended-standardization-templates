@@ -1,3 +1,7 @@
+//-- Standard Gauge, Unspecified Axle Load
+	if ((param_axle_weight == 3 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_unspecified_selfpower) {
+			powered_railtype_list:				[
 											//-- Standard Guage Rail, at least
 												// 1435mm: Default Railtype, RAIL
 												"RAIL",
@@ -177,7 +181,7 @@
 												"SRAt", "SRBt", "SRCt", "SRDt", "SREt",// "SRFt",
 												"SSAt", "SSBt", "SSCt", "SSDt", "SSEt",// "SSFt",
 												"SUAt", "SUBt", "SUCt", "SUDt", "SUEt",// "SUFt",
-												// 1435mm: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// 1435mm: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "SA_-",
 												"SAA-", "SAB-", "SAC-", "SAD-", "SAE-",// "SAF-",
 												"SBA-", "SBB-", "SBC-", "SBD-", "SBE-",// "SBF-",
@@ -507,7 +511,7 @@
 												"XRAt", "XRBt", "XRCt", "XRDt", "XREt",// "XRFt",
 												"XSAt", "XSBt", "XSCt", "XSDt", "XSEt",// "XSFt",
 												"XUAt", "XUBt", "XUCt", "XUDt", "XUEt",// "XUFt",
-												// Omni-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Omni-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "XAA-",
 												"XAA-", "XAB-", "XAC-", "XAD-", "XAE-",// "XAF-",
 												"XBA-", "XBB-", "XBC-", "XBD-", "XBE-",// "XBF-",
@@ -819,7 +823,7 @@
 												"xRAt", "xRBt", "xRCt", "xRDt", "xREt",// "xRFt",
 												"xSAt", "xSBt", "xSCt", "xSDt", "xSEt",// "xSFt",
 												"xUAt", "xUBt", "xUCt", "xUDt", "xUEt",// "xUFt",
-												// Multi-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Multi-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "xAA-",
 												"xAA-", "xAB-", "xAC-", "xAD-", "xAE-",// "xAF-",
 												"xBA-", "xBB-", "xBC-", "xBD-", "xBE-",// "xBF-",
@@ -1142,7 +1146,7 @@
 												"+RAt", "+RBt", "+RCt", "+RDt", "+REt",// "+RFt",
 												"+SAt", "+SBt", "+SCt", "+SDt", "+SEt",// "+SFt",
 												"+UAt", "+UBt", "+UCt", "+UDt", "+UEt",// "+UFt",
-												// Quad-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Quad-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "+AA-",
 												"+AA-", "+AB-", "+AC-", "+AD-", "+AE-",// "+AF-",
 												"+BA-", "+BB-", "+BC-", "+BD-", "+BE-",// "+BF-",
@@ -1462,7 +1466,7 @@
 												"-RAt", "-RBt", "-RCt", "-RDt", "-REt",// "-RFt",
 												"-SAt", "-SBt", "-SCt", "-SDt", "-SEt",// "-SFt",
 												"-UAt", "-UBt", "-UCt", "-UDt", "-UEt",// "-UFt",
-												// Four-Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Four-Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "-AA-",
 												"-AA-", "-AB-", "-AC-", "-AD-", "-AE-",// "-AF-",
 												"-BA-", "-BB-", "-BC-", "-BD-", "-BE-",// "-BF-",
@@ -1783,7 +1787,7 @@
 												"DRAt", "DRBt", "DRCt", "DRDt", "DREt",// "DRFt",
 												"DSAt", "DSBt", "DSCt", "DSDt", "DSEt",// "DSFt",
 												"DUAt", "DUBt", "DUCt", "DUDt", "DUEt",// "DUFt",
-												// Anti-Dueling Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "DAA-",
 												"DAA-", "DAB-", "DAC-", "DAD-", "DAE-",// "DAF-",
 												"DBA-", "DBB-", "DBC-", "DBD-", "DBE-",// "DBF-",
@@ -2104,7 +2108,7 @@
 												"dRAt", "dRBt", "dRCt", "dRDt", "dREt",// "dRFt",
 												"dSAt", "dSBt", "dSCt", "dSDt", "dSEt",// "dSFt",
 												"dUAt", "dUBt", "dUCt", "dUDt", "dUEt",// "dUFt",
-												// Anti-Dueling Gauge: Unpowered ",Locomotives", (Driving Cab, Snowplow, etc.)
+												// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 												// "dAA-",
 												"dAA-", "dAB-", "dAC-", "dAD-", "dAE-",// "dAF-",
 												"dBA-", "dBB-", "dBC-", "dBD-", "dBE-",// "dBF-",
@@ -2401,3 +2405,6 @@
 												"_RAP", "_RBP", "_RCP", "_RDP", "_REP",// "_RFP",
 												"_R_p",
 												"_RAp", "_RBp", "_RCp", "_RDp", "_REp"//, "_RFp",
+		}
+	}
+}

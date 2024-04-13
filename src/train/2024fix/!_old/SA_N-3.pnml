@@ -1,0 +1,14 @@
+];
+		//---
+		//		railtype_flags:					bitmask(RAILTYPE_FLAG_PRECOMBINED);
+		//		curve_speed_multiplier:			?;
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+		//		construction_cost:				16; //double the rail cost
+		//		speed_limit:					200 mph;
+		//		acceleration_model:				ACC_MODEL_RAIL;
+		//		map_colour:						?;
+		//		requires_railtype_list:			?;
+		//		introduces_railtype_list:		?;
+		//		sort_order:						37;
+		//		maintenance_cost:				16;//double the rail cost
+				alternative_railtype_list:		[
