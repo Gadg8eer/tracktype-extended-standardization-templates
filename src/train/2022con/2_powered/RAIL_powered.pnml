@@ -2,7 +2,7 @@
 		item(FEAT_RAILTYPES, railtype_1435mm_class10_xhigh_selfpower) {
 			property {
 				compatible_railtype_list:		[
-			//-- Railtypes that locomotives of this railtype can be pulled on by a non-electric locomotive;
+				//-- Railtypes that locomotives of this railtype can be pulled on by a non-electric locomotive;
 				//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
 				//-- Standard Gauge Rail, at least
 				// 1435mm: Default Railtype, RAIL
@@ -16,7 +16,7 @@
 				// ToyTrax
 					"TYTX", "ELTX",
 				// Standard Gauge Railtypes, Standardized		
-					// "SA_N",
+					//"SA_N",
 					"SAAN",// "SABN", "SACN", "SADN", "?AdN", "SAEN", "SAFN",
 					"SBAN",// "SBBN", "SBCN", "SBDN", "?BdN", "SBEN", "SBFN",
 					"SCAN",// "SCBN", "SCCN", "SCDN", "SCdN", "SCEN", "SCFN",
@@ -29,13 +29,13 @@
 					"SSAN",// "SSBN", "SSCN", "SSDN", "?SdN", "SSEN", "SSFN",
 					"SUAN",// "SUBN", "SUCN", "SUDN", "?UdN", "SUEN", "SUFN",
 				// 1435mm: Josef Drexler's Every Voltage Catenaries, ELRL & SAEE
-					// "ELRL",
+					//"ELRL",
 				// Slowrails, SwedishRails
-					// "E040", "E080",
+					//"E040", "E080",
 				// NuTracks, SwedishRails, Japanese Track Set
-					// "ELOW", "EMED", "EHIG",
+					//"ELOW", "EMED", "EHIG",
 				// DBRails
-					// "DBNE", "DBHE", "DBHS",
+					//"DBNE", "DBHE", "DBHS",
 				// "SA_E",
 					"SAAE",// "SABE", "SACE", "SADE", "SAEE", "SAFE",
 					"SBAE",// "SBBE", "SBCE", "SBDE", "SBEE", "SBFE",
@@ -50,10 +50,10 @@
 					"SUAE",// "SUBE", "SUCE", "SUDE", "SUEE", "SUFE",
 				// 1435mm: Every Voltage Rails, 3rd Rail Flavor
 				// PikkaBird-compatible Metro
-					// "MTRO", "MTRT", "MTRC", "MTRS", "MTRU",
-						// "MTR0", "MTR1", "MTR2",
+					//"MTRO", "MTRT", "MTRC", "MTRS", "MTRU",
+						//"MTR0", "MTR1", "MTR2",
 				// NuTracks
-					// "3LOW", "3MED", "3HIG",
+					//"3LOW", "3MED", "3HIG",
 					"3RDR",
 				// "SA_3",
 					"SAA3",// "SAB3", "SAC3", "SAD3", "SAE3", "SAF3",
@@ -173,7 +173,7 @@
 					"SUAa",// "SUBa", "SUCa", "SUDa", "SUEa", "SUFa",
 				// 1435mm: Rail Tunnel with Universal Electrification
 				// Iron Horse-compatible Metro with Universal Electrification
-					// "IHC_",
+					//"IHC_",
 				// "SA_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
@@ -294,7 +294,8 @@
 					"SUA,",// "SUB,", "SUC,", "SUD,", "SUE,", "SAF,",
 				// 1435mm: Standard Gauge with 25kV/15kV AC
 				// Standardized Multi-voltage International Track Set
-			//"NORD",
+
+						//"NORD",
 				// "SA_$",
 					"SAA$",// "SAB$", "SAC$", "SAD$", "?Ad$", "SAE$", "SAF$",
 					"SBA$",// "SBB$", "SBC$", "SBD$", "?Bd$", "SBE$", "SBF$",
@@ -379,11 +380,11 @@
 				// 891 mm to 950 mm			"3AAN", Three Foot Gauges!
 				// 1000 mm to 1067 mm		"RAAN", Metre/Tramway Gauge!
 				// 1219 mm					"4AAN", Four Foot Gauge!
-				// 1372 mm "sAAN", Scotch Gauge!
+				// 1372 mm					"sAAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
-				// 1458 mm to 1495 mm "tAAN", Leipzig Tram and GTA Streetcar Gauges!
-				// 1520 mm to 1524 mm "5AAN", 5 Foot Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
+				// 1458 mm to 1495 mm		"tAAN", Leipzig Tram and GTA Streetcar Gauges!
+				// 1520 mm to 1524 mm		"5AAN", 5 Foot Gauges!
 				// 1581 mm to 1600 mm		"VAAN", Pennsylvania/Australian "Victorian", Gauges!
 				// 1638 mm					"IAAN", Baltimore, Iberian and 5 Foot, 6 Inch Gauges!
 				// 1829 mm					"6AAN", Six Foot Gauge!
@@ -712,11 +713,11 @@
 				// 891 mm to 950 mm			"3AAN", Three Foot Gauges!
 				// 1000 mm to 1067 mm		"RAAN", Metre/Tramway Gauge!
 				// 1219 mm					"4AAN", Four Foot Gauge!
-				// 1372 mm "sAAN", Scotch Gauge!
+				// 1372 mm					"sAAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
-				// 1458 mm to 1495 mm "tAAN", Leipzig Tram and GTA Streetcar Gauges!
-				// 1520 mm to 1524 mm "5AAN", 5 Foot Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
+				// 1458 mm to 1495 mm		"tAAN", Leipzig Tram and GTA Streetcar Gauges!
+				// 1520 mm to 1524 mm		"5AAN", 5 Foot Gauges!
 				// 1581 mm to 1600 mm		"VAAN", Pennsylvania/Australian "Victorian", Gauges!
 				// 1638 mm					"IAAN", Baltimore, Iberian and 5 Foot, 6 Inch Gauges!
 				// 1829 mm					"6AAN", Six Foot Gauge!
@@ -857,7 +858,7 @@
 				// "xA_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
-					// "xAAt",// "xABt", "xACt", "xADt", "??dt", "xAEt", "xAFt",
+					//"xAAt",// "xABt", "xACt", "xADt", "??dt", "xAEt", "xAFt",
 					"xBAt",// "xBBt", "xBCt", "xBDt", "??dt", "xBEt", "xBFt",
 					"xCAt",// "xCBt", "xCCt", "xCDt", "??dt", "xCEt", "xCFt",
 					"xDAt",// "xDBt", "xDCt", "xDDt", "??dt", "xDEt", "xDFt",
@@ -1053,11 +1054,11 @@
 				// Quad-Gauge (unpowered) includes...
 				// 1000 mm to 1067 mm		"RAAN", Metre/Tramway Gauge!
 				// 1219 mm					"4AAN", Four Foot Gauge!
-				// 1372 mm "sAAN", Scotch Gauge!
+				// 1372 mm					"sAAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
-				// 1458 mm to 1495 mm "tAAN", Leipzig Tram and GTA Streetcar Gauges!
-				// 1520 mm to 1524 mm "5AAN", 5 Foot Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
+				// 1458 mm to 1495 mm		"tAAN", Leipzig Tram and GTA Streetcar Gauges!
+				// 1520 mm to 1524 mm		"5AAN", 5 Foot Gauges!
 				// 1581 mm to 1600 mm		"VAAN", Pennsylvania/Australian "Victorian", Gauges!
 				// 1638 mm					"IAAN", Baltimore, Iberian and 5 Foot, 6 Inch Gauges!
 				// 1829 mm					"6AAN", Six Foot Gauge!
@@ -1198,7 +1199,7 @@
 				// "+A_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
-					// "+AAt",// "+ABt", "+ACt", "+ADt", "??dt", "+AEt", "+AFt",
+					//"+AAt",// "+ABt", "+ACt", "+ADt", "??dt", "+AEt", "+AFt",
 					"+BAt",// "+BBt", "+BCt", "+BDt", "??dt", "+BEt", "+BFt",
 					"+CAt",// "+CBt", "+CCt", "+CDt", "??dt", "+CEt", "+CFt",
 					"+DAt",// "+DBt", "+DCt", "+DDt", "??dt", "+DEt", "+DFt",
@@ -1423,9 +1424,9 @@
 				// 891 mm to 950 mm			"3AAN", Three Foot Gauges!
 				// 1000 mm to 1067 mm		"RAAN", Metre/Tramway Gauge!
 				// 1219 mm					"4AAN", Four Foot Gauge!
-				// 1372 mm "-AAN", Scotch Gauge!
+				// 1372 mm					"-AAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
 				// "-A_N",
 					"-AAN",// "-ABN", "-ACN", "-ADN", "?AdN", "-AEN", "-AFN",
 					"-BAN",// "-BBN", "-BCN", "-BDN", "?BdN", "-BEN", "-BFN",
@@ -1562,7 +1563,7 @@
 				// "-A_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
-					// "-AAt",// "-ABt", "-ACt", "-ADt", "??dt", "-AEt", "-AFt",
+					//"-AAt",// "-ABt", "-ACt", "-ADt", "??dt", "-AEt", "-AFt",
 					"-BAt",// "-BBt", "-BCt", "-BDt", "??dt", "-BEt", "-BFt",
 					"-CAt",// "-CBt", "-CCt", "-CDt", "??dt", "-CEt", "-CFt",
 					"-DAt",// "-DBt", "-DCt", "-DDt", "??dt", "-DEt", "-DFt",
@@ -1781,12 +1782,12 @@
 					"-RA[",// "-RB[", "-RC[", "-RD[", "?Rd[", "-RE[", "-AF[",
 					"-SA[",// "-SB[", "-SC[", "-SD[", "?Sd[", "-SE[", "-AF[",
 					"-UA[",// "-UB[", "-UC[", "-UD[", "?Ud[", "-UE[", "-AF[",
-				// Anti-Dueling Gauge (Broad/Standard) includes...
-				// 1372 mm "sAAN", Scotch Gauge!
+				// Anti-Duel Gauge (Broad/Standard) includes...
+				// 1372 mm					"sAAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
-				// 1458 mm to 1495 mm "tAAN", Leipzig Tram and GTA Streetcar Gauges!
-				// 1520 mm to 1524 mm "5AAN", 5 Foot Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
+				// 1458 mm to 1495 mm		"tAAN", Leipzig Tram and GTA Streetcar Gauges!
+				// 1520 mm to 1524 mm		"5AAN", 5 Foot Gauges!
 				// 1581 mm to 1600 mm		"VAAN", Pennsylvania/Australian "Victorian", Gauges!
 				// 1638 mm					"IAAN", Baltimore, Iberian and 5 Foot, 6 Inch Gauges!
 				// 1829 mm					"6AAN", Six Foot Gauge!
@@ -1803,7 +1804,7 @@
 					"DRAN",// "DRBN", "DRCN", "DRDN", "?GdN", "DREN", "DRFN",
 					"DSAN",// "DUBN", "DSCN", "DSDN", "?SdN", "DSEN", "DSFN",
 					"DUAN",// "DUBN", "DUCN", "DUDN", "?UdN", "DUEN", "DUFN",
-				// Anti-Dueling Gauge: Josef Drexler's Every Voltage Catenaries
+				// Anti-Duel Gauge: Josef Drexler's Every Voltage Catenaries
 				// "DA_E",
 					"DAAE",// "DABE", "DACE", "DADE", "DAEE", "DAFE",
 					"DBAE",// "DBBE", "DBCE", "DBDE", "DBEE", "DBFE",
@@ -1816,7 +1817,7 @@
 					"DRAE",// "DRBE", "DRCE", "DRDE", "DREE", "DRFE",
 					"DSAE",// "DSBE", "DSCE", "DSDE", "DSEE", "DSFE",
 					"DUAE",// "DUBE", "DUCE", "DUDE", "DUEE", "DUFE",
-				// Anti-Dueling Gauge: Every Voltage Rails, 3rd Rail Flavor 
+				// Anti-Duel Gauge: Every Voltage Rails, 3rd Rail Flavor 
 				// "DA_3",
 					"DAA3",// "DAB3", "DAC3", "DAD3", "DAE3", "DAF3",
 					"DBA3",// "DBB3", "DBC3", "DBD3", "DBE3", "DBF3",
@@ -1829,7 +1830,7 @@
 					"DRA3",// "DRB3", "DRC3", "DRD3", "DRE3", "DRF3",
 					"DSA3",// "DSB3", "DSC3", "DSD3", "DSE3", "DSF3",
 					"DUA3",// "DUB3", "DUC3", "DUD3", "DUE3", "DUF3",
-				// Anti-Dueling Gauge: Every Voltage Catenaries & Rails, 3rd Rail Flavor
+				// Anti-Duel Gauge: Every Voltage Catenaries & Rails, 3rd Rail Flavor
 				// "DA_Z",
 					"DAAZ",// "DABZ", "DACZ", "DADZ", "DAEZ", "DAFZ",
 					"DBAZ",// "DBBZ", "DBCZ", "DBDZ", "DBEZ", "DBFZ",
@@ -1842,7 +1843,7 @@
 					"DRAZ",// "DRBZ", "DRCZ", "DRDZ", "DREZ", "DRFZ",
 					"DSAZ",// "DSBZ", "DSCZ", "DSDZ", "DSEZ", "DSFZ",
 					"DUAZ",// "DUBZ", "DUCZ", "DUDZ", "DUEZ", "DUFZ",
-				// Anti-Dueling Gauge: Every Voltage Rails, 4th Rail Flavor
+				// Anti-Duel Gauge: Every Voltage Rails, 4th Rail Flavor
 				// "DA_4",
 					"DAA4",// "DAB4", "DAC4", "DAD4", "DAE4", "DAF4",
 					"DBA4",// "DBB4", "DBC4", "DBD4", "DBE4", "DBF4",
@@ -1855,7 +1856,7 @@
 					"DRA4",// "DRB4", "DRC4", "DRD4", "DRE4", "DRF4",
 					"DSA4",// "DSB4", "DSC4", "DSD4", "DSE4", "DSF4",
 					"DUA4",// "DUB4", "DUC4", "DUD4", "DUE4", "DUF4",
-				// Anti-Dueling Gauge: Every Voltage Catenaries & Rails, 4th Rail Flavor
+				// Anti-Duel Gauge: Every Voltage Catenaries & Rails, 4th Rail Flavor
 				// "DA_Y",
 					"DAAY",// "DABY", "DACY", "DADY", "DAEY", "DAFY",
 					"DBAY",// "DBBY", "DBCY", "DBDY", "DBEY", "DBFY",
@@ -1868,7 +1869,7 @@
 					"DRAY",// "DRBY", "DRCY", "DRDY", "DREY", "DRFY",
 					"DSAY",// "DSBY", "DSCY", "DSDY", "DSEY", "DSFY",
 					"DUAY",// "DUBY", "DUCY", "DUDY", "DUEY", "DUFY",
-				// Anti-Dueling Gauge: Every Voltage Catenaries & Rails, Three-phase AC Flavor
+				// Anti-Duel Gauge: Every Voltage Catenaries & Rails, Three-phase AC Flavor
 				// "DA_T",
 					"DAAT",// "DABT", "DACT", "DADT", "DAET", "DAFT",
 					"DBAT",// "DBBT", "DBCT", "DBDT", "DBET", "DBFT",
@@ -1881,7 +1882,7 @@
 					"DRAT",// "DRBT", "DRCT", "DRDT", "DRET", "DRFT",
 					"DSAT",// "DSBT", "DSCT", "DSDT", "DSET", "DSFT",
 					"DUAT",// "DUBT", "DUCT", "DUDT", "DUET", "DUFT",
-				// Anti-Dueling Gauge: 3kV DC Catenaries
+				// Anti-Duel Gauge: 3kV DC Catenaries
 				// "DA_D",
 					"DAAD",// "DABD", "DACD", "DADD", "DAED", "DAFD",
 					"DBAD",// "DBBD", "DBCD", "DBDD", "DBED", "DBFD",
@@ -1894,7 +1895,7 @@
 					"DRAD",// "DRBD", "DRCD", "DRDD", "DRED", "DRFD",
 					"DSAD",// "DSBD", "DSCD", "DSDD", "DSED", "DSFD",
 					"DUAD",// "DUBD", "DUCD", "DUDD", "DUED", "DUFD",
-				// Anti-Dueling Gauge: 1.5kV DC Catenaries
+				// Anti-Duel Gauge: 1.5kV DC Catenaries
 				// "DA_d",
 					"DAAd",// "DABd", "DACd", "DADd", "DAEd", "DAFd",
 					"DBAd",// "DBBd", "DBCd", "DBDd", "DBEd", "DBFd",
@@ -1907,7 +1908,7 @@
 					"DRAd",// "DRBd", "DRCd", "DRDd", "DREd", "DRFd",
 					"DSAd",// "DSBd", "DSCd", "DSDd", "DSEd", "DSFd",
 					"DUAd",// "DUBd", "DUCd", "DUDd", "DUEd", "DUFd",
-				// Anti-Dueling Gauge: 25kV AC Catenaries
+				// Anti-Duel Gauge: 25kV AC Catenaries
 				// "DA_A",
 					"DAAA",// "DABA", "DACA", "DADA", "SAdA", "DAEA", "DAFA",
 					"DBAA",// "DBBA", "DBCA", "DBDA", "SBdA", "DBEA", "DBFA",
@@ -1920,7 +1921,7 @@
 					"DRAA",// "DRBA", "DRCA", "DRDA", "SRdA", "DREA", "DRFA",
 					"DSAA",// "DSBA", "DSCA", "DSDA", "SSdA", "DSEA", "DSFA",
 					"DUAA",// "DUBA", "DUCA", "DUDA", "SUdA", "DUEA", "DUFA",
-				// Anti-Dueling Gauge: 15kV AC Catenaries
+				// Anti-Duel Gauge: 15kV AC Catenaries
 				// "DA_a",
 					"DAAa",// "DABa", "DACa", "DADa", "DAEa", "DAFa",
 					"DBAa",// "DBBa", "DBCa", "DBDa", "DBEa", "DBFa",
@@ -1933,7 +1934,7 @@
 					"DRAa",// "DRBa", "DRCa", "DRDa", "DREa", "DRFa",
 					"DSAa",// "DSBa", "DSCa", "DSDa", "DSEa", "DSFa",
 					"DUAa",// "DUBa", "DUCa", "DUDa", "DUEa", "DUFa",
-				// Anti-Dueling Gauge: Rail Tunnel with Universal Electrification
+				// Anti-Duel Gauge: Rail Tunnel with Universal Electrification
 				// "DA_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
@@ -1948,7 +1949,7 @@
 					"DRAt",// "DRBt", "DRCt", "DRDt", "??dt", "DREt", "DRFt",
 					"DSAt",// "DSBt", "DSCt", "DSDt", "??dt", "DSEt", "DSFt",
 					"DUAt",// "DUBt", "DUCt", "DUDt", "??dt", "DUEt", "DUFt",
-				// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
+				// Anti-Duel Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 				// "DA_-",
 					"DAA-",// "DAB-", "DAC-", "DAD-", "??d-", "DAE-", "DAF-",
 					"DBA-",// "DBB-", "DBC-", "DBD-", "??d-", "DBE-", "DBF-",
@@ -1961,7 +1962,7 @@
 					"DRA-",// "DRB-", "DRC-", "DRD-", "??d-", "DRE-", "DRF-",
 					"DSA-",// "DSB-", "DSC-", "DSD-", "??d-", "DSE-", "DSF-",
 					"DUA-",// "DUB-", "DUC-", "DUD-", "??d-", "DUE-", "DUF-",
-				// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion
+				// Anti-Duel Gauge: Standard Gauge with Pneumatic Propulsion
 				// "DA_P",
 					"DAAP",// "DABP", "DACP", "DADP", "??dP", "DAEP", "DAFP",
 					"DBAP",// "DBBP", "DBCP", "DBDP", "??dP", "DBEP", "DAFP",
@@ -1974,7 +1975,7 @@
 					"DRAP",// "DRBP", "DRCP", "DRDP", "??dP", "DREP", "DAFP",
 					"DSAP",// "DSBP", "DSCP", "DSDP", "??dP", "DSEP", "DAFP",
 					"DUAP",// "DUBP", "DUCP", "DUDP", "??dP", "DUEP", "DAFP",
-				// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
+				// Anti-Duel Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
 				// "DA_p",
 					"DAAp",// "DABp", "DACp", "DADp", "??dp", "DAEp", "DAFp",
 					"DBAp",// "DBBp", "DBCp", "DBDp", "??dp", "DBEp", "DBFp",
@@ -1987,7 +1988,7 @@
 					"DRAp",// "DRBp", "DRCp", "DRDp", "??dp", "DREp", "DAFp",
 					"DSAp",// "DSBp", "DSCp", "DSDp", "??dp", "DSEp", "DAFp",
 					"DUAp",// "DUBp", "DUCp", "DUDp", "??dp", "DUEp", "DAFp",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
+				// Anti-Duel Gauge: Standard Gauge with 25kV/15kV AC and 3kV/1.5kV DC
 				// "DA_*",
 					"DAA*",// "DAB*", "DAC*", "DAD*", "??d*", "DAE*", "DAF*",
 					"DBA*",// "DBB*", "DBC*", "DBD*", "??d*", "DBE*", "DBF*",
@@ -2000,7 +2001,7 @@
 					"DRA*",// "DRB*", "DRC*", "DRD*", "??d*", "DRE*", "DAF*",
 					"DSA*",// "DSB*", "DSC*", "DSD*", "??d*", "DSE*", "DAF*",
 					"DUA*",// "DUB*", "DUC*", "DUD*", "??d*", "DUE*", "DAF*",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
+				// Anti-Duel Gauge: Standard Gauge with 25kV/15kV AC and 3kV DC
 				// "DA_'",
 					"DAA'",// "DAB'", "DAC'", "DAD'", "??d'", "DAE'", "DAF'",
 					"DBA'",// "DBB'", "DBC'", "DBD'", "??d'", "DBE'", "DBF'",
@@ -2013,7 +2014,7 @@
 					"DRA'",// "DRB'", "DRC'", "DRD'", "??d'", "DRE'", "DAF'",
 					"DSA'",// "DSB'", "DSC'", "DSD'", "??d'", "DSE'", "DAF'",
 					"DUA'",// "DUB'", "DUC'", "DUD'", "??d'", "DUE'", "DAF'",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
+				// Anti-Duel Gauge: Standard Gauge with 25kV/15kV AC and 1.5kV DC
 				// "DA_^",
 					"DAA^",// "DAB^", "DAC^", "DAD^", "??d^", "DAE^", "DAF^",
 					"DBA^",// "DBB^", "DBC^", "DBD^", "??d^", "DBE^", "DBF^",
@@ -2052,7 +2053,7 @@
 					"DRA,",// "DRB,", "DRC,", "DRD,", "DRE,", "DAF,",
 					"DSA,",// "DSB,", "DSC,", "DSD,", "DSE,", "DAF,",
 					"DUA,",// "DUB,", "DUC,", "DUD,", "DUE,", "DAF,",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV/15kV AC
+				// Anti-Duel Gauge: Standard Gauge with 25kV/15kV AC
 				// "DA_$",
 					"DAA$",// "DAB$", "DAC$", "DAD$", "?Ad$", "DAE$", "DAF$",
 					"DBA$",// "DBB$", "DBC$", "DBD$", "?Bd$", "DBE$", "DBF$",
@@ -2065,7 +2066,7 @@
 					"DRA$",// "DRB$", "DRC$", "DRD$", "?Rd$", "DRE$", "DAF$",
 					"DSA$",// "DSB$", "DSC$", "DSD$", "?Sd$", "DSE$", "DAF$",
 					"DUA$",// "DUB$", "DUC$", "DUD$", "?Ud$", "DUE$", "DAF$",
-				// Anti-Dueling Gauge: Standard Gauge with 3kV/1.5kV DC
+				// Anti-Duel Gauge: Standard Gauge with 3kV/1.5kV DC
 				// "DA_=",
 					"DAA=",// "DAB=", "DAC=", "DAD=", "?Ad=", "DAE=", "DAF=",
 					"DBA=",// "DBB=", "DBC=", "DBD=", "?Bd=", "DBE=", "DBF=",
@@ -2078,7 +2079,7 @@
 					"DRA=",// "DRB=", "DRC=", "DRD=", "?Rd=", "DRE=", "DAF=",
 					"DSA=",// "DSB=", "DSC=", "DSD=", "?Sd=", "DSE=", "DAF=",
 					"DUA=",// "DUB=", "DUC=", "DUD=", "?Ud=", "DUE=", "DAF=",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV AC and 3kV DC
+				// Anti-Duel Gauge: Standard Gauge with 25kV AC and 3kV DC
 				// "DA_)",
 					"DAA)",// "DAB)", "DAC)", "DAD)", "?Ad)", "DAE)", "DAF)",
 					"DBA)",// "DBB)", "DBC)", "DBD)", "?Bd)", "DBE)", "DBF)",
@@ -2091,7 +2092,7 @@
 					"DRA)",// "DRB)", "DRC)", "DRD)", "?Rd)", "DRE)", "DAF)",
 					"DSA)",// "DSB)", "DSC)", "DSD)", "?Sd)", "DSE)", "DAF)",
 					"DUA)",// "DUB)", "DUC)", "DUD)", "?Ud)", "DUE)", "DAF)",
-				// Anti-Dueling Gauge: Standard Gauge with 25kV AC and 1.5kV DC
+				// Anti-Duel Gauge: Standard Gauge with 25kV AC and 1.5kV DC
 				// "DA_(",
 					"DAA(",// "DAB(", "DAC(", "DAD(", "?Ad(", "DAE(", "DAF(",
 					"DBA(",// "DBB(", "DBC(", "DBD(", "?Bd(", "DBE(", "DBF(",
@@ -2104,7 +2105,7 @@
 					"DRA(",// "DRB(", "DRC(", "DRD(", "?Rd(", "DRE(", "DAF(",
 					"DSA(",// "DSB(", "DSC(", "DSD(", "?Sd(", "DSE(", "DAF(",
 					"DUA(",// "DUB(", "DUC(", "DUD(", "?Ud(", "DUE(", "DAF(",
-				// Anti-Dueling Gauge: Standard Gauge with 15kV AC and 3kV DC
+				// Anti-Duel Gauge: Standard Gauge with 15kV AC and 3kV DC
 				// "DA_]",
 					"DAA]",// "DAB]", "DAC]", "DAD]", "?Ad]", "DAE]", "DAF]",
 					"DBA]",// "DBB]", "DBC]", "DBD]", "?Bd]", "DBE]", "DBF]",
@@ -2117,7 +2118,7 @@
 					"DRA]",// "DRB]", "DRC]", "DRD]", "?Rd]", "DRE]", "DAF]",
 					"DSA]",// "DSB]", "DSC]", "DSD]", "?Sd]", "DSE]", "DAF]",
 					"DUA]",// "DUB]", "DUC]", "DUD]", "?Ud]", "DUE]", "DAF]",
-				// Anti-Dueling Gauge: Standard Gauge with 15kV AC and 1.5kV DC
+				// Anti-Duel Gauge: Standard Gauge with 15kV AC and 1.5kV DC
 				// "DA_[",
 					"DAA[",// "DAB[", "DAC[", "DAD[", "?Ad[", "DAE[", "DAF[",
 					"DBA[",// "DBB[", "DBC[", "DBD[", "?Bd[", "DBE[", "DBF[",
@@ -2130,12 +2131,12 @@
 					"DRA[",// "DRB[", "DRC[", "DRD[", "?Rd[", "DRE[", "DAF[",
 					"DSA[",// "DSB[", "DSC[", "DSD[", "?Sd[", "DSE[", "DAF[",
 					"DUA[",// "DUB[", "DUC[", "DUD[", "?Ud[", "DUE[", "DAF[",
-				// Dueling Gauge (Broad/Standard) includes...
-				// 1372 mm "sAAN", Scotch Gauge!
+				// Anti-Duel Gauge (Broad/Standard) includes...
+				// 1372 mm					"sAAN", Scotch Gauge!
 				// 1432 mm to 1435 mm		"SAAN", Near-Standard and Standard/Stevenson Gauges!
-				// 1445 mm to 1450 mm "bAAN", Italian and Dresden Gauges!
-				// 1458 mm to 1495 mm "tAAN", Leipzig Tram and GTA Streetcar Gauges!
-				// 1520 mm to 1524 mm "5AAN", 5 Foot Gauges!
+				// 1445 mm to 1450 mm		"bAAN", Italian and Dresden Gauges!
+				// 1458 mm to 1495 mm		"tAAN", Leipzig Tram and GTA Streetcar Gauges!
+				// 1520 mm to 1524 mm		"5AAN", 5 Foot Gauges!
 				// 1581 mm to 1600 mm		"VAAN", Pennsylvania/Australian "Victorian", Gauges!
 				// 1638 mm					"IAAN", Baltimore, Iberian and 5 Foot, 6 Inch Gauges!
 				// 1829 mm					"6AAN", Six Foot Gauge!
@@ -2282,7 +2283,7 @@
 					"dRAa",// "dRBa", "dRCa", "dRDa", "dREa", "dRFa",
 					"dSAa",// "dSBa", "dSCa", "dSDa", "dSEa", "dSFa",
 					"dUAa",// "dUBa", "dUCa", "dUDa", "dUEa", "dUFa",
-				// Anti-Dueling Gauge: Rail Tunnel with Universal Electrification
+				// Anti-Duel Gauge: Rail Tunnel with Universal Electrification
 				// "dA_t",
 				// It is recommended you DO NOT make this an actual railtype unless you want to simulate tunnel sizes.
 				// The role of "custom tunnel" for ALL trains, including monorail, maglev and custom railtypes, is filled by the "_R_t"
@@ -2297,7 +2298,7 @@
 					"dRAt",// "dRBt", "dRCt", "dRDt", "??dt", "dREt", "dRFt",
 					"dSAt",// "dSBt", "dSCt", "dSDt", "??dt", "dSEt", "dSFt",
 					"dUAt",// "dUBt", "dUCt", "dUDt", "??dt", "dUEt", "dUFt",
-				// Anti-Dueling Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
+				// Anti-Duel Gauge: Unpowered "Locomotives" (Driving Cab, Snowplow, etc.)
 				// "dA_-",
 					"dAA-",// "dAB-", "dAC-", "dAD-", "??d-", "dAE-", "dAF-",
 					"dBA-",// "dBB-", "dBC-", "dBD-", "??d-", "dBE-", "dBF-",
@@ -2310,7 +2311,7 @@
 					"dRA-",// "dRB-", "dRC-", "dRD-", "??d-", "dRE-", "dRF-",
 					"dSA-",// "dSB-", "dSC-", "dSD-", "??d-", "dSE-", "dSF-",
 					"dUA-",// "dUB-", "dUC-", "dUD-", "??d-", "dUE-", "dUF-",
-				// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion
+				// Anti-Duel Gauge: Standard Gauge with Pneumatic Propulsion
 				// "dA_P",
 					"dAAP",// "dABP", "dACP", "dADP", "??dP", "dAEP", "dAFP",
 					"dBAP",// "dBBP", "dBCP", "dBDP", "??dP", "dBEP", "dAFP",
@@ -2323,7 +2324,7 @@
 					"dRAP",// "dRBP", "dRCP", "dRDP", "??dP", "dREP", "dAFP",
 					"dSAP",// "dSBP", "dSCP", "dSDP", "??dP", "dSEP", "dAFP",
 					"dUAP",// "dUBP", "dUCP", "dUDP", "??dP", "dUEP", "dAFP",
-				// Anti-Dueling Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
+				// Anti-Duel Gauge: Standard Gauge with Pneumatic Propulsion and Universal Electrification
 				// "dA_p",
 					"dAAp",// "dABp", "dACp", "dADp", "??dp", "dAEp", "dAFp",
 					"dBAp",// "dBBp", "dBCp", "dBDp", "??dp", "dBEp", "dBFp",
@@ -2476,7 +2477,7 @@
 					"dFA[",// "dFB[", "dFC[", "dFD[", "?Fd[", "dFE[", "dFF[",
 					"dGA[",// "dGB[", "dGC[", "dGD[", "?Gd[", "dGE[", "dGF[",
 					"dHA[",// "dHB[", "dHC[", "dHD[", "?Hd[", "dHE[", "dHF[",
-					"dRA[",// "dRB[", "dRC[", "dRD[", "?Rd[", "dRE[", "dAF[",
+					"dRA[",// "dRB[", "dRC[", "dRD[", "?Rd[", "dRE[", "dRF[",
 					"dSA[",// "dSB[", "dSC[", "dSD[", "?Sd[", "dSE[", "dAF[",
 					"dUA[",// "dUB[", "dUC[", "dUD[", "?Ud[", "dUE[", "dAF[",
 				// Tunnel: All standardized types except cheat
@@ -2487,7 +2488,7 @@
 				// "_R_t", is NOT a potential cheat!
 				// "_R_t", is a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
 				// "_R_t", is for curved trench "tunnels", to be disguised by anything with a foundation; railtypes (for diagonal tiles), road/tramway, buildings, etc.
-				// "Cheat", "trench tunnels", (The non-legit ones, to save railtype labels) are listed with all other cheat types.
+				// "Cheat" "trench tunnels", (The non-legit ones, to save railtype labels) are also listed with all other cheat types.
 				/*------------------*/
 				/* YOU MAY CONTINUE */
 				/*------------------*/
@@ -2529,11 +2530,11 @@
 				//
 				// Now imagine that instead of only adding the bare minimum necessary railtypes, that this module also reserved them by including a full railtypetable...
 				// Well, if you did, you'd get an error about the game trying to access an invalid sprite when loading one or more of your railtype GRFs. Or if you are using the (planned) NRT version of this module, when loading one or more of your roadtype/tramtype GRFs.
-				// If this happens, this is because the number of railtypes (or the number of roadtypes AND tramtypes, which share a collective 64 reservation slots between the two) is too much and you've used more than the available 60 extra slots out of the 64 total.
+				// If this happens, this is because the number of railtypes (or the combined number of roadtypes AND tramtypes, which share a collective 64 reservation slots between the two) is too much and you've used more than the available 60 extra slots out of the 64 total.
 				// Told you there'd be a test!
 				//
 				// If you passed this test, OpenTTD should load all GRFs without sprite access errors when starting a game by randomly generating a new game map.
-				// To do so, do your best to minimize reserving labels via the typetables, and rely on type_lists for compatibility instead of hidden types. That is all, thank you for rereading this crash course.
+				// To do so, do your best to minimize reserving labels via the typetables, and rely on type_lists instead of hidden types for compatibility. That is all, thank you for rereading this crash course.
 				// Go ahead and refer to the railtypes in or otherwise use this file, potentially with a parameter to support the original 2012 version of the standard (simpler, less extensive) and the 2022 "Innsbrook", collection as alternatives, to make your own tracktype graphics or rolling stock GRFs!
 				/*------------------*/
 				/* YOU MAY CONTINUE */
@@ -2616,7 +2617,7 @@
 					"_R_S",
 					"_RAS",// "_RBS", "_RCS", "_RDS", "_RdS", "_RES", "_RFS",
 				// (Pneumatic) CHEAT RAILS!
-					// "_R_P",
+					//"_R_P",
 					"_RAP",// "_RBP", "_RCP", "_RDP", "_RdP", "_REP", "_RFP",
 				// (Universally-Powered) CHEAT RAILS!
 					"_R_p",
