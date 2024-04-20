@@ -1,0 +1,12 @@
+	if ((param_axle_weight == 1 && param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
+			property {
+		//------------------------------------------------
+				alternative_railtype_list:		[
+										"RAIL",
+										"SA_N",
+										"SAAN", "SABN", "SACN", "SADN", "?AdN", "SAEN"//, 
+												];
+			}
+		}
+	}

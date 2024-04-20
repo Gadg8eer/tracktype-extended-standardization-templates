@@ -1,0 +1,217 @@
+# 1 "example_header.pnml"
+//Welcome to the example header!
+disable_item(FEAT_TRAINS);
+# 1 "src/header.pnml" 1
+grf{
+	grfid: "EPPG" ;
+	name: string(STR_GRF_NAME) ;
+	desc: string(STR_GRF_DESC) ;
+	version: 0;
+	min_compatible_version: 0 ;
+}
+# 1 "example_header.pnml" 3
+
+//#define DEAD 
+
+//#include "src/lol this will not work.pnml"
+//Rail type table
+railtypetable {
+    RAIL,
+ ELRL,
+ SAA3: [ELRL],
+ SAAZ: [ELRL],
+ SAA4: [SAA3, ELRL],
+ NAAN: [NAAN, NGRL, RAIL],
+}
+
+# 1 "src/cargo_table.pnml" 1
+cargotable {
+//Default cargos
+   PASS, MAIL, COAL, FOOD, GOLD, GOOD, GRAI, IORE, LVST, OIL_, PAPR, STEL, VALU, WHEA, WOOD,
+
+//Tropical cargos
+   CORE, DIAM, FRUT, MAIZ, RUBR, WATR, 
+
+//ECS
+   AORE, BDMT, BRCK, CERA, CERE, CMNT, DYES, FERT, FICR, FISH, GLAS, LIME, OLSD, PETR, PLAS, POTA, RFPR,SAND, SULP, TOUR, VEHI, WDPR, WOOL, 
+   
+//FIRS
+   BEER, CLAY, ENSP, FMSP, FRVG, GRVL, MILK, MNSP, PHOS, PORE, RCYC, SCMT, SGBT, SGCN, JAVA, COPR, SUGR,
+   
+//Nuclear stuff
+	URAN, NWST
+}
+# 1 "example_header.pnml" 3
+# 1 "src/train_one.pnml" 1
+//Example train one!
+template temp_loco(x, y){
+	//left_x, upper_y, width, height, offset_x, offset_y
+	[x+0,y,8,23,-3,-11]    //North
+	[x+10,y,20,16,-13,-8]  //North East
+	[x+32,y,33,11,-17,-7]  //East
+	[x+67,y,20,16,-5,-8]   //South East
+	[x+89,y,8,23,-3,-11]   //South
+	[x+99,y,20,16,-13,-8]   //South West
+	[x+121,y,33,11,-17,-7] //West
+	[x+156,y,20,16,-5,-8]  //North West
+}
+
+template temp_loco_reverse(x, y){
+	//left_x, upper_y, width, height, offset_x, offset_y
+	[x+89,y,8,23,-3,-11]   //South
+	[x+99,y,20,16,-13,-8]   //South West
+	[x+121,y,33,11,-17,-7] //West
+	[x+156,y,20,16,-5,-8]  //North West
+	[x+0,y,8,23,-3,-11]    //North
+	[x+10,y,20,16,-13,-8]  //North East
+	[x+32,y,33,11,-17,-7]  //East
+	[x+67,y,20,16,-5,-8]   //South East
+}
+
+spriteset (class70_colas_rail, "gfx/class_70.png"){temp_loco(0, 0)}
+spriteset (class70_colas_rail_rev, "gfx/class_70.png"){temp_loco_reverse(0, 0)}
+
+switch (FEAT_TRAINS, PARENT, sw_70_reverse, vehicle_is_reversed){
+ 1: class70_colas_rail_rev ;
+ class70_colas_rail ;
+}
+
+item (FEAT_TRAINS, item_train_one, 1){
+	property{
+		name: string(STR_TRAIN_ONE_NAME);
+		climates_available: ALL_CLIMATES;
+		introduction_date:date(1,1,1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes: bitmask();
+		non_refittable_cargo_classes: bitmask();
+		vehicle_life:40;
+		reliability_decay:0;
+		cost_factor:40;
+		running_cost_base:RUNNING_COST_ELECTRIC;
+		running_cost_factor:255;
+		sprite_id:SPRITE_ID_NEW_TRAIN;
+		speed:75 mph;
+		track_type:RAIL;
+		power:3690 hp;
+		engine_class:ENGINE_CLASS_DIESEL;
+		weight:135 ton;
+		air_drag_coefficient: 0.2;
+		tractive_effort_coefficient:0.396;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL,2,DISABLE_WAGON_POWER);
+	}
+	graphics{
+		default:sw_70_reverse;
+	}
+}
+# 1 "example_header.pnml" 3
+# 1 "src/train_two.pnml" 1
+//Example train two!
+template template_turbo_single(x,y){
+	[x+0,y,8,24,-3,-11] //North
+	[x+10,y,20,16,-13,-8] //North East
+	[x+32,y,32,11,-16,-7] //East
+	[x+66,y,20,16,-5,-8] //South East
+}
+
+spriteset (cl172_lm_mid,   "gfx/class_172.png"){template_turbo_single(0,52)}
+
+item (FEAT_TRAINS, item_train_two, 2){
+	property{
+		name:string(STR_TRAIN_TWO_NAME);
+		climates_available: ALL_CLIMATES;
+		introduction_date: date(1, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		vehicle_life: 30;
+		reliability_decay: 7;
+		refittable_cargo_classes: CC_PASSENGERS;
+		cargo_allow_refit: [PASS, TOUR];
+		loading_speed: 34;
+		cost_factor: 50;
+		running_cost_factor: 45;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+		speed: 100 mph;
+		misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_CARGO;
+		power: 0 hp;
+		running_cost_base: RUNNING_COST_DIESEL;
+		dual_headed: 0;
+		default_cargo_type: PASS;
+		cargo_capacity: 85;
+		weight: 44 ton;
+		air_drag_coefficient: 0.08;
+		tractive_effort_coefficient: 0.41;
+		length: 8;
+		effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_DIESEL;
+	}
+	graphics{
+		default: cl172_lm_mid;
+	}
+}
+# 1 "example_header.pnml" 3
+# 1 "src/train_three.pnml" 1
+//Example train three!
+template temp_pacer(y){
+	//left_x, upper_y, width, height, offset_x, offset_y
+	[2,y,10,22,-4,-11]       //North
+	[22,y,26,22,-16,-12]     //North East
+	[52,y,36,18,-17,-11]     //East
+	[92,y,26,22,-10,-12]     //South East
+	[122,y,10,22,-4,-11]     //South
+	[142,y,26,22,-16,-12]    //South West
+	[172,y,36,18,-17,-11]    //West
+	[212,y,26,22,-10,-12]    //North West
+}
+
+spriteset (pacer_front_rgr,"gfx/pacer.png"){temp_pacer(194)}
+spriteset (pacer_back_rgr, "gfx/pacer.png"){temp_pacer(218)}
+
+switch(FEAT_TRAINS, SELF, sw_143_livery, (position_in_vehid_chain + 1) % 2){
+	1 : pacer_front_rgr ;
+	pacer_back_rgr ;
+}
+
+switch(FEAT_TRAINS, SELF, sw_143_articulated_part, extra_callback_info1){
+	1:return item_train_three;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+item (FEAT_TRAINS, item_train_three, 3){
+	property{
+		name: string(STR_TRAIN_THREE_NAME);
+		climates_available: ALL_CLIMATES;
+		introduction_date:date(1,1,1);
+		model_life:VEHICLE_NEVER_EXPIRES;
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+		vehicle_life:40;
+		reliability_decay:0;
+		cost_factor:10;
+		running_cost_base:RUNNING_COST_DIESEL;
+		running_cost_factor:24;
+		sprite_id:SPRITE_ID_NEW_TRAIN;
+		speed:75 mph;
+		track_type:RAIL;
+		power:454;
+		engine_class:ENGINE_CLASS_DIESEL;
+		weight:48 ton;
+		air_drag_coefficient: 0.08;
+		tractive_effort_coefficient:0.71;
+		cargo_capacity:75;
+		loading_speed:25;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL,4,DISABLE_WAGON_POWER);
+	}
+	graphics{
+		default:sw_143_livery;
+		articulated_part: sw_143_articulated_part;
+	}
+}
+# 1 "example_header.pnml" 3
+
+//Sorting the purchase list
+
+sort(FEAT_TRAINS, [
+3,
+1,
+]);

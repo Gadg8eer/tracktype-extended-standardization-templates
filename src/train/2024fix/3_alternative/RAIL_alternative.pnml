@@ -1,0 +1,16 @@
+	if ((param_axle_weight == 1 && param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+		//-- Standard Gauge, Very Low Axle Load Tracks
+		// This one is small on purpose because the default label is meant to be hidden by this GRF (unless otherwise intended, this IS a GPL licensed file)
+		//-------------------------------------------------------------
+		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
+			property {
+				alternative_railtype_list:		[
+												// Early Rail Set
+												//"LIHT", "LTRL",
+												//"SAaN",
+												// Standard Gauge
+												//"SA_N", SA_-"
+		//										];
+			}
+		}
+	}
