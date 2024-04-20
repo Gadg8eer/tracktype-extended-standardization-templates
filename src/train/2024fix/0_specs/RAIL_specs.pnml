@@ -1,19 +1,12 @@
- // Costs are meant to be played with inflation OFF and Wallclock mode set to 8760 minutes per year, equivalent to 1 irl minute per in-game hour or 24 irl minutes per in-game day. Base costs are linked to US bread prices between 2001 and a given year. One loaf in 2001 = 100 "Custom Omnichronological Interaction Negotiables" or COINs. One loaf in 1828 (The earliest standard gauge railway for steam engines) was $0.055 USD (yes, five-and-a-half cents) so that should be taken into account when adjusting a currency. If starting in 1828, the exchange rate should be ¢14 COINs = £1; ¢1260 COINs to build 70 feet of SAAN and ¢4200 to maintain it for a single day.
- // Designed for the assumption that 1 irl second = 1 in-game minute; that's 60 real-seconds in a game hour, 24 real-minutes per game day, and ~6 real-days or 8,760 real-minutes per game year.
- // Tile size is assumed to be 70' x 70' judging by the size of a passenger bus or a house.
- // As the default railtype's standardized equivalent, SAAN is the "anchor" by which the "realistic" values are judged by. Said "realism" is entirely optional, feel free to remove or change the values as you find is most fitting of your creation! ^_^
-
-	
 	if (param_axle_weight == 3 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Very Low Axle Load Tracks
-		// 50,000 COINs per 
 
 		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
 			property {
 				label:						"RAIL";
 				introduction_date:					1825/04/01;
 		//---
-				railtype_flags:						bitmask(RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_HIDDEN);
+				railtype_flags:						bitmask(RAILTYPE_FLAG_HIDDEN);
 		//		curve_speed_multiplier:				0.14;
 		//		station_graphics:					RAILTYPE_STATION_NORMAL;
 		//		construction_cost:					99.75; // 6.62 loaves of bread per 70 feet
@@ -28,26 +21,37 @@
 		}
 	}
 
+ /* REALISM MODE VERSION */
+ // Costs are meant to be played with inflation OFF and Wallclock mode set to 8760 minutes per year, equivalent to 1 irl minute per in-game hour or 24 irl minutes per in-game day.
+ // Designed for the assumption that 1 irl second = 1 in-game minute; that's 60 real-seconds in a game hour, 24 real-minutes per game day, and ~6 real-days or 8,760 real-minutes per game year.
+ // As the default railtype's standardized equivalent, SAAN is the "anchor" by which the "realistic" values are judged by.
+ //-----
+ // Base costs are linked to energy via US bread price differences between 2000 and a given year.
+ // One loaf in 2000 = 100 "Custom Omnichronological Interaction Negotiables" or COINs. One loaf in 1828 (The earliest standard gauge railway for steam engines) was $0.055 USD (yes, five-and-a-half cents) so that should be taken into account when adjusting a currency. If starting in 1828, the exchange rate should be ¢14 COINs = £1; ¢1260 COINs to build 70 feet of SAAN and ¢4200 to maintain it for a single day.
+ //-----
+ // Play with game units enabled for both ships and for all other vehicles. Tile size is assumed to be arond 70' x 70' judging by the size of a passenger bus or a house, rather than any "measurements" made in-game.
+ // All the above "realism" is entirely optional, feel free to remove or change the values as you find is most fitting of your creation! ^_^
+
 	if ((param_axle_weight == 3 && param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
 		//-- Standard Gauge, Very High Axle Load Tracks
 		// 
 
 		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
 			property {
-				label:						"RAIL";
+				label:								"RAIL";
 				//introduction_date:				1825/04/01;
 			//---
-				railtype_flags:						bitmask(RAILTYPE_FLAG_HIDDEN);
+				railtype_flags:						bitmask(RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_HIDDEN);
 				curve_speed_multiplier:				0.14;
 		
 				// 6.62 loaves of bread per 70 feet
-				//construction_cost:				1; //1 = ~180 COINs, or 0.18 loaves, per 70 feet 
+				//construction_cost:				!; //! = ~180 COINs, or 0.18 loaves, per 70 feet 
 				speed_limit:						305 mph;
 				acceleration_model:					ACC_MODEL_RAIL;
 				//sort_order:						07;
 				
 				// .662 loaves of bread per 70 feet per period
-				//maintenance_cost:					8; //1 = ~600 COINs, or .60 loaves, per 70 feet
+				//maintenance_cost:					!; //! = ~600 COINs, or .60 loaves, per 70 feet
 			}
 		}
 	}

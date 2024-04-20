@@ -14,13 +14,13 @@
  // As the default railtype's standardized equivalent, SAAN is the "anchor" by which the "realistic" values are judged by. Said "realism" is entirely optional, feel free to remove or change the values as you find is most fitting of your creation! ^_^
 
 //-- Standard Gauge, Low Axle Load Tracks
-	if ((param_axle_weight == 0 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE)) {
+	if ((param_axle_weight == 1 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE)) {
 		item(FEAT_RAILTYPES, railtype_1435mm_class3_low_selfpower) {
 			property {
 				label:						"SABN";
 		//		introduction_date:				1968/01/01;
 		//---
-				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+		//		railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 		//		curve_speed_multiplier:			0.26;
 		//		station_graphics:				RAILTYPE_STATION_NORMAL;
 				construction_cost:				1; // 10 loaves of bread per 70 feet
@@ -29,7 +29,8 @@
 		//		map_colour:						?;
 		//		requires_railtype_list:			?;
 				introduces_railtype_list:		[
-										"RAIL", "SA_N"
+												"RAIL",
+												"SA_N"
 												];
 		//		sort_order:						07;
 				maintenance_cost:				8; // 1 loaves of bread per 70 feet per period
@@ -38,7 +39,7 @@
 	}
 
 //-- Standard Gauge, Low Axle Load Tracks
-	if ((param_axle_weight == 1 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE)) {
+	if ((param_axle_weight == 1 && param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
 		item(FEAT_RAILTYPES, railtype_1435mm_class3_low_selfpower) {
 			property {
 				label:						"SABN";
@@ -47,16 +48,17 @@
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 		//		curve_speed_multiplier:			0.26;
 		//		station_graphics:				RAILTYPE_STATION_NORMAL;
-				construction_cost:				1; // 10 loaves of bread per 70 feet
+				construction_cost:				!; // 10 loaves of bread per 70 feet
 		//		speed_limit:					30 mph;
 				acceleration_model:				ACC_MODEL_RAIL;
 		//		map_colour:						?;
 		//		requires_railtype_list:			?;
 				introduces_railtype_list:		[
-										"RAIL", "SA_N"
+												"RAIL",
+												"SA_N"
 												];
 		//		sort_order:						07;
-				maintenance_cost:				8; // 1 loaves of bread per 70 feet per period
+				maintenance_cost:				!; // 1 loaves of bread per 70 feet per period
 			}
 		}
 	}
@@ -76,7 +78,9 @@
 				acceleration_model:				ACC_MODEL_RAIL;
 		//		map_colour:						?;
 		//		introduces_railtype_list:		[
-										"RAIL", "SA_N"
+												"RAIL",
+												"SA_N",
+												"SAAN"//,
 												];
 		//		sort_order:						07;
 				maintenance_cost:				0; // 1 loaves of bread per 70 feet per period

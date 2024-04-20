@@ -16,7 +16,6 @@
 	
 	if (param_axle_weight == 1 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Very Low Axle Load Tracks
-		// 50,000 COINs per 
 
 		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
 			property {
