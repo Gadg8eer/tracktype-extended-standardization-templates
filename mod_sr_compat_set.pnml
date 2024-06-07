@@ -3,6 +3,29 @@
 #include "src/01_railtypetable.pnml"
 
 //=======================================================================
+//               Track Module, 2004 Vanilla
+//=======================================================================
+#include "src/train/2004ttd/0_specs/RAIL_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/RAIL_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/RAIL_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/RAIL_alternative.pnml"
+
+//#include "src/train/2004ttd/0_specs/ELRL_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/ELRL_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/ELRL_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/ELRL_alternative.pnml"
+
+//#include "src/train/2004ttd/0_specs/MONO_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/MONO_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/MONO_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/MONO_alternative.pnml"
+
+//#include "src/train/2004ttd/0_specs/MGLV_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/MGLV_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/MGLV_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/MGLV_alternative.pnml"
+
+//=======================================================================
 //               Track Module, 2012 OG Standard
 //=======================================================================
 #include "src/train/2012std/0_specs/RAIL_specs.pnml"
@@ -111,3 +134,8 @@
 //#include "src/train/2024fix/1_compatible/SAEN_compatible.pnml"
 //#include "src/train/2024fix/2_powered/SAEN_powered.pnml"
 //#include "src/train/2024fix/3_alternative/SAEN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/SAFN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/SAFN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/SAFN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/SAFN_alternative.pnml"
