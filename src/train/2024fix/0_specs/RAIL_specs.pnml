@@ -1,22 +1,32 @@
-	if (param_axle_weight == 3 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Very Low Axle Load Tracks
 
-		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+	if (param_axle_weight == 3 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "SHFN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
-				label:						"RAIL";
-				introduction_date:					1825/04/01;
-		//---
-				railtype_flags:						bitmask(RAILTYPE_FLAG_HIDDEN);
-		//		curve_speed_multiplier:				0.14;
-		//		station_graphics:					RAILTYPE_STATION_NORMAL;
-		//		construction_cost:					99.75; // 6.62 loaves of bread per ~75-100 feet
-		//		speed_limit:						305 mph;
-		//		acceleration_model:					ACC_MODEL_RAIL;
-		//		map_colour:							?;
-		//		requires_railtype_list:				?;
-				introduces_railtype_list:					"RAIL", "SA_N";
-		//		sort_order:							07;
-		//		maintenance_cost:					8; // .662 loaves of bread per ~75-100 feet per period
+				label:							"RAIL";
+				introduction_date:				1825/04/01;
+				railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				introduces_railtype_list:			[
+													"RAIL",
+													"SA_N", "SA_-"
+													];
+			}
+		}
+	}
+
+	if (param_axle_weight == 4 && param_realism == 0 && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "SHFN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"RAIL";
+				introduction_date:				1825/04/01;
+				railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				introduces_railtype_list:			[
+													"RAIL",
+													"SA_N", "SA_-"
+													];
 			}
 		}
 	}
@@ -29,35 +39,65 @@
  // Base costs are linked to energy via US bread price differences between 2000 and a given year.
  // One loaf in 2000 was $1.00 USD on average, while one Pound Sterling was worth $1.65 USD in 2000. One loaf in 2024 was $2.00, while one loaf in 1828 (The earliest standard gauge railway for steam engines) was $0.055 USD (yes, five-and-a-half cents) so that should be taken into account when adjusting the construction and maintenance costs.
  // The exchange rate should be ₭3307 kcal = £1; The measurement is the rough amount of kilocalories (food calories) worth of white bread that could be bought by $1.65 USD in 2000.
- // Sice food calories are actually kilocalories, and kilocalories are just units of 1,000 scientific calories, and calories are a scientific measurement unit of raw energy, costs can be calculated with the following...
+ // Since food calories are actually kilocalories, and kilocalories are just units of 1,000 scientific calories, and calories are a scientific measurement unit of raw energy, costs can be calculated with the following...
  // 1) Determine the amount of energy needed for an action. 2) Take the number of scientific calories - which will usually be in the millions at least - and divide it by 1,000 to get the number of kilocalories. 3) divide the number of kilocalories by 3307 for the value in Pounds Sterling.
  // ₭297,630 kcal would be needed to build ~75-100 feet of SAAN and ₭29,763 kcal needed to maintain it for a single in-game year. This would preferrably be emulated while accomodating the use of Wallclock Mode with the above settings (8760 minutes per year) as "realism mode" is designed for the "Long Haul" GRF-heavy multiplayer server.
  // Maintenance costs for SAAN should be ₭3.40 kcal per real minute (in-game hour), which presents a problem because the game engine won't go below the conversion rate of ₭3307 kcal.
- // Hopefully this is corrected someday, in the meantime make sure the maintenance cost is as low as possible using base cost GRFs and settle for a minimum of ₭3307 kcal (£1.65 GBP) in maintenance per real minute/game hour per tile.
+ // Hopefully this is corrected someday, in the meantime make sure the maintenance cost is as low as possible using a base cost GRF and settle for a minimum of ₭3307 kcal (£1.65 GBP) in maintenance per real minute/game hour per tile.
  //-----
  // Play with game unit speed measurement enabled for both ships and for all other vehicles. Tile size is assumed to be arond 70' x 70' judging by the size of a passenger bus or a house, rather than any "measurements" made in-game.
  // All the above "realism" is entirely optional, feel free to remove or change the values as you find is most fitting of your creation! That said, having a parameter to support the above would be nice! ^_^
 
-	if ((param_axle_weight == 3 && param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
-		//-- Standard Gauge, Very High Axle Load Tracks
-		// 
-
-		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
+	if ((((param_axle_weight == 3 && param_realism == 1) && railtype_available("SHFN")) && loading_stage == LOADING_STAGE_RESERVE) || (((param_axle_weight == 4 && param_realism == 1) && railtype_available("SAEN")) && loading_stage == LOADING_STAGE_RESERVE)) {
+		//-- Standard Gauge, Future-Proofed Axle Weight Tracks
+		// "SHFN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
-				label:								"RAIL";
-				//introduction_date:				1825/04/01;
+				label:							"RAIL";
+				introduction_date:				2028/06/31;
+				name:							string(STR_RAILTYPE_NAME_RAIL202X);
 			//---
-				railtype_flags:						bitmask(RAILTYPE_FLAG_DISALLOW_90DEG, RAILTYPE_FLAG_HIDDEN);
-				curve_speed_multiplier:				0.14;
-		
-				// 6.62 loaves of bread per ~75-100 feet of track built
-				//construction_cost:				!; //! = ~180 COINs, or 0.18 loaves, per ~75-100 feet 
-				speed_limit:						305 mph;
-				acceleration_model:					ACC_MODEL_RAIL;
-				//sort_order:						07;
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+				//construction_cost:			!; // 10 loaves of bread per ~75-100 feet
+				construction_cost:				3; // In units of £2 (6614 kcal); 21890 kcal (6.62 loaves of bread) per ~75-100 feet
+				speed_limit:					305 mph;
+				acceleration_model:				ACC_MODEL_RAIL;
+				introduces_railtype_list:		[
+												"RAIL",
+												"SA_N", "SA_-"
+												];
+				//sort_order:					07;
 				
-				// .662 loaves of bread per ~75-100 feet per period
-				//maintenance_cost:					!; //! = ~600 COINs, or .60 loaves, per ~75-100 feet
+				//maintenance_cost:				!; // 2004 kcal (1 loaf of bread) per ~75-100 feet
+				maintenance_cost:				80; // In units of £300; 1326 kcal (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
+			}
+		}
+	}
+	
+	if (((param_axle_weight == 4 && param_realism == 1) && (railtype_available("SHFN") || (railtype_available("SHEN") && railtype_available("SAEN")))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Axle Weight Tracks
+		// "SHFN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"RAIL";
+				introduction_date:				2028/06/31;
+				name:							string(STR_RAILTYPE_NAME_RAIL2024);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+				//construction_cost:			!; // 10 loaves of bread per ~75-100 feet
+				construction_cost:				3; // In units of £2 (6614 kcal); 21890 kcal (6.62 loaves of bread) per ~75-100 feet
+				speed_limit:					305 mph;
+				acceleration_model:				ACC_MODEL_RAIL;
+				introduces_railtype_list:		[
+												"RAIL",
+												"SA_N", "SA_-"
+												];
+				//sort_order:					07;
+				
+				//maintenance_cost:				!; // 2004 kcal (1 loaf of bread) per ~75-100 feet
+				maintenance_cost:				80; // In units of £300; 1326 kcal (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
 			}
 		}
 	}

@@ -1,0 +1,236 @@
+##grflangid 0x00
+STR_GRF_NAME													:Tracktype Extended Standardization Templates r1
+STR_GRF_DESC													:Planned out by the OpenTTD community. Compiled by Gadg8eer. GPL v2, no graphics included.
+STR_WEBSITE														:https://github.com/Gadg8eer/tracktype_standards_module
+
+STR_GRF_BASECOST_NAME											:Base Cost Test GRF
+STR_GRF_BASECOST_DESC											:A modifiable testing GRF by Gadg8eer. GPL v2, no graphics included.
+
+STR_PARAM_COLOUR_SCHEME_NAME									:Colour scheme
+STR_PARAM_COLOUR_SCHEME_DESC									:Select the type of colour scheme to use for fences
+STR_PARAM_COLOUR_SCHEME_1CC										:One company color
+STR_PARAM_COLOUR_SCHEME_2CC										:Two company colors
+STR_PARAM_COLOUR_SCHEME_REAL									:Real-world colors
+
+STR_PARAM_AXLE_WEIGHT_NAME										:Axle weight scheme
+STR_PARAM_AXLE_WEIGHT_DESC										:Select the system of axle weights provided by your railtype newgrf.{}{}{RED}Default:{BLACK} RAIL = RAIL.{}{}{ORANGE}Full 2012 Standard:{BLACK} RAIL = SHEN.{}{}{YELLOW}Innsbruck 2022 Convention:{BLACK} RAIL = SHAN; a partially-compliant version of 2012 Standard, without making use of axle weights, for use with most legacy vehicle sets (pre-2022).{}{}{GREEN}"Flux Capacitor":{BLACK} RAIL = SH_N; extended support for voltages and possibilities, as well as an undefined axle load for an ideal world where we could go back to 2012 and warn ourselves that the axle loads would be ignored if we didn't set "_" as an "undefined" axle load.{}{}{BLUE}Advanced:{BLACK} RAIL = SHFN; extended support for voltages and possibilities, compatible with rail vehicles from post-2024, no underscore reservations.
+STR_PARAM_AXLE_WEIGHT_NONE										:(Default) Vanilla 
+STR_PARAM_AXLE_WEIGHT_STANDARD_2012								:Full 2012 Standard
+STR_PARAM_AXLE_WEIGHT_CONVENTION_2022							:Innsbruck 2022 Convention
+STR_PARAM_AXLE_WEIGHT_OUTATIME_202X								:Flux Capacitor 202X
+STR_PARAM_AXLE_WEIGHT_UPDATE_2024								:Advanced 2024 Extension (Recommended!)
+STR_ERROR_AXLE_WEIGHT_TRIGGER_ERROR								:Debug Message (Don't use!)
+STR_ERROR_AXLE_WEIGHT_ERROR										:Uh oh! Looks like you encountered a bug! This message is to reveal that the result of setting the axle weight parameter to the option you're using has somehow caused this error. Please contact Gadg8eer via, or modify the source code found at, the GRF's website to get it updated. {GREEN}Or, if you purposefully chose the Debug Message option for axle weight, just select another option and start a new game and this should work.{BLACK}
+
+STR_PARAM_FORCE_REALISM_NAME									:Force true-to-life tracktype stats?
+STR_PARAM_FORCE_REALISM_DESC									:Assumes that ALL of the following are true...{}{}a) a custom currency with an exchange rate of 3307 = £1 (to mimic the exchange rate of the USD down to the penny) in 2000 is being used{}b) the bread price of $1 USD in 2000 is used to peg costs to the price of energy (2004 kilocalories per loaf) regardless of time and space by comparing a household staple{}c) inflation is turned off{}d) one tile is considered - based on vanilla bus lengths - to be ~75-100 feet long and ~75-100 feet wide{}e) this mod is loaded AFTER all train sets and tracktype sets in the GRF list.{}{}This option modifies the stats of all auto-detected railtypes to stats heavily researched via wikipedia and the internet, and is not tested for balance. {RED}Use at your own risk!
+STR_PARAM_NOT_FORCE_REALISM										:(Default) No, thank you!
+STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
+
+# 2004
+STR_RAILTYPE_NAME_RAIL2004										:1432mm to 1435mm Gauge Rail
+STR_RAILTYPE_NAME_ELRL2004										:1432mm to 1435mm Gauge Rail, Universal Catenary
+
+# 2012
+STR_RAILTYPE_NAME_SAAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHAN2012										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRAN2012										:1432mm to 1435mm Gauge Rail, Rack - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SABN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHBN2012										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRBN2012										:1432mm to 1435mm Gauge Rail, Rack - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SACN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SECN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHCN2012										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRCN2012										:1432mm to 1435mm Gauge Rail, Rack - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SADN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHDN2012										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRDN2012										:1432mm to 1435mm Gauge Rail, Rack - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_RAIL2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHEN2012										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SREN2012										:1432mm to 1435mm Gauge Rail, Rack - 50t p/axle, Max. {VELOCITY}
+
+# 2022
+STR_RAILTYPE_NAME_SAAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_RAIL2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHAN2022										:1432mm to 1435mm Gauge Rail - Max. {VELOCITY}
+
+# OUTATIME
+STR_RAILTYPE_NAME_SAcN202X										:Wood Rail Wagonway - 1t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAbN202X										:Iron Plateway - 1t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAaN202X										:1432mm to 1435mm Gauge Prototype Rail - 5t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHAN202X										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRAN202X										:1432mm to 1435mm Gauge Rail, Rack - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SABN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHBN202X										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRBN202X										:1432mm to 1435mm Gauge Rail, Rack - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SACN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SECN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHCN202X										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRCN202X										:1432mm to 1435mm Gauge Rail, Rack - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SADN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHDN202X										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRDN202X										:1432mm to 1435mm Gauge Rail, Rack - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SBdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SCdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SDdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SEdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SFdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SGdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SHdN202X										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SRdN202X										:(Standard Gauge Car with better axles, Rack - DO NOT USE AT ALL!)
+STR_RAILTYPE_NAME_SAEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHEN202X										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SREN202X										:1432mm to 1435mm Gauge Rail, Rack - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHFN202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_RAIL202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SA_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SB_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SC_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SD_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SE_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SF_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SG_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SH_N202X										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+
+# 2024
+STR_RAILTYPE_NAME_SAcN2024										:Wood Rail Wagonway - 1t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAbN2024										:Iron Plateway - 1t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAaN2024										:1432mm to 1435mm Gauge Prototype Rail - 5t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHAN2024										:1432mm to 1435mm Gauge Rail - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRAN2024										:1432mm to 1435mm Gauge Rail, Rack - 10t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SABN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHBN2024										:1432mm to 1435mm Gauge Rail - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRBN2024										:1432mm to 1435mm Gauge Rail, Rack - 20t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SACN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SECN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHCN2024										:1432mm to 1435mm Gauge Rail - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRCN2024										:1432mm to 1435mm Gauge Rail, Rack - 30t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SADN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHDN2024										:1432mm to 1435mm Gauge Rail - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRDN2024										:1432mm to 1435mm Gauge Rail, Rack - 40t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SBdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SCdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SDdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SEdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SFdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SGdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SHdN2024										:(Standard Gauge Car with better axles - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SRdN2024										:(Standard Gauge Car with better axles, Rack - DO NOT USE AT ALL!)
+STR_RAILTYPE_NAME_SAEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHEN2024										:1432mm to 1435mm Gauge Rail - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SREN2024										:1432mm to 1435mm Gauge Rail, Rack - 50t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SAFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_RAIL2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHFN2024										:1432mm to 1435mm Gauge Rail - ∞t p/axle, Max. Unlimited
+STR_RAILTYPE_NAME_SRFN2024										:1432mm to 1435mm Gauge Rail, Rack - ∞t p/axle, Max. Unlimited

@@ -1,15 +1,12 @@
-##name English (US)
-##ownname Adv. English (US)
-##isocode en_US
-##plural 0
-##textdir ltr
-##digitsep ,
-##digitsepcur ,
-##decimalsep .
-##winlangid 0x2008
-##grflangid 0x00
+##grflangid 0x01
+# Quantity of cargo
+##gender m w n p
+##map_gender m male
+##map_gender f female
+##map_gender n it
+##map_gender p they
 
-STR_GRF_NAME													:Routetype Standards Modularity Project
+STR_GRF_NAME													:Tracktype Extended Standardization Templates r1
 STR_GRF_DESC													:Planned out by the OpenTTD community. Compiled by Gadg8eer. GPL v2, no graphics included.
 STR_WEBSITE														:https://github.com/Gadg8eer/tracktype_standards_module
 
@@ -43,7 +40,6 @@ STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
 # See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenTTD. If not, see <http://www.gnu.org/licenses/>.
 
 
-##id 0x0000
 STR_NULL                                                        :
 STR_EMPTY                                                       :
 STR_UNDEFINED                                                   :(undefined string)
@@ -118,40 +114,39 @@ STR_CARGO_SINGULAR_BATTERY                                      :Battery
 STR_CARGO_SINGULAR_PLASTIC                                      :Plastic
 STR_CARGO_SINGULAR_FIZZY_DRINK                                  :Fizzy Drink
 
-# Quantity of cargo
-STR_QUANTITY_NOTHING                                            :
-STR_QUANTITY_PASSENGERS                                         :{COMMA}{NBSP}passenger{P "" s}
-STR_QUANTITY_COAL                                               :{WEIGHT_LONG} of coal
-STR_QUANTITY_MAIL                                               :{COMMA}{NBSP}bag{P "" s} of mail
-STR_QUANTITY_OIL                                                :{VOLUME_LONG} of oil
-STR_QUANTITY_LIVESTOCK                                          :{COMMA}{NBSP}head of livestock
-STR_QUANTITY_GOODS                                              :{COMMA}{NBSP}crate{P "" s} of goods
-STR_QUANTITY_GRAIN                                              :{WEIGHT_LONG} of grain
-STR_QUANTITY_WOOD                                               :{WEIGHT_LONG} of wood
-STR_QUANTITY_IRON_ORE                                           :{WEIGHT_LONG} of iron ore
-STR_QUANTITY_STEEL                                              :{WEIGHT_LONG} of steel
-STR_QUANTITY_VALUABLES                                          :{COMMA}{NBSP}bag{P "" s} of valuables
-STR_QUANTITY_COPPER_ORE                                         :{WEIGHT_LONG} of copper ore
-STR_QUANTITY_MAIZE                                              :{WEIGHT_LONG} of corn
-STR_QUANTITY_FRUIT                                              :{WEIGHT_LONG} of fruit
-STR_QUANTITY_DIAMONDS                                           :{COMMA}{NBSP}bag{P "" s} of diamonds
-STR_QUANTITY_FOOD                                               :{WEIGHT_LONG} of food
-STR_QUANTITY_PAPER                                              :{WEIGHT_LONG} of paper
-STR_QUANTITY_GOLD                                               :{COMMA}{NBSP}bag{P "" s} of gold
-STR_QUANTITY_WATER                                              :{VOLUME_LONG} of water
-STR_QUANTITY_WHEAT                                              :{WEIGHT_LONG} of wheat
-STR_QUANTITY_RUBBER                                             :{VOLUME_LONG} of rubber
-STR_QUANTITY_SUGAR                                              :{WEIGHT_LONG} of sugar
-STR_QUANTITY_TOYS                                               :{COMMA}{NBSP}toy{P "" s}
-STR_QUANTITY_SWEETS                                             :{COMMA}{NBSP}bag{P "" s} of candy
-STR_QUANTITY_COLA                                               :{VOLUME_LONG} of cola
-STR_QUANTITY_CANDYFLOSS                                         :{WEIGHT_LONG} of cotton candy
-STR_QUANTITY_BUBBLES                                            :{COMMA} bubble{P "" s}
-STR_QUANTITY_TOFFEE                                             :{WEIGHT_LONG} of toffee
-STR_QUANTITY_BATTERIES                                          :{COMMA} batter{P y ies}
-STR_QUANTITY_PLASTIC                                            :{VOLUME_LONG} of plastic
-STR_QUANTITY_FIZZY_DRINKS                                       :{COMMA} fizzy drink{P "" s}
-STR_QUANTITY_N_A                                                :N/A
+#STR_QUANTITY_NOTHING                                            :
+#STR_QUANTITY_PASSENGERS                                         :{COMMA}{NBSP}passenger{P "" s}
+#STR_QUANTITY_COAL                                               :{WEIGHT_LONG} of coal
+#STR_QUANTITY_MAIL                                               :{COMMA}{NBSP}bag{P "" s} of mail
+#STR_QUANTITY_OIL                                                :{VOLUME_LONG} of oil
+#STR_QUANTITY_LIVESTOCK                                          :{COMMA}{NBSP}head of livestock
+#STR_QUANTITY_GOODS                                              :{COMMA}{NBSP}crate{P "" s} of goods
+#STR_QUANTITY_GRAIN                                              :{WEIGHT_LONG} of grain
+#STR_QUANTITY_WOOD                                               :{WEIGHT_LONG} of wood
+#STR_QUANTITY_IRON_ORE                                           :{WEIGHT_LONG} of iron ore
+#STR_QUANTITY_STEEL                                              :{WEIGHT_LONG} of steel
+#STR_QUANTITY_VALUABLES                                          :{COMMA}{NBSP}bag{P "" s} of valuables
+#STR_QUANTITY_COPPER_ORE                                         :{WEIGHT_LONG} of copper ore
+#STR_QUANTITY_MAIZE                                              :{WEIGHT_LONG} of corn
+#STR_QUANTITY_FRUIT                                              :{WEIGHT_LONG} of fruit
+#STR_QUANTITY_DIAMONDS                                           :{COMMA}{NBSP}bag{P "" s} of diamonds
+#STR_QUANTITY_FOOD                                               :{WEIGHT_LONG} of food
+#STR_QUANTITY_PAPER                                              :{WEIGHT_LONG} of paper
+#STR_QUANTITY_GOLD                                               :{COMMA}{NBSP}bag{P "" s} of gold
+#STR_QUANTITY_WATER                                              :{VOLUME_LONG} of water
+#STR_QUANTITY_WHEAT                                              :{WEIGHT_LONG} of wheat
+#STR_QUANTITY_RUBBER                                             :{VOLUME_LONG} of rubber
+#STR_QUANTITY_SUGAR                                              :{WEIGHT_LONG} of sugar
+#STR_QUANTITY_TOYS                                               :{COMMA}{NBSP}toy{P "" s}
+#STR_QUANTITY_SWEETS                                             :{COMMA}{NBSP}bag{P "" s} of candy
+#STR_QUANTITY_COLA                                               :{VOLUME_LONG} of cola
+#STR_QUANTITY_CANDYFLOSS                                         :{WEIGHT_LONG} of cotton candy
+#STR_QUANTITY_BUBBLES                                            :{COMMA} bubble{P "" s}
+#STR_QUANTITY_TOFFEE                                             :{WEIGHT_LONG} of toffee
+#STR_QUANTITY_BATTERIES                                          :{COMMA} batter{P y ies}
+#STR_QUANTITY_PLASTIC                                            :{VOLUME_LONG} of plastic
+#STR_QUANTITY_FIZZY_DRINKS                                       :{COMMA} fizzy drink{P "" s}
+#STR_QUANTITY_N_A                                                :N/A
 
 # Two letter abbreviation of cargo name
 STR_ABBREV_NOTHING                                              :
@@ -189,12 +184,12 @@ STR_ABBREV_FIZZY_DRINKS                                         :FZ
 STR_ABBREV_ALL                                                  :ALL
 
 # 'Mode' of transport for cargoes
-STR_PASSENGERS                                                  :{COMMA}{NBSP}passenger{P "" s}
-STR_BAGS                                                        :{COMMA}{NBSP}bag{P "" s}
-STR_TONS                                                        :{COMMA}{NBSP}tonne{P "" s}
-STR_LITERS                                                      :{COMMA}{NBSP}liter{P "" s}
-STR_ITEMS                                                       :{COMMA}{NBSP}item{P "" s}
-STR_CRATES                                                      :{COMMA}{NBSP}crate{P "" s}
+#STR_PASSENGERS                                                  :{COMMA}{NBSP}passenger{P "" s}
+#STR_BAGS                                                        :{COMMA}{NBSP}bag{P "" s}
+#STR_TONS                                                        :{COMMA}{NBSP}tonne{P "" s}
+#STR_LITERS                                                      :{COMMA}{NBSP}liter{P "" s}
+#STR_ITEMS                                                       :{COMMA}{NBSP}item{P "" s}
+#STR_CRATES                                                      :{COMMA}{NBSP}crate{P "" s}
 
 STR_COLOUR_DEFAULT                                              :Default
 ###length 17
@@ -262,17 +257,17 @@ STR_UNITS_WEIGHT_SHORT_IMPERIAL                                 :{DECIMAL}{NBSP}
 STR_UNITS_WEIGHT_SHORT_METRIC                                   :{DECIMAL}{NBSP}t
 STR_UNITS_WEIGHT_SHORT_SI                                       :{DECIMAL}{NBSP}kg
 
-STR_UNITS_WEIGHT_LONG_IMPERIAL                                  :{DECIMAL}{NBSP}ton{P "" s}
-STR_UNITS_WEIGHT_LONG_METRIC                                    :{DECIMAL}{NBSP}tonne{P "" s}
-STR_UNITS_WEIGHT_LONG_SI                                        :{DECIMAL}{NBSP}kg
+#STR_UNITS_WEIGHT_LONG_IMPERIAL                                  :{DECIMAL}{NBSP}ton{P "" s}
+#STR_UNITS_WEIGHT_LONG_METRIC                                    :{DECIMAL}{NBSP}tonne{P "" s}
+#STR_UNITS_WEIGHT_LONG_SI                                        :{DECIMAL}{NBSP}kg
 
 STR_UNITS_VOLUME_SHORT_IMPERIAL                                 :{DECIMAL}{NBSP}gal
 STR_UNITS_VOLUME_SHORT_METRIC                                   :{DECIMAL}{NBSP}l
 STR_UNITS_VOLUME_SHORT_SI                                       :{DECIMAL}{NBSP}m³
 
-STR_UNITS_VOLUME_LONG_IMPERIAL                                  :{DECIMAL}{NBSP}gallon{P "" s}
-STR_UNITS_VOLUME_LONG_METRIC                                    :{DECIMAL}{NBSP}litre{P "" s}
-STR_UNITS_VOLUME_LONG_SI                                        :{DECIMAL}{NBSP}m³
+#STR_UNITS_VOLUME_LONG_IMPERIAL                                  :{DECIMAL}{NBSP}gallon{P "" s}
+#STR_UNITS_VOLUME_LONG_METRIC                                    :{DECIMAL}{NBSP}litre{P "" s}
+#STR_UNITS_VOLUME_LONG_SI                                        :{DECIMAL}{NBSP}m³
 
 STR_UNITS_FORCE_IMPERIAL                                        :{DECIMAL}{NBSP}lbf
 STR_UNITS_FORCE_METRIC                                          :{DECIMAL}{NBSP}kgf
@@ -283,15 +278,15 @@ STR_UNITS_HEIGHT_METRIC                                         :{DECIMAL}{NBSP}
 STR_UNITS_HEIGHT_SI                                             :{DECIMAL}{NBSP}m
 
 # Time units used in string control characters
-STR_UNITS_DAYS                                                  :{COMMA}{NBSP}day{P "" s}
-STR_UNITS_SECONDS                                               :{COMMA}{NBSP}second{P "" s}
-STR_UNITS_TICKS                                                 :{COMMA}{NBSP}tick{P "" s}
+#STR_UNITS_DAYS                                                  :{COMMA}{NBSP}day{P "" s}
+#STR_UNITS_SECONDS                                               :{COMMA}{NBSP}second{P "" s}
+#STR_UNITS_TICKS                                                 :{COMMA}{NBSP}tick{P "" s}
 
-STR_UNITS_MONTHS                                                :{NUM}{NBSP}month{P "" s}
-STR_UNITS_MINUTES                                               :{NUM}{NBSP}minute{P "" s}
+#STR_UNITS_MONTHS                                                :{NUM}{NBSP}month{P "" s}
+#STR_UNITS_MINUTES                                               :{NUM}{NBSP}minute{P "" s}
 
-STR_UNITS_YEARS                                                 :{NUM}{NBSP}year{P "" s}
-STR_UNITS_PERIODS                                               :{NUM}{NBSP}period{P "" s}
+#STR_UNITS_YEARS                                                 :{NUM}{NBSP}year{P "" s}
+#STR_UNITS_PERIODS                                               :{NUM}{NBSP}period{P "" s}
 
 # Common window strings
 STR_LIST_FILTER_TITLE                                           :{BLACK}Filter:
@@ -1134,7 +1129,7 @@ STR_GAME_OPTIONS_SOCIAL_PLUGIN_STATE_DUPLICATE                  :{RED}Duplicated
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_STATE_UNSUPPORTED_API            :{RED}Unsupported version
 STR_GAME_OPTIONS_SOCIAL_PLUGIN_STATE_INVALID_SIGNATURE          :{RED}Invalid signature
 
-STR_BASESET_STATUS                                              :{STRING} {RED}({NUM} missing/corrupted file{P "" s})
+#STR_BASESET_STATUS                                              :{STRING} {RED}({NUM} missing/corrupted file{P "" s})
 
 STR_ERROR_RESOLUTION_LIST_FAILED                                :{WHITE}Failed to retrieve a list of supported resolutions
 STR_ERROR_FULLSCREEN_FAILED                                     :{WHITE}Fullscreen mode failed
@@ -1298,7 +1293,7 @@ STR_CONFIG_SETTING_HORIZONTAL_POS_LEFT                          :Left
 STR_CONFIG_SETTING_HORIZONTAL_POS_CENTER                        :Center
 STR_CONFIG_SETTING_HORIZONTAL_POS_RIGHT                         :Right
 
-STR_CONFIG_SETTING_SECONDS_VALUE                                :{COMMA}{NBSP}second{P 0 "" s}
+#STR_CONFIG_SETTING_SECONDS_VALUE                                :{COMMA}{NBSP}second{P 0 "" s}
 
 STR_CONFIG_SETTING_INFINITE_MONEY                               :Infinite money: {STRING}
 STR_CONFIG_SETTING_INFINITE_MONEY_HELPTEXT                      :Allow unlimited spending and disable bankruptcy of companies
@@ -1369,7 +1364,7 @@ STR_CONFIG_SETTING_EXTRADYNAMITE_HELPTEXT                       :Make it easier 
 
 STR_CONFIG_SETTING_TRAIN_LENGTH                                 :Maximum length of train consists: {STRING}
 STR_CONFIG_SETTING_TRAIN_LENGTH_HELPTEXT                        :Set the maximum length of train consists
-STR_CONFIG_SETTING_TILE_LENGTH                                  :{COMMA} tile{P 0 "" s}
+#STR_CONFIG_SETTING_TILE_LENGTH                                  :{COMMA} tile{P 0 "" s}
 
 STR_CONFIG_SETTING_SMOKE_AMOUNT                                 :Amount of vehicle smoke/sparks: {STRING}
 STR_CONFIG_SETTING_SMOKE_AMOUNT_HELPTEXT                        :Set how much smoke or how many sparks are emitted by vehicles
@@ -1548,8 +1543,8 @@ STR_CONFIG_SETTING_AUTORENEW_VEHICLE_HELPTEXT                   :When enabled, a
 STR_CONFIG_SETTING_AUTORENEW_MONTHS                             :Autorenew when vehicle is {STRING} maximum age
 STR_CONFIG_SETTING_AUTORENEW_MONTHS_HELPTEXT                    :Relative age when a vehicle should be considered for auto-renewing
 ###length 2
-STR_CONFIG_SETTING_AUTORENEW_MONTHS_VALUE_BEFORE                :{COMMA} month{P 0 "" s} before
-STR_CONFIG_SETTING_AUTORENEW_MONTHS_VALUE_AFTER                 :{COMMA} month{P 0 "" s} after
+#STR_CONFIG_SETTING_AUTORENEW_MONTHS_VALUE_BEFORE                :{COMMA} month{P 0 "" s} before
+#STR_CONFIG_SETTING_AUTORENEW_MONTHS_VALUE_AFTER                 :{COMMA} month{P 0 "" s} after
 
 STR_CONFIG_SETTING_AUTORENEW_MONEY                              :Autorenew minimum needed money for renew: {STRING}
 STR_CONFIG_SETTING_AUTORENEW_MONEY_HELPTEXT                     :Minimal amount of money that must remain in the bank before considering auto-renewing vehicles
@@ -1559,7 +1554,7 @@ STR_CONFIG_SETTING_ERRMSG_DURATION_HELPTEXT                     :Duration for di
 
 STR_CONFIG_SETTING_HOVER_DELAY                                  :Show tooltips: {STRING}
 STR_CONFIG_SETTING_HOVER_DELAY_HELPTEXT                         :Delay before tooltips are displayed when hovering the mouse over some interface element. Alternatively tooltips are bound to the right mouse button when this value is set to 0
-STR_CONFIG_SETTING_HOVER_DELAY_VALUE                            :Hover for {COMMA} millisecond{P 0 "" s}
+#STR_CONFIG_SETTING_HOVER_DELAY_VALUE                            :Hover for {COMMA} millisecond{P 0 "" s}
 ###setting-zero-is-special
 STR_CONFIG_SETTING_HOVER_DELAY_DISABLED                         :Right click
 
@@ -1861,7 +1856,7 @@ STR_CONFIG_SETTING_SERVINT_AIRCRAFT                             :Default mainten
 STR_CONFIG_SETTING_SERVINT_AIRCRAFT_HELPTEXT                    :Set the default maintenance interval for new aircraft, if no explicit maintenance interval is set for the vehicle
 STR_CONFIG_SETTING_SERVINT_SHIPS                                :Default maintenance interval for ships: {STRING}
 STR_CONFIG_SETTING_SERVINT_SHIPS_HELPTEXT                       :Set the default maintenance interval for new ships, if no explicit maintenance interval is set for the vehicle
-STR_CONFIG_SETTING_SERVINT_VALUE                                :{COMMA}{NBSP}Day{P 0 "" s}/Minute{P 0 "" s}/%
+#STR_CONFIG_SETTING_SERVINT_VALUE                                :{COMMA}{NBSP}Day{P 0 "" s}/Minute{P 0 "" s}/%
 ###setting-zero-is-special
 STR_CONFIG_SETTING_SERVINT_DISABLED                             :Disabled
 
@@ -1951,7 +1946,7 @@ STR_CONFIG_SETTING_FEEDER_PAYMENT_SHARE_HELPTEXT                :Percentage of i
 
 STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY                         :When dragging, place signals every: {STRING}
 STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY_HELPTEXT                :Set the distance at which signals will be built on a track up to the next obstacle (signal, junction), if signals are dragged
-STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY_VALUE                   :{COMMA} tile{P 0 "" s}
+#STR_CONFIG_SETTING_DRAG_SIGNALS_DENSITY_VALUE                   :{COMMA} tile{P 0 "" s}
 STR_CONFIG_SETTING_DRAG_SIGNALS_FIXED_DISTANCE                  :When dragging, keep fixed distance between signals: {STRING}
 STR_CONFIG_SETTING_DRAG_SIGNALS_FIXED_DISTANCE_HELPTEXT         :Select the behaviour of signal placement when Ctrl+dragging signals. If disabled, signals are placed around tunnels or bridges to avoid long stretches without signals. If enabled, signals are placed every n tiles, making alignment of signals at parallel tracks easier
 
@@ -2014,7 +2009,7 @@ STR_CONFIG_SETTING_STATUSBAR_POS                                :Position of sta
 STR_CONFIG_SETTING_STATUSBAR_POS_HELPTEXT                       :Horizontal position of the status bar at the bottom of the screen
 STR_CONFIG_SETTING_SNAP_RADIUS                                  :Window snap radius: {STRING}
 STR_CONFIG_SETTING_SNAP_RADIUS_HELPTEXT                         :Distance between windows before the window being moved is automatically aligned to nearby windows
-STR_CONFIG_SETTING_SNAP_RADIUS_VALUE                            :{COMMA} pixel{P 0 "" s}
+#STR_CONFIG_SETTING_SNAP_RADIUS_VALUE                            :{COMMA} pixel{P 0 "" s}
 ###setting-zero-is-special
 STR_CONFIG_SETTING_SNAP_RADIUS_DISABLED                         :Disabled
 STR_CONFIG_SETTING_SOFT_LIMIT                                   :Maximum number of non-sticky windows: {STRING}
@@ -2242,8 +2237,8 @@ STR_INTRO_TOOLTIP_AI_SETTINGS                                   :{BLACK}Open AI 
 STR_INTRO_TOOLTIP_GAMESCRIPT_SETTINGS                           :{BLACK}Open Game script settings
 STR_INTRO_TOOLTIP_QUIT                                          :{BLACK}Quit 'OpenTTD'
 
-STR_INTRO_BASESET                                               :{BLACK}The currently selected base graphics set is missing {NUM} sprite{P "" s}. Please check for updates for the baseset.
-STR_INTRO_TRANSLATION                                           :{BLACK}This translation misses {NUM} string{P "" s}. Please help make OpenTTD better by signing up as translator. See readme.txt for details.
+#STR_INTRO_BASESET                                               :{BLACK}The currently selected base graphics set is missing {NUM} sprite{P "" s}. Please check for updates for the baseset.
+#STR_INTRO_TRANSLATION                                           :{BLACK}This translation misses {NUM} string{P "" s}. Please help make OpenTTD better by signing up as translator. See readme.txt for details.
 
 # Quit window
 STR_QUIT_CAPTION                                                :{WHITE}Quit
@@ -2461,10 +2456,10 @@ STR_NETWORK_START_SERVER_PASSWORD_TOOLTIP                       :{BLACK}Protect 
 
 STR_NETWORK_START_SERVER_VISIBILITY_LABEL                       :{BLACK}Visibility:
 STR_NETWORK_START_SERVER_VISIBILITY_TOOLTIP                     :{BLACK}Whether other people can see your server in the public listing
-STR_NETWORK_START_SERVER_CLIENTS_SELECT                         :{BLACK}{NUM} client{P "" s}
+#STR_NETWORK_START_SERVER_CLIENTS_SELECT                         :{BLACK}{NUM} client{P "" s}
 STR_NETWORK_START_SERVER_NUMBER_OF_CLIENTS                      :{BLACK}Maximum number of clients:
 STR_NETWORK_START_SERVER_NUMBER_OF_CLIENTS_TOOLTIP              :{BLACK}Choose the maximum number of clients. Not all slots need to be filled
-STR_NETWORK_START_SERVER_COMPANIES_SELECT                       :{BLACK}{NUM} compan{P y ies}
+#STR_NETWORK_START_SERVER_COMPANIES_SELECT                       :{BLACK}{NUM} compan{P y ies}
 STR_NETWORK_START_SERVER_NUMBER_OF_COMPANIES                    :{BLACK}Maximum number of companies:
 STR_NETWORK_START_SERVER_NUMBER_OF_COMPANIES_TOOLTIP            :{BLACK}Limit the server to a certain number of companies
 
@@ -2473,7 +2468,7 @@ STR_NETWORK_START_SERVER_NEW_GAME_NAME_OSKTITLE                 :{BLACK}Enter a 
 # Network connecting window
 STR_NETWORK_CONNECTING_CAPTION                                  :{WHITE}Connecting...
 
-STR_NETWORK_CONNECTING_WAITING                                  :{BLACK}{NUM} client{P "" s} in front of you
+#STR_NETWORK_CONNECTING_WAITING                                  :{BLACK}{NUM} client{P "" s} in front of you
 STR_NETWORK_CONNECTING_DOWNLOADING_1                            :{BLACK}{BYTES} downloaded so far
 STR_NETWORK_CONNECTING_DOWNLOADING_2                            :{BLACK}{BYTES} / {BYTES} downloaded so far
 
@@ -2525,7 +2520,7 @@ STR_NETWORK_CLIENT_LIST_NEW_COMPANY                             :(New company)
 STR_NETWORK_CLIENT_LIST_NEW_COMPANY_TOOLTIP                     :{BLACK}Create a new company and join it
 STR_NETWORK_CLIENT_LIST_PLAYER_ICON_SELF_TOOLTIP                :{BLACK}This is you
 STR_NETWORK_CLIENT_LIST_PLAYER_ICON_HOST_TOOLTIP                :{BLACK}This is the host of the game
-STR_NETWORK_CLIENT_LIST_CLIENT_COMPANY_COUNT                    :{BLACK}{NUM} client{P "" s} - {NUM}/{NUM} compan{P y ies}
+#STR_NETWORK_CLIENT_LIST_CLIENT_COMPANY_COUNT                    :{BLACK}{NUM} client{P "" s} - {NUM}/{NUM} compan{P y ies}
 STR_NETWORK_CLIENT_LIST_CLIENT_COMPANY_COUNT_TOOLTIP            :{BLACK}The number of currently connected clients, number of companies and maximum number of companies allowed by the server administrator
 
 # Matches ConnectionType
@@ -2616,7 +2611,7 @@ STR_NETWORK_ERROR_TIMEOUT_JOIN                                  :{WHITE}Your com
 STR_NETWORK_ERROR_INVALID_CLIENT_NAME                           :{WHITE}Your player name is not valid
 
 STR_NETWORK_ERROR_CLIENT_GUI_LOST_CONNECTION_CAPTION            :{WHITE}Possible connection loss
-STR_NETWORK_ERROR_CLIENT_GUI_LOST_CONNECTION                    :{WHITE}The last {NUM} second{P "" s} no data has arrived from the server
+#STR_NETWORK_ERROR_CLIENT_GUI_LOST_CONNECTION                    :{WHITE}The last {NUM} second{P "" s} no data has arrived from the server
 
 ###length 21
 STR_NETWORK_ERROR_CLIENT_GENERAL                                :general error
@@ -3615,11 +3610,11 @@ STR_INVALID_VEHICLE                                             :<invalid vehicl
 # NewGRF scanning window
 STR_NEWGRF_SCAN_CAPTION                                         :{WHITE}Scanning NewGRF mods
 STR_NEWGRF_SCAN_MESSAGE                                         :{BLACK}Scanning NewGRF mods. Depending on the amount this can take a while...
-STR_NEWGRF_SCAN_STATUS                                          :{BLACK}{NUM} NewGRF{P "" s} scanned out of an estimated {NUM} NewGRF{P "" s}
+#STR_NEWGRF_SCAN_STATUS                                          :{BLACK}{NUM} NewGRF{P "" s} scanned out of an estimated {NUM} NewGRF{P "" s}
 STR_NEWGRF_SCAN_ARCHIVES                                        :Scanning for archives
 
 # Sign list window
-STR_SIGN_LIST_CAPTION                                           :{WHITE}Sign List - {COMMA} Sign{P "" s}
+#STR_SIGN_LIST_CAPTION                                           :{WHITE}Sign List - {COMMA} Sign{P "" s}
 STR_SIGN_LIST_MATCH_CASE                                        :{BLACK}Match case
 STR_SIGN_LIST_MATCH_CASE_TOOLTIP                                :{BLACK}Toggle matching case when comparing sign names against the filter string
 
@@ -3770,7 +3765,7 @@ STR_STORY_BOOK_INVALID_GOAL_REF                                 :{RED}Invalid go
 # Station list window
 STR_STATION_LIST_TOOLTIP                                        :{BLACK}Station names - click on name to center main view on station. Ctrl+Click to open a new viewport on station location
 STR_STATION_LIST_USE_CTRL_TO_SELECT_MORE                        :{BLACK}Ctrl+Click to select multiple items
-STR_STATION_LIST_CAPTION                                        :{WHITE}{COMPANY} - {COMMA} Station{P "" s}
+#STR_STATION_LIST_CAPTION                                        :{WHITE}{COMPANY} - {COMMA} Station{P "" s}
 STR_STATION_LIST_STATION                                        :{YELLOW}{STATION} {STATION_FEATURES}
 STR_STATION_LIST_WAYPOINT                                       :{YELLOW}{WAYPOINT}
 STR_STATION_LIST_NONE                                           :{YELLOW}- None -
@@ -3903,7 +3898,7 @@ STR_FINANCES_INFRASTRUCTURE_BUTTON                              :{BLACK}Infrastr
 
 # Company view
 STR_COMPANY_VIEW_CAPTION                                        :{WHITE}{COMPANY} {BLACK}{COMPANY_NUM}
-STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(President)
+#STR_COMPANY_VIEW_PRESIDENT_MANAGER_TITLE                        :{WHITE}{PRESIDENT_NAME}{}{GOLD}(President)
 
 STR_COMPANY_VIEW_INAUGURATED_TITLE                              :{GOLD}Inaugurated: {WHITE}{NUM}
 STR_COMPANY_VIEW_COLOUR_SCHEME_TITLE                            :{GOLD}Color Scheme:
