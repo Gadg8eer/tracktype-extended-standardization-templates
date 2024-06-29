@@ -12,4 +12,4 @@ Also contains...
 
 ++ Updated (2024) for standardized with both axle weights AND the universal SA_N supported. Also includes xUSSR extended voltages and suggested possibilities from the NewGRF specs wiki, and speeds K, L, M, N, O, P, Q and R as different speeds of rack rail. Some features may require a train set built to account for all of this.
 
-All of these use the recommended "if/else" if block to reduce the number of railtypes to the bare minimum.
+All of these use the recommended "if/else if" block to reduce the number of railtypes to the bare minimum.
