@@ -4,7 +4,7 @@
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"RAIL";
-				name:							string(STR_RAILTYPE_NAME_RAIL2004);
+				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 			}
