@@ -32,7 +32,7 @@
  // 3) Divide the number of kilocalories by 3307 for the value in (NON-arbitrary) Pounds Sterling.
  // 4) Do not confuse the arbitrary "£1" in the custom currency menu (worth 1 bread loaves) for any non-arbitrary reality-based £1 costs (worth 3307 bread loaves) you uncover when aiming for realistic pricing.
  // 5) Play with game unit speed measurement enabled for both ships and for all other vehicles, which labels the length as "tiles/sec". Tile size is assumed to be around 70' x 70' judging by the size of a passenger bus or a house, rather than any "measurements" made in-game. This means a mile is a little over 75 tiles and a kilometer about 46 tiles.
- // 6) Measure vehicle speeds by building a long straight track/road. The length of measurement must be 7 tiles AT TOP SPEED. This will give you 700 feet of speed. Divide the speed by 7 to get 
+ // 6) 1 tile per second is approximately 76 to 77 km/h, exactly 76.8096 if you need to be accurate. You can measure vehicle speeds to check this if needed by building a long straight track/road. The length of measurement must be 7 tiles AT TOP SPEED. This will give you 700 feet to fine-tune the speeds. Divide the speed by 7 to get the number of tiles passed per second.
 
 	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
