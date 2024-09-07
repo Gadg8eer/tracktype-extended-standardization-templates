@@ -1,8 +1,0 @@
-##grflangid 0x01
-
-STR_GRF_NAME                 :Example NML-Py-Patcher GRF
-STR_GRF_DESC                 :{GOLD}This is the example GRF that comes with BLUE}Star{GREEN}Raid{GOLD}'s Py-Patcher.
-
-STR_TRAIN_ONE_NAME   :Example Train 1
-STR_TRAIN_TWO_NAME   :Example Train 2
-STR_TRAIN_THREE_NAME :Example Train 3
