@@ -57,7 +57,7 @@ grf {
 	if (param_realism == 1) {
 		basecost {
 			PR_STATION_VALUE: 1;
-			PR_BUILD_RAIL: 10;
+			PR_BUILD_RAIL: 1;
 			PR_BUILD_SIGNALS: 1;
 			PR_BUILD_BRIDGE: 1;
 			PR_BUILD_DEPOT_TRAIN: 1;
