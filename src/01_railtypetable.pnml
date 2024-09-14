@@ -1,5 +1,21 @@
 /* ----------- */
-// COINs are a fictional currency based on the price of bread in the US in 2001 ($1.00 USD), with all other costs pegged by the amount of energy in loaves of bread required to build something.
+// COINs are a fictional currency based on the price of bread in the US in 2000-2001 ($1.00 USD), with all other costs informed by the amount of energy in loaves of bread required to build something. This is gameplay balanced.
+// c is 5 mph, or ~10 km/h; 1594, wooden wagonways - 6.62 COINs/tile
+// b is 10 mph, or ~15 km/h; 1594, plateways - 6.62 COINs/tile
+// a is 10 mph, or ~15 km/h; 1799, prototype rails - 6.62 COINs/tile
+// A is 15 mph, or ~25 km/h; 1800, shunting yard - 6.62 COINs/tile
+// B is 30 mph, or ~50 km/h; 1825, branch line - 10 COINs/tile
+// C is 95 mph, or ~155 km/h; 1890, bulk mineral transport - 25 COINs/tile
+// D is 105 mph, or ~170 km/h; 1904-05-04, main line - 30 COINs/tile
+// E is 125 mph, or ~200 km/h; 1930-01-01, express rail transport - 40 COINs/tile
+// F is 200 mph, or ~320 km/h; 1958-12-31, high speed line - 55 COINs/tile
+// G is 220 mph, or ~355 km/h; 2008-04-11, dedicated high speed line - 60 COINs/tile
+// H is unlimited; 2030-01-01, dedicated express high speed line - 70 COINs/tile
+/* ----------- */
+// Amps are a currency based on the price of bread in the US in 2000-2001 ($1.00 USD), with all other costs pegged to the value of the amount of energy in loaves of bread required to build something.
+// c is 5 mph, or ~10 km/h; 1594, wooden wagonways - 6.62 COINs/tile
+// b is 10 mph, or ~15 km/h; 1594, plateways - 6.62 COINs/tile
+// a is 10 mph, or ~15 km/h; 1799, prototype rails - 6.62 COINs/tile
 // A is 15 mph, or ~25 km/h; 1800, shunting yard - 6.62 COINs/tile
 // B is 30 mph, or ~50 km/h; 1825, branch line - 10 COINs/tile
 // C is 95 mph, or ~155 km/h; 1890, bulk mineral transport - 25 COINs/tile
@@ -10,8 +26,9 @@
 // H is unlimited; 2030-01-01, dedicated express high speed line - 70 COINs/tile
 /* ----------- */
  // Third letter is axle load; The following is only a set of guidelines, not a prescribed value for axle weight classes, you may deviate from it at will :)
- // SAbN [WWAY] (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
- // SAaN [LTRL] (Plateway) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+ // SAcN [WWAY] (Wooden) is maximum is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1594, only horses
+ // SAbN [LTRL] (Plateway) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1799, horses and prototype steam locos
+ // SAaN (Prototype Rails) is maximum 1 metric tonne/megagram, 1.102311 short tons, 1000 kg; available in 1820, prototype steam locos
  // SAAN is maximum 10 metric tonnes/megagrams, 11.02311 short tons, 10000 kg; available in 1828, prototype and standard gauge locos
  // SABN [RAIL] (Rail) is maximum 20 metric tonnes/megagrams, 22.04623 short tons, 20000 kg; available in 1968, meant to also be a tramtype if the two systems are ever unified
  // SA_N would be maximum 30 metric tonnes/megagrams, 33.06934 short tons, 30000 kg; available around 1978, not based on any real rail axle load class
