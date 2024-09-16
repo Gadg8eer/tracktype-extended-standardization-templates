@@ -5,7 +5,17 @@
 //=======================================================================
 //               Track Module, 2004 Vanilla
 //=======================================================================
-#include "src/train/2004ttd/0_specs/RAIL_specs.pnml"
+#include "src/train/2004ttd/0_specs/WWAY_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/WWAY_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/WWAY_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/WWAY_alternative.pnml"
+
+//#include "src/train/2004ttd/0_specs/LTRL_specs.pnml"
+//#include "src/train/2004ttd/1_compatible/LTRL_compatible.pnml"
+//#include "src/train/2004ttd/2_powered/LTRL_powered.pnml"
+//#include "src/train/2004ttd/3_alternative/LTRL_alternative.pnml"
+
+//#include "src/train/2004ttd/0_specs/RAIL_specs.pnml"
 //#include "src/train/2004ttd/1_compatible/RAIL_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/RAIL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/RAIL_alternative.pnml"
@@ -28,7 +38,7 @@
 //=======================================================================
 //               Track Module, 2012 OG Standard
 //=======================================================================
-#include "src/train/2012std/0_specs/RAIL_specs.pnml"
+//#include "src/train/2012std/0_specs/RAIL_specs.pnml"
 //#include "src/train/2012std/1_compatible/RAIL_compatible.pnml"
 //#include "src/train/2012std/2_powered/RAIL_powered.pnml"
 //#include "src/train/2012std/3_alternative/RAIL_alternative.pnml"
