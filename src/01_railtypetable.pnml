@@ -74,7 +74,6 @@
 	MONO,
 	//AH_N,
 	AH_1,
-<<<<<<< HEAD
 
 
 //--- Minimum Gauge Rail (381 mm to 508mm)
@@ -6596,7 +6595,7 @@
 //	-p_p, -pAp, -pBp, -pCp, -pDp, -pdp, -pEp,// -pFp,
 //	-q_p, -qAp, -qBp, -qCp, -qDp, -qdp, -qEp,// -qFp,
 //	-r_p, -rAp, -rBp, -rCp, -rDp, -rdp, -rEp,// -rFp,
-=======
+//=======
 	
 //--- 381 mm to 508 mm Rail (Minimum Gauge)
 	mA_N,
@@ -11256,7 +11255,6 @@
 //	"-RAp", "-RBp", "-RCp", "-RDp", "-REp", "!?Fp",
 //	"-SAp", "-SBp", "-SCp", "-SDp", "-SEp", "!?Fp",
 //	"-UAp", "-UBp", "-UCp", "-UDp", "-UEp", "!?Fp",
->>>>>>> 6b66858dc3edc7b4a3dac0982be97371ea374f19
 
 
 //--------------
@@ -11674,17 +11672,17 @@
 //	"SUA-", "SUB-", "SUC-", "SUD-", "SUE-",// "!?F-",
 //--- Electrified Rail
 	ELRL, SA_E,
-	SAAE, SABE, SACE, SADE, SAEE,",// "!AFE,
-	SBAE, SBBE, SBCE, SBDE, SBEE,",// "!BFE,
-	SCAE, SCBE, SCCE, SCDE, SCEE,",// "!CFE,
-	SDAE, SDBE, SDCE, SDDE, SDEE,",// "!DFE,
-	SEAE, SEBE, SECE, SEDE, SEEE,",// "!EFE,
-	SFAE, SFBE, SFCE, SFDE, SFEE,",// "!FFE,
-	SGAE, SGBE, SGCE, SGDE, SGEE,",// "!GFE,
-	SHAE, SHBE, SHCE, SHDE, SHEE,",// "!HFE,
-	SRAE, SRBE, SRCE, SRDE, SREE,",// "!RFE,
-//	SSAE, SSBE, SSCE, SSDE, SSEE,",// "!SFE,
-/*	SUAE, SUBE, SUCE, SUDE,*/ SUEE,",// "!UFE,
+	SAAE, SABE, SACE, SADE, SAEE,// !AFE,
+	SBAE, SBBE, SBCE, SBDE, SBEE,// !BFE,
+	SCAE, SCBE, SCCE, SCDE, SCEE,// !CFE,
+	SDAE, SDBE, SDCE, SDDE, SDEE,// !DFE,
+	SEAE, SEBE, SECE, SEDE, SEEE,// !EFE,
+	SFAE, SFBE, SFCE, SFDE, SFEE,// !FFE,
+	SGAE, SGBE, SGCE, SGDE, SGEE,// !GFE,
+	SHAE, SHBE, SHCE, SHDE, SHEE,// !HFE,
+	SRAE, SRBE, SRCE, SRDE, SREE,// !RFE,
+//	SSAE, SSBE, SSCE, SSDE, SSEE,// !SFE,
+/*	SUAE, SUBE, SUCE, SUDE,*/ SUEE,// !UFE,
 //--- Third Rail
 //	SA_3,
 //	SAA3, SAB3, SAC3, SAD3, SAE3,// !AF3,
@@ -11712,18 +11710,18 @@
 //	SSAZ, SSBZ, SSCZ, SSDZ, SSEZ,// !SFZ,
 //	SUAZ, SUBZ, SUCZ, SUDZ, SUEZ,// !UFZ,
 //--- Fourth Rail
-//	SA_,",
-//	SAA,", SAB,", SAC,", SAD,", SAE,",// "!?F,",
-//	SBA,", SBB,", SBC,", SBD,", SBE,",// "!?F,",
-//	SCA,", SCB,", SCC,", SCD,", SCE,",// "!?F,",
-//	SDA,", SDB,", SDC,", SDD,", SDE,",// "!?F,",
-//	SEA,// !?FA,", SEB,", SEC,", SED,// !?FD,", SEE,",// "!SFE,",// "!?F,",
-//	SFA,", SFB,", SFC,", SFD,", SFE,",// "!?F,",
-//	SGA,", SGB,", SGC,", SGD,", SGE,",// "!?F,",
-//	SHA,", SHB,", SHC,", SHD,", SHE,",// "!?F,",
-//	SRA,", SRB,", SRC,", SRD,", SRE,",// "!?F,",
-//	SSA,", SSB,", SSC,", SSD,", SSE,",// "!?F,",
-//	SUA,", SUB,", SUC,", SUD,", SUE,",// "!?F,",
+//	SA_4",
+//	SAA4", SAB4", SAC4", SAD4", SAE4",// "!?F4",
+//	SBA4", SBB4", SBC4", SBD4", SBE4",// "!?F4",
+//	SCA4", SCB4", SCC4", SCD4", SCE4",// "!?F4",
+//	SDA4", SDB4", SDC4", SDD4", SDE4",// "!?F4",
+//	SEA,// !?FA4", SEB4", SEC4", SED,// !?FD4", SEE4",// "!SFE4",// "!?F4",
+//	SFA4", SFB4", SFC4", SFD4", SFE4",// "!?F4",
+//	SGA4", SGB4", SGC4", SGD4", SGE4",// "!?F4",
+//	SHA4", SHB4", SHC4", SHD4", SHE4",// "!?F4",
+//	SRA4", SRB4", SRC4", SRD4", SRE4",// "!?F4",
+//	SSA4", SSB4", SSC4", SSD4", SSE4",// "!?F4",
+//	SUA4", SUB4", SUC4", SUD4", SUE4",// "!?F4",
 //--- Fourth Rail with Catenary
 //	SA_Y,
 //	SAAY, SABY, SACY, SADY, SAEY,// !?FY,
