@@ -4,9 +4,9 @@
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"WWAY";
-				name:							string(STR_SAcNTYPE_NAME_SAcN2004);
+				name:							string(STR_RAILTYPE_NAME_SAcN_2004);
 			//---
-			//	SAcNtype_flags:					bitmask(SAcNTYPE_FLAG_HIDDEN);
+			//	SAcNtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 			}
 		}
 	}
