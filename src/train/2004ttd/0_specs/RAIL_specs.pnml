@@ -1,4 +1,4 @@
-	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
+﻿	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
@@ -26,10 +26,10 @@
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// 21890 AmpHours (6.62 loaves of bread) per ~75-100 feet for basic rail
-				construction_cost:				4; // In units of 16 ₿readslices (1.6 ₿readloaves) per ~75-100 feet per 75 second gamehour period
-			// 1326 AmpHours (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
-				maintenance_cost:				1; // In units of 50 ₿readslices (5 ₿readloaves) per ~75-100 feet per 75 second gamehour period
+			// 21890 Amp•Hours (6.62 loaves of bread) per ~75-100 feet for basic rail
+				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
+			// 1326 Amp•Hours (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
+				maintenance_cost:				1; // In units of ₳,1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
