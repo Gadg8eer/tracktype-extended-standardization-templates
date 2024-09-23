@@ -31,7 +31,7 @@
  // 1 loaf is equal to ~1500 nutritional calories (1.5 million heat calories), or ~6,275 kA•h (6,276,000 Amps), of energy. You will need 4 loaves for paying 4 people, per hour, for 16 hours. That's 64 loaves of bread, equal to 96,000 nutritional calories, or ~401,664 kA•h (6,276,000 Amps), of energy to lay one tile of wooden wagonway.
  
  // If a worker is a tradesman (someone like Richard Threvick who pioneered iron plateways or "SAbN"), expect to pay 2 loaves per person every hour (2.5 seconds irl) for 8 hours (20 minutes) to lay a single tile (112.5 of plateway.
- // Since construction is instantaneous, we're relying on an inability to pause in multiplayer for this to make partial sense. While stretching construction over 40 real minutes can't be done, the cost is the point.
+ // Since construction is instantaneous, we're relying on an inability to pause in multiplayer for this to make partial sense, i.e. you divide a more reasonable number like cost-per-mile by the amount of hours needed to complete the construction of 1 mile of track. While stretching construction over 40 real minutes can't be done, the cost is the point.
  // 1 loaf is equal to ~1500 nutritional calories (1.5 million heat calories), or ~6,275 kA•h (6,276,000 Amps), of energy. You will need 10 loaves for paying 5 people, per hour, for 8 hours. That's 80 loaves of bread, equal to 120,000 nutritional calories, or ~502,080 kA•h (502,080,000 Amp•Hours), of energy to lay one tile of plateway.
  // You will also need iron plate to lay the track, adding 
  
