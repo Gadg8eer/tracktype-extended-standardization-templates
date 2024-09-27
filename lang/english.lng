@@ -337,9 +337,9 @@ STR_RAILTYPE_NAME_SDFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axl
 STR_RAILTYPE_NAME_SEFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SFFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SGFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_RAIL_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_RAIL_2024										:1432mm to 1435mm{BLACK} - {PURPLE}(SHOULD BE HIDDEN TYPE, PLEASE FIX)
+STR_RAILTYPE_NAME_SHFN_2024										:1432mm to 1435mm{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+
 STR_RAILTYPE_NAME_SKFN_2024										:1432mm to 1435mm, Rack Rail{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SLFN_2024										:1432mm to 1435mm, Rack Rail{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SMFN_2024										:1432mm to 1435mm, Rack Rail{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
@@ -357,174 +357,174 @@ STR_RAILTYPE_NAME_SpFN_2024										:1432mm to 1435mm, Rack-Only Locomotive{BLA
 STR_RAILTYPE_NAME_SqFN_2024										:1432mm to 1435mm, Rack-Only Locomotive{BLACK} - {RED}DO NOT MAKE BUILDABLE!
 STR_RAILTYPE_NAME_SrFN_2024										:1432mm to 1435mm, Rack-Only Locomotive{BLACK} - {RED}DO NOT MAKE BUILDABLE!
 ### ELRL
-STR_RAILTYPE_NAME_SAA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SEA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHA!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SMA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SNA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRA!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SAB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SEB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHB!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SMB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SNB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRB!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SAC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SEC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHC!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SMC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SNC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRC!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SAD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SED!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHD!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SMD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SND!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRD!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SAd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SBd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SCd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SDd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SEd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SFd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SGd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SHd!_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
-STR_RAILTYPE_NAME_SKd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SLd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SMd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SNd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SOd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SPd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SQd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SRd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Skd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Sld!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Smd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Snd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Sod!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Spd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Sqd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_Srd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
-STR_RAILTYPE_NAME_SAE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SEE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHE!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SME!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SNE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRE!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SAF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SBF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SCF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SDF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SEF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SFF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SGF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SHF!_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SKF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SLF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SMF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SNF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SOF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SPF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SQF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SRF!_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_SkF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SlF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SmF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SnF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SoF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SpF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SqF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
-STR_RAILTYPE_NAME_SrF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHAE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRAE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrAE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SABE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHBE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRBE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrBE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SACE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SECE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHCE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRCE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrCE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SADE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHDE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SODE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRDE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrDE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SBdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SCdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SDdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SEdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SFdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SGdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SHdE_2024										:{GRAY}Standard Gauge Car with better axles, Catenary (Universal AC/DC){BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SKdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SLdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SMdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SNdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SOdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SPdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SQdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SRdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SkdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SldE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SmdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SndE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SodE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SpdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SqdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SrdE_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, Catenary (Universal AC/DC){BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SAEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHEE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQEE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SREE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrEE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHFE_2024										:1432mm to 1435mm, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRFE_2024										:1432mm to 1435mm, Rack Rail, Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrFE_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), Catenary (Universal AC/DC){BLACK} - {RED}DO NOT MAKE BUILDABLE!
 ### MTRO, MTR0
 STR_RAILTYPE_NAME_SAA3_2024										:1432mm to 1435mm, 3rd Rail (750v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SBA3_2024										:1432mm to 1435mm, 3rd Rail (750v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
@@ -867,7 +867,6 @@ STR_RAILTYPE_NAME_SqFZ_2024										:1432mm to 1435mm Gauge Rack-Only Locomotiv
 STR_RAILTYPE_NAME_SrFZ_2024										:1432mm to 1435mm Gauge Rack-Only Locomotive, 3rd Rail (750v) & Catenary (Universal AC/DC){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 
 ### SHF4
-STR_RAILTYPE_NAME_SAA4_2024										:1432mm to 1435mm, 4th Rail (630v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SAA4_2024										:1432mm to 1435mm, 4th Rail (630v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SBA4_2024										:1432mm to 1435mm, 4th Rail (630v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SCA4_2024										:1432mm to 1435mm, 4th Rail (630v){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
@@ -1375,7 +1374,6 @@ STR_RAILTYPE_NAME_SpFT_2024										:1432mm to 1435mm Gauge Rack-Only Locomotiv
 STR_RAILTYPE_NAME_SqFT_2024										:1432mm to 1435mm Gauge Rack-Only Locomotive, Three-phase (AC Omni-Voltage){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SrFT_2024										:1432mm to 1435mm Gauge Rack-Only Locomotive, Three-phase (AC Omni-Voltage){BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 ### SHFA
-STR_RAILTYPE_NAME_SAAA_2024										:1432mm to 1435mm, Catenary (25kV AC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SAAA_2024										:1432mm to 1435mm, Catenary (25kV AC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SBAA_2024										:1432mm to 1435mm, Catenary (25kV AC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SCAA_2024										:1432mm to 1435mm, Catenary (25kV AC){BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
