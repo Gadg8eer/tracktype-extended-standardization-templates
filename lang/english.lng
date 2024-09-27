@@ -1,4 +1,4 @@
-##grflangid 0x00
+﻿##grflangid 0x00
 STR_GRF_NAME													:Tracktype Extended Standardization Templates r1
 STR_GRF_DESC													:Planned out by the OpenTTD community. Compiled by Gadg8eer. GPL v2, no graphics included.
 STR_WEBSITE														:https://github.com/Gadg8eer/tracktype_standards_module
@@ -30,8 +30,8 @@ STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
 # 2004
 STR_RAILTYPE_NAME_RAIL_2004										:1432mm to 1435mm
 STR_RAILTYPE_NAME_ELRL_2004										:1432mm to 1435mm, Universal Catenary
-STR_RAILTYPE_NAME_MONO_2004										:Monorail, Universal Ground Electrification
-STR_RAILTYPE_NAME_MGLV_2004										:Maglev, Universal System
+STR_RAILTYPE_NAME_MONO_2004										:ALWEG Monorail, Universal Ground Electrification
+STR_RAILTYPE_NAME_MGLV_2004										:SCMaglev, Universal System
 ### Early Rail Set
 ### WWAY = SAcN
 STR_RAILTYPE_NAME_WWAY_2004										:Wagonway{BLACK} - {WHITE}Max. {VELOCITY}

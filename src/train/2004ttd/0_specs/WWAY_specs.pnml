@@ -4,7 +4,7 @@
 		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"WWAY";
-				name:							string(STR_RAILTYPE_NAME_SAcN_2004);
+				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 			}
@@ -21,8 +21,8 @@
 			property {
 				label:							"WWAY";
 				introduction_date:				1594/01/01;
-				name:							string(STR_RAILTYPE_NAME_SAcN_2004);
-				//toolbar_caption:				string(STR_RAILTYPE_NAME_SAcN_2004);
+				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_WWAY_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds

@@ -1,5 +1,5 @@
-﻿if(((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
-	//-- Standard Gauge, Future-Proofed Tracks
+	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
@@ -14,8 +14,8 @@
  /* REALISM MODE VERSION */
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
 
-if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
-	//-- Standard Gauge, Future-Proofed Tracks
+	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {

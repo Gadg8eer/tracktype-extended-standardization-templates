@@ -1,4 +1,3 @@
-﻿
 	if (((param_axle_weight == 1 && param_realism == 0) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
