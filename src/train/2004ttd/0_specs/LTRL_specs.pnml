@@ -25,11 +25,12 @@
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_SAcN_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳13,240 Amp•Hours irl (6.62 loaves of bread) per ~110 feet or ~34.5 meters for wagonway
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
-			// ₳1,324 Amp•Hours/year in-game (.662 loaves of bread) per ~110 feet or ~34.5 meters (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				1; // In units of ₳1,600 Amp•Hours per tile per irl day
+			// ₳753,133,240 Amp•Hours irl per ~110 feet or ~34.5 meters of wagonway
+				construction_cost:				45968; // In units of ₳16,384 Amp•Hours per tile
+			// ₳75,313,324 ×  Amp•Hours/year in-game per ~110 feet or ~34.5 meters (exactly 112.644 feet for reference) per 1440 minutes
+				maintenance_cost:				47071 / 360; // In units of ₳1,600 Amp•Hours per tile per game day
 			}
 		}
 	}
