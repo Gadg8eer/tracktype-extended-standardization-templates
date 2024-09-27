@@ -1,6 +1,5 @@
-﻿
-	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Future-Proofed Tracks
+﻿if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+	//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
@@ -15,8 +14,8 @@
  /* REALISM MODE VERSION */
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
 
-	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Future-Proofed Tracks
+if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+	//-- Standard Gauge, Future-Proofed Tracks
 		// "RAIL"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
@@ -26,10 +25,11 @@
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ₳21890 Amp•Hours (6.62 loaves of bread) per ~75-100 feet for basic rail
+			// ~₳? Amp•Hours per ~75-100 feet for basic rail
 				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
-			// ~₳5548 Amp•Hours (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
+			// ~₳? Amp•Hours per ~75-100 feet per 24 realminute/gamehour period
 				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
