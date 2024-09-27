@@ -1,0 +1,41 @@
+﻿
+	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("MONO") && loading_stage == LOADING_STAGE_RESERVE)) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "MONO"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"MONO";
+				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if ((param_axle_weight == 0 && param_realism == 1) && railtype_available("MONO") && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "MONO"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"MONO";
+				introduction_date:				1954/07/16;
+				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_MONO_2004);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+			// ~₳145,407,509,164,700 Amp•Hours per ~75-100 feet for monorail
+				construction_cost:				(33856 × (65535 × 65535)); // In units of ₳16,384 Amp•Hours per tile
+			// ~₳14,540,750,916,470 Amp•Hours per ~75-100 feet per 24 realminute/gamehour period
+				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
+			}
+		}
+	}
+
+$1,193,181.82
+
+3475322867.853796
