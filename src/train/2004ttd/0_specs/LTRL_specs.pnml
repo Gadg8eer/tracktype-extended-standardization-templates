@@ -1,6 +1,6 @@
 	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Wagonway Tracks
-		// "SAcN"
+		//-- Standard Gauge, Plateway Tracks
+		// "LTRL"/"SAbN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"LTRL";
@@ -15,8 +15,8 @@
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
 
 	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Wooden Wagonway
-		// "SAcN"
+		//-- Iron Plateway
+		// "LTRL"/"SAbN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"LTRL";
@@ -26,10 +26,14 @@
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳753,133,240 Amp•Hours irl per ~110 feet or ~34.5 meters of wagonway
+			// ₳753,133,240 Amp•Hours irl per 21.336 metres of wagonway
+			// +0% for electrification = ₳0
 				construction_cost:				45968; // In units of ₳16,384 Amp•Hours per tile
-			// ₳75,313,324 ×  Amp•Hours/year in-game per ~110 feet or ~34.5 meters (exactly 112.644 feet for reference) per 1440 minutes
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 Amp•Hours
+			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
 				maintenance_cost:				47071 / 360; // In units of ₳1,600 Amp•Hours per tile per game day
 			}
 		}
