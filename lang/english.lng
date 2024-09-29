@@ -23,7 +23,7 @@ STR_ERROR_AXLE_WEIGHT_TRIGGER_ERROR								:Debug Message (Don't use!)
 STR_ERROR_AXLE_WEIGHT_ERROR										:Uh oh! Looks like you encountered a bug! This message is to reveal that the result of setting the axle weight parameter to the option you're using has somehow caused this error. Please contact Gadg8eer via, or modify the source code found at, the GRF's website to get it updated. {GREEN}Or, if you purposefully chose the Debug Message option for axle weight, just select another option and start a new game and this should work.{BLACK}
 
 STR_PARAM_FORCE_REALISM_NAME									:Force true-to-life tracktype stats?
-STR_PARAM_FORCE_REALISM_DESC									:Assumes that ALL of the following are true...{}{}a) a custom currency with an exchange rate of 1 = £1 (to maximize the currency resolution) and price everything as if a loaf of bread/2,000,000 calories/2000 food calories equals £100. This will mean GRFs created before this GRF are not balanced for use with it. To calculate stats for vehicles for a parameter that enables a compatibility mode, you should treat the single pound unit as equal to $0.01 USD, and price according to the energy required to build/maintain a vehicle. For reference, the bread price of $1.00 USD in 2000 is used to peg costs to the price of energy (2006 kilocalories per loaf) regardless of time and space by comparing a household staple{}c) inflation is turned off{}d) one tile is considered{BLACK} - based on vanilla bus lengths{BLACK} - to be ~75-100 feet long and ~75-100 feet wide{}e) this mod is loaded AFTER all train sets and tracktype sets in the GRF list.{}{}This option modifies the stats of all auto-detected railtypes to stats heavily researched via wikipedia and the internet, and is not tested for balance. {RED}Use at your own risk!
+STR_PARAM_FORCE_REALISM_DESC									:Assumes that ALL of the following are true...{}{}a) a custom currency with an exchange rate of 1 = £1 (to maximize the currency resolution) and price everything as if a loaf of bread/2,000,000 calories/2000 food calories equals £100. This will mean GRFs created before this GRF are not balanced for use with it. To calculate stats for vehicles for a parameter that enables a compatibility mode, you should treat the single pound unit as equal to $0.01 USD, and price according to the energy required to build/maintain a vehicle. For reference, the bread price of $1.00 USD in 2000 is used to peg costs to the price of energy (2006 kilocalories per loaf) regardless of time and space by comparing a household staple{}c) inflation is turned off{}d) one tile is considered{BLACK} - based on vanilla bus lengths{BLACK} - to be 21.336 metres long and 21.336 metres wide{}e) this mod is loaded AFTER all train sets and tracktype sets in the GRF list.{}{}This option modifies the stats of all auto-detected railtypes to stats heavily researched via wikipedia and the internet, and is not tested for balance. {RED}Use at your own risk!
 STR_PARAM_NOT_FORCE_REALISM										:(Default) No, thank you!
 STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
 
@@ -23221,13 +23221,12 @@ STR_RAILTYPE_NAME_GUF1_2024										:Urban Gyrorail{BLACK} - {BLUE}∞t p/axle{
 ##### Maglevs
 ### MGLV_2024 = LHFI_2024
 STR_RAILTYPE_NAME_MGLV_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
+# LHFS ("M-Bahn" German/Chinese Maglev)
+STR_RAILTYPE_NAME_LBAS_2024										:M-Bahn, Prototype{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_LHFS_2024										:M-Bahn{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 ### LHFI
 # SCMaglev ("TTD-style" Japanese Maglev)
-STR_RAILTYPE_NAME_LCEI_2024										:SCMaglev Prototype Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_LDFI_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_LEFI_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_LFFI_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
-STR_RAILTYPE_NAME_LGFI_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_LCAI_2024										:SCMaglev Prototype Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_LHFI_2024										:SCMaglev Guideway{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 # THFS ("Transrapid" German/Chinese Maglev)
 STR_RAILTYPE_NAME_TAES_2024										:Prototype Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
@@ -23245,5 +23244,3 @@ STR_RAILTYPE_NAME_TEFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLA
 STR_RAILTYPE_NAME_TFFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_TGFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_THFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
-# LHFS ("M-Bahn" German/Chinese Maglev)
-STR_RAILTYPE_NAME_LBFS_2024										:M-Bahn Prototype Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
