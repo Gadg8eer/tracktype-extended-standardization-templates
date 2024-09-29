@@ -10,7 +10,7 @@
 //#include "src/train/2004ttd/2_powered/WWAY_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/WWAY_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/LTRL_specs.pnml"
+#include "src/train/2004ttd/0_specs/LTRL_specs.pnml"
 //#include "src/train/2004ttd/1_compatible/LTRL_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/LTRL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/LTRL_alternative.pnml"
@@ -20,12 +20,12 @@
 //#include "src/train/2004ttd/2_powered/RAIL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/RAIL_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/ELRL_specs.pnml"
+#include "src/train/2004ttd/0_specs/ELRL_specs.pnml"
 //#include "src/train/2004ttd/1_compatible/ELRL_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/ELRL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/ELRL_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/MONO_specs.pnml"
+#include "src/train/2004ttd/0_specs/MONO_specs.pnml"
 //#include "src/train/2004ttd/1_compatible/MONO_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/MONO_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/MONO_alternative.pnml"
