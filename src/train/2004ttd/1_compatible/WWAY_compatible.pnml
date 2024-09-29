@@ -1,4 +1,4 @@
-	if ((param_realism == 1 && loading_stage == LOADING_STAGE_RESERVE)) {
+	if (param_realism == 0 && (railtype_available("WWAY") && loading_stage == LOADING_STAGE_RESERVE)) {
 		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
 			property {
 				compatible_railtype_list:		[
