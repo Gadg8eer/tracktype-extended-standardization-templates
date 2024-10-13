@@ -57,7 +57,7 @@ grf {
 	if (param_realism == 1) {
 		basecost {
 			PR_STATION_VALUE: 1;
-			PR_BUILD_RAIL: 10; //Units of ~₳16384 Amp•Hours
+			PR_BUILD_RAIL: 1; // Units of ~₳64 Amp•Hours to the power of 10
 			PR_BUILD_SIGNALS: 1;
 			PR_BUILD_BRIDGE: 1;
 			PR_BUILD_DEPOT_TRAIN: 1;
@@ -73,7 +73,7 @@ grf {
 			PR_BUILD_WAYPOINT_RAIL: 1;
 			PR_CLEAR_WAYPOINT_RAIL: 1;
 			PR_BUILD_FOUNDATION: 1;
-			PR_MAINTENANCE_RAIL: 1; //Units of ~₳12 Amp•Hours
+			PR_MAINTENANCE_RAIL: 1; // Units of ~₳12 Amp•Hours
 			PR_MAINTENANCE_STATION: 1;
 		}
 	}
