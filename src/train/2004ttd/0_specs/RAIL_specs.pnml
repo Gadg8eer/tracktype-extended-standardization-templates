@@ -30,12 +30,12 @@
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
 			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
 			// +0% for electrification = ₳0
-				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
 			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
 			// DOESN'T HAVE ELECTRIFICATION!
 			// ~₳0 Amp•Hours
 			// TOTAL: ₳602,506,592 Amp•Hours
-				maintenance_cost:				(9193 × (1 × 65535)) / 24; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
