@@ -35,7 +35,7 @@
 			// DOESN'T HAVE ELECTRIFICATION!
 			// ~₳0 Amp•Hours
 			// TOTAL: ₳602,506,592 Amp•Hours
-				maintenance_cost:				(9193 × (1 × 65535)) / 360; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				(9193 × (1 × 65535)) / 24; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
