@@ -4,7 +4,7 @@
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"LTRL";
-				name:							string(STR_RAILTYPE_NAME_SAcN_2004);
+				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 			}
@@ -21,8 +21,8 @@
 			property {
 				label:							"LTRL";
 				introduction_date:				1799/06/31;
-				name:							string(STR_RAILTYPE_NAME_SAcN_2004);
-				//toolbar_caption:				string(STR_RAILTYPE_NAME_SAcN_2004);
+				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_LTRL_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
