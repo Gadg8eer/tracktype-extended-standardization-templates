@@ -60,7 +60,7 @@ grf {
 	if (param_realism == 1) {
 		basecost {
 			PR_STATION_VALUE: 1;
-			PR_BUILD_RAIL: 10; //Units of ~16384 Amp¤Hours
+			PR_BUILD_RAIL: 1; // Units of ~₳64 Amp•Hours to the power of 10
 			PR_BUILD_SIGNALS: 1;
 			PR_BUILD_BRIDGE: 1;
 			PR_BUILD_DEPOT_TRAIN: 1;
@@ -76,7 +76,7 @@ grf {
 			PR_BUILD_WAYPOINT_RAIL: 1;
 			PR_CLEAR_WAYPOINT_RAIL: 1;
 			PR_BUILD_FOUNDATION: 1;
-			PR_MAINTENANCE_RAIL: 5; //Units of ~1600 Amp¤Hours
+			PR_MAINTENANCE_RAIL: 1; // Units of ~₳12 Amp•Hours
 			PR_MAINTENANCE_STATION: 1;
 		}
 	}
@@ -16437,7 +16437,7 @@ train_width_32_px = 1;
 # 1 "src/train/2004ttd/0_specs/WWAY_specs.pnml" 1
 	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Wagonway Tracks
-		// "SAcN"
+		// "WWAY"/"SAcN"
 		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"WWAY";
@@ -16453,7 +16453,7 @@ train_width_32_px = 1;
 
 	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Wooden Wagonway
-		// "SAcN"
+		// "WWAY"/"SAcN"
 		item(FEAT_RAILTYPES, railtype_earlyrail_wagonway_1metrictonne_selfpower) {
 			property {
 				label:							"WWAY";
@@ -16463,11 +16463,16 @@ train_width_32_px = 1;
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳13,240 Amp•Hours irl (6.62 loaves of bread) per ~110 feet or ~34.5 meters for wagonway
+			// ₳13,240 Amp•Hours irl (6.62 loaves of bread) per 21.336 metres for wagonway
+			// +0% for electrification = ₳0
 				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
-			// ₳1,324 Amp•Hours/year in-game (.662 loaves of bread) per ~110 feet or ~34.5 meters (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				1 / 360; // In units of ₳1,600 Amp•Hours per tile per irl day
+			// ₳1,324 Amp•Hours/year in-game (.662 loaves of bread) per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 Amp•Hours
+			// TOTAL: ~₳1,324 Amp•Hours
+				maintenance_cost:				1; // In units of ₳12 Amp•Hours per tile per irl day
 			}
 		}
 	}
@@ -16476,7 +16481,48 @@ train_width_32_px = 1;
 //#include "src/train/2004ttd/2_powered/WWAY_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/WWAY_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/LTRL_specs.pnml"
+# 1 "src/train/2004ttd/0_specs/LTRL_specs.pnml" 1
+	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Plateway Tracks
+		// "LTRL"/"SAbN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
+			property {
+				label:							"LTRL";
+				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Iron Plateway
+		// "LTRL"/"SAbN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"LTRL";
+				introduction_date:				1799/06/31;
+				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_LTRL_2004);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
+				curve_speed_multiplier:			0.125; // Very low speeds
+			// ₳753,133,240 Amp•Hours irl per 21.336 metres of wagonway
+			// +0% for electrification = ₳0
+				construction_cost:				45968; // In units of ₳16,384 Amp•Hours per tile
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 Amp•Hours
+			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
+				maintenance_cost:				47071 / 24; // In units of ₳1,600 Amp•Hours per tile per game day
+			}
+		}
+	}
+# 1 "mod_sr_compat_set.pnml" 2
 //#include "src/train/2004ttd/1_compatible/LTRL_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/LTRL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/LTRL_alternative.pnml"
@@ -16484,7 +16530,7 @@ train_width_32_px = 1;
 # 1 "src/train/2004ttd/0_specs/RAIL_specs.pnml" 1
 	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "RAIL"
+		// "RAIL"/"SHEN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"RAIL";
@@ -16500,21 +16546,26 @@ train_width_32_px = 1;
 
 	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "RAIL"
+		// "RAIL"/"SHEN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"RAIL";
-				introduction_date:				1825/04/01;
+				introduction_date:				1821/04/19;
 				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
-				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
+				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳? Amp•Hours per ~75-100 feet for basic rail
-				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
-			// ~₳? Amp•Hours per ~75-100 feet per 24 realminute/gamehour period
-				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
+			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// +0% for electrification = ₳0
+				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 Amp•Hours
+			// TOTAL: ₳602,506,592 Amp•Hours
+				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
@@ -16523,12 +16574,96 @@ train_width_32_px = 1;
 //#include "src/train/2004ttd/2_powered/RAIL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/RAIL_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/ELRL_specs.pnml"
+# 1 "src/train/2004ttd/0_specs/ELRL_specs.pnml" 1
+	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "ELRL"/"SHEE"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"ELRL";
+				name:							string(STR_RAILTYPE_NAME_ELRL_2004);
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "ELRL"/"SHEE"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"ELRL";
+				introduction_date:				1895/01/01;
+				name:							string(STR_RAILTYPE_NAME_ELRL_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_ELRL_2004);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					500 km/h; // SA_N - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// +10% for electrification = ₳6,627,572,512
+				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+			// ~₳662,757,251 Amp•Hours per 21.336 metres per 21.336 metres per 24 realminute/gamehour period
+			// ALSO REQUIRES ELECTRICITY!
+			// ~₳2,160,000,000 Amp•Hours
+			// TOTAL: ~₳2,762,506,592 Amp•Hours
+				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+			}
+		}
+	}
+# 1 "mod_sr_compat_set.pnml" 2
 //#include "src/train/2004ttd/1_compatible/ELRL_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/ELRL_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/ELRL_alternative.pnml"
 
-//#include "src/train/2004ttd/0_specs/MONO_specs.pnml"
+# 1 "src/train/2004ttd/0_specs/MONO_specs.pnml" 1
+	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "MONO"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"MONO";
+				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "MONO"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"MONO";
+				introduction_date:				1954/07/16;
+				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_MONO_2004);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_MONORAIL;
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+			// ~₳145,407,509,164,700 Amp•Hours per 21.336 metres for monorail
+			// +0% for tunnel = ₳0
+				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+			// ~₳14,540,750,916,470 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+			// ALWAYS INCLUDES ELECTRIFICATION!
+			// ~₳600,000 Amp•Hours
+			// TOTAL: ~₳14,540,751,516,470 Amp•Hours
+				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+			}
+		}
+	}
+# 1 "mod_sr_compat_set.pnml" 2
 //#include "src/train/2004ttd/1_compatible/MONO_compatible.pnml"
 //#include "src/train/2004ttd/2_powered/MONO_powered.pnml"
 //#include "src/train/2004ttd/3_alternative/MONO_alternative.pnml"
@@ -16542,15 +16677,15 @@ train_width_32_px = 1;
 //               Track Module, 2012 OG Standard
 //=======================================================================
 # 1 "src/train/2012std/0_specs/RAIL_specs.pnml" 1
-	if (((param_axle_weight == 1 && param_realism == 0) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
+	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "RAIL"
+		// "RAIL"/"SHEN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"RAIL";
-				name:							string(STR_RAILTYPE_NAME_RAIL_2012);
+				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
 			//---
-				railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 			}
 		}
 	}
@@ -16558,22 +16693,28 @@ train_width_32_px = 1;
  /* REALISM MODE VERSION */
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
 
-	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("RAIL")) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Future-Proofed Tracks
-		// "RAIL"
+	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Prototype Tracks
+		// "RAIL"/"SHEN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"RAIL";
-				introduction_date:				1825/04/01;
-				name:							string(STR_RAILTYPE_NAME_RAIL_2012);
-				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2012);
+				introduction_date:				1821/04/19;
+				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2004);
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// 21890 Amp•Hours (6.62 loaves of bread) per ~75-100 feet for basic rail
-				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
-			// ~5548 Amp•Hours (.662 loaves of bread) per ~75-100 feet per 24 realminute/gamehour period
-				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
+			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// +0% for electrification = ₳0
+				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 Amp•Hours
+			// TOTAL: ₳602,506,592 Amp•Hours
+				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
