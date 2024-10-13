@@ -34,7 +34,7 @@
 			// DOESN'T HAVE ELECTRIFICATION!
 			// ~₳0 Amp•Hours
 			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				47071 / 360; // In units of ₳1,600 Amp•Hours per tile per game day
+				maintenance_cost:				47071 / 24; // In units of ₳1,600 Amp•Hours per tile per game day
 			}
 		}
 	}
