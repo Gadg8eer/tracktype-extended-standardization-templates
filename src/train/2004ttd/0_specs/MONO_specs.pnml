@@ -36,7 +36,7 @@
 			// ALWAYS INCLUDES ELECTRIFICATION!
 			// ~₳600,000 Amp•Hours
 			// TOTAL: ~₳14,540,751,516,470 Amp•Hours
-				maintenance_cost:				3386 × ((1 × 65535) × 65535) / 360 ; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				3386 × ((1 × 65535) × 65535) / 24 ; // In units of ₳1600 Amp•Hours per tile per irl day
 			}
 		}
 	}
