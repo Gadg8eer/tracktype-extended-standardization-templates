@@ -28,14 +28,14 @@
 				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
 				acceleration_model:				ACC_MODEL_MONORAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳145,407,509,164,700 Amp•Hours per 21.336 metres for monorail
+			// ~₳145,407,509,164,700 kA•h per 21.336 metres for monorail
 			// +0% for tunnel = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
-			// ~₳14,540,750,916,470 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
+			// ~₳14,540,750,916,470 kA•h per 21.336 metres per 24 realminute/gamehour period
 			// ALWAYS INCLUDES ELECTRIFICATION!
-			// ~₳600,000 Amp•Hours
-			// TOTAL: ~₳14,540,751,516,470 Amp•Hours
-				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+			// ~₳600,000 kA•h
+			// TOTAL: ~₳14,540,751,516,470 kA•h
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
