@@ -28,14 +28,14 @@
 				speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳13,240 Amp•Hours irl (6.62 loaves of bread) per 21.336 metres for wagonway
+			// ₳13,240 kA•h irl (6.62 loaves of bread) per 21.336 metres for wagonway
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳13,807 kA•h for onetrack section of 10.668 metres (1/2 tile) to 21.336 metres
 			// ₳1,324 Amp•Hours/year in-game (.662 loaves of bread) per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 Amp•Hours
+			// ~₳0 kA•h
 			// TOTAL: ~₳1,324 Amp•Hours
-				maintenance_cost:				1; // In units of ₳12 Amp•Hours per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳3,450 kA•h per tile per irl day
 			}
 		}
 	}

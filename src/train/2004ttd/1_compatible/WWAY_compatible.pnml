@@ -5420,8 +5420,8 @@
 				// This includes a set of cheat railtypes listed below.
 				//
 				// You will notice that there is very little in the railtypetable for the modules.
-				// Railtypetable and its roadtype/tramtype equivalents					"reserve" all types in the table.
-				// The compatible_railtype_list, powered_railtype_list and alternative_railtype_list DO NOT					"reserve" ANY types listed within.
+				// Railtypetable and its roadtype/tramtype equivalents "reserve" all types in the table.
+				// The compatible_railtype_list, powered_railtype_list and alternative_railtype_list DO NOT	"reserve" ANY types listed within.
 				// Railtype lists still function without any reservations. The game detects listed labels and ignores unused ones automatically.
 				// Only 64 railtypes can be reserved per game. This is unlikely to change.
 				// If it does, it will likely mean a huge change to the interface because of the sheer number of railtypes that 64 is when menu-based.
@@ -5429,13 +5429,13 @@
 				// Remember this, there will be a test.
 				//
 				// 4 railtypes are reserved by default; RAIL (railway/railroad, duh), ELRL (electrified rail), MONO (monorail) and MGLV (TTD-style maglev).
-				// The equivalents to these in the 2024					"Fixed", Standardized Railtype scheme are SHFN (RAIL), SHFE (ELRL), MHF1 (MONO) and LHFI (MGLV).
+				// The equivalents to these in the 2024	"Fixed", Standardized Railtype scheme are SHFN (RAIL), SHFE (ELRL), MHF1 (MONO) and LHFI (MGLV).
 				// SHEN and SHFN, SHEE and SHFE, MHE1/MHF1 and LHEI/LHFI are NOT reserved.
 				//
 				// The reservations for rail vehicles should be instead directed to SA?N, SA?E, MA?1 and LA?I respectively, but...
-				// ...replace the					"?", with					"A", through					"E", to define axle weight for ALL rail vehicles in your train set!
+				// ...replace the "?", with	"A", through "E", to define axle weight for ALL rail vehicles in your train set!
 				// ...and don't forget to replace the A to the left of the axle weight with an R if the locomotive has rack rail capability, or a lowercase r if the locomotive can ONLY function on racked rails! If the rack rail is required for an electrified tracktype, use Sr?E or the relevant electrification type!
-				// (To define the axle weight, see the included axle_guidelines.txt;					"_", is available if you can't be bothered)
+				// (To define the axle weight, see the included axle_guidelines.txt; "_", is available if you can't be bothered)
 				// SA_N, SA_E, MA_1 and LA_I are ALSO NOT reserved. Those should only be reserved as needed by the train set.
 				//
 				// The reservations are only for SAAN, SAAE, MAA1 and LAAI...
@@ -5443,7 +5443,7 @@
 				// POWERED on _AAp through _AFp, _AAE through _AFE, _AA1 through _AF1, and _AAI through _AFI respectively.
 				//
 				// "_R_t", is NOT a potential cheat, but a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
-				// "_R_t", is for curved trench					"tunnels", to be disguised by anything with a foundation; railtypes, road/tramway, buildings, etc.
+				// "_R_t", is for curved trench	"tunnels" to be disguised by anything with a foundation; railtypes, road/tramway, buildings, etc.
 				//
 				// Now imagine that instead of only adding the bare minimum necessary railtypes, that this module also reserved them by including a full railtypetable...
 				// Well, if you did, you'd get an error about the game trying to access an invalid sprite when loading one or more of your railtype GRFs. Or if you are using the (planned) NRT version of this module, when loading one or more of your roadtype/tramtype GRFs.
@@ -5452,7 +5452,7 @@
 				//
 				// If you passed this test, OpenTTD should load all GRFs without sprite access errors when starting a game by randomly generating a new game map.
 				// To do so, do your best to minimize reserving labels via the typetables, and rely on type_lists instead of hidden types for compatibility. That is all, thank you for rereading this crash course.
-				// Go ahead and refer to the railtypes in or otherwise use this file, potentially with a parameter to support the original 2012 version of the standard (simpler, less extensive) and the 2022					"Innsbrook", collection as alternatives, to make your own tracktype graphics or rolling stock GRFs!
+				// Go ahead and refer to the railtypes in or otherwise use this file, potentially with a parameter to support the original 2012 version of the standard (simpler, less extensive) and the 2022 "Innsbrook" collection as alternatives, to make your own tracktype graphics or rolling stock GRFs!
 			/*------------------*/
 			/* YOU MAY CONTINUE */
 			/*==================*/
