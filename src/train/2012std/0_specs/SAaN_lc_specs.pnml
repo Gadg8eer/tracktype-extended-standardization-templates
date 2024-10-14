@@ -33,7 +33,7 @@
 				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
 			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ₳602,506,592 Amp•Hours
+			// ₳602,506,592 Amp•Hours per gameyear/realday
 				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
 			//---
 				station_graphics:				RAILTYPE_STATION_NORMAL;
