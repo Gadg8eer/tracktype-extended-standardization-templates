@@ -59,25 +59,32 @@ grf {
 
 	if (param_realism == 1) {
 		basecost {
-			PR_STATION_VALUE: 1;
-			PR_BUILD_RAIL: 1; // Units of ~₳64 Amp•Hours to the power of 10
-			PR_BUILD_SIGNALS: 1;
-			PR_BUILD_BRIDGE: 1;
-			PR_BUILD_DEPOT_TRAIN: 1;
-			PR_BUILD_TUNNEL: 1;
-			PR_BUILD_STATION_RAIL: 1;
-			PR_BUILD_STATION_RAIL_LENGTH: 1;
-			PR_CLEAR_RAIL: 1;
-			PR_CLEAR_SIGNALS: 1;
-			PR_CLEAR_BRIDGE: 1;
-			PR_CLEAR_DEPOT_TRAIN: 1;
-			PR_CLEAR_TUNNEL: 1;
-			PR_CLEAR_STATION_RAIL: 1;
-			PR_BUILD_WAYPOINT_RAIL: 1;
-			PR_CLEAR_WAYPOINT_RAIL: 1;
-			PR_BUILD_FOUNDATION: 1;
-			PR_MAINTENANCE_RAIL: 1; // Units of ~₳12 Amp•Hours
-			PR_MAINTENANCE_STATION: 1;
+		// All prices should be based on the price of a loaf of bread in American Dollars in the year 2000 ($1.00 USD) converted into 2 million scientific calories (2000 food calories/kilocalories).
+		// One penny was worth 20 food calories,~₳83,680 Amp•Hours or ~₳84 kA•h. One USD was less than one GBP and OpenTTD uses GBP as the base currency, so adjustment for inflation followed by conversion from ~Y2K USD to into ~Y2K GBP is necessary.
+		// The rate in 2000 from USD to GBP was $1.00 USD = £0.70 GBP at it's peak for the year, and then from that you convert the GBP to purchasing power (how much bread and similar staples cost) and convert purchasing power into food calories; £0.01 GBP in 2000 was equal to $0.02 USD, but only due to rounding up, and the purchasing power of GBP in 2000 was 33 food calories, or 138,072 Amp•Hours, or ~₳138 kA•h, per pence. One Mill (1/10 of a pence, or "£0.001" with three decimal places) was not used in 2000 by the UK, but would have been equal to 13,807 Amp•Hours, or ~₳1.38 kA•h. Prices should be adjusted for inflation and exchange rates accordingly.
+		// Ignore the above for electric locomotives and track! Instead, assume fuel costs for non-electric vehicles are measured in kiloAmp-Hours via statistics available online like horsepower or fuel economy.
+			// Unchanged unless noted otherwise.
+			PR_STATION_VALUE: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h each.
+			PR_BUILD_RAIL: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h for 21.336 metres of track.
+			PR_BUILD_SIGNALS: 0; // A unit of £0.65 GBP, worth ~₳8,974,680 Amp•Hours, or ~₳8,975 kA•h
+			PR_BUILD_BRIDGE: 0; // A unit of £2.75 GBP, worth ~₳37,969,800 Amp•Hours, or ~₳37,970 kA•h
+			PR_BUILD_DEPOT_TRAIN: 0; // A unit of £6.00 GBP, worth ~₳82,843,200 Amp•Hours, or ~₳82,843 kA•h
+			PR_BUILD_TUNNEL: 0; // A unit of £4.50 GBP, worth ~₳62,132,400 Amp•Hours, or ~₳62,132 kA•h
+			PR_BUILD_STATION_RAIL: 0; // A unit of £2.00 GBP, worth ~₳27,614,400 Amp•Hours, or ~₳27,614 kA•h
+			PR_BUILD_STATION_RAIL_LENGTH: 0; // A unit of £1.80 GBP, worth ~₳24,852,960 Amp•Hours, or ~₳24,853 kA•h
+			PR_CLEAR_RAIL: 0; // A unit of £0.70 GBP (or rather, "-£0.70"; a refund!), worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
+			PR_CLEAR_SIGNALS: 0; // A unit of £0.10 GBP, worth ~₳1,380,720 Amp•Hours, or ~₳1,381 kA•h
+			PR_CLEAR_BRIDGE: 0; // A unit of £0.50 GBP, worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
+			PR_CLEAR_DEPOT_TRAIN: 0; // A unit of £0.80 GBP, worth ~₳11,045,760 Amp•Hours, or ~₳11,045 kA•h
+			PR_CLEAR_TUNNEL: 0; // A unit of £0.30 GBP, worth ~₳4,142,160 Amp•Hours, or ~₳4,142 kA•h
+			PR_CLEAR_STATION_RAIL: 0; // A unit of £0.50 GBP, worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
+			PR_BUILD_WAYPOINT_RAIL: 0; // A unit of £6.00 GBP, worth ~₳82,843,200 Amp•Hours, or ~₳82,843 kA•h
+			PR_CLEAR_WAYPOINT_RAIL: 0; // A unit of £0.80 GBP, worth ~₳11,045,760 Amp•Hours, or ~₳11,046 kA•h
+			PR_BUILD_FOUNDATION: 0; // A unit of £2.50 GBP, worth ~₳34,518,000 Amp•Hours, or ~₳34,518 kA•h
+			PR_MAINTENANCE_RAIL: 0; // 1/12 of a unit of £0.12 GBP, worth ~₳1,656,864 Amp•Hours, or ~₳1,656 kA•h
+									// NOTE: Always have "maintenance_cost" set to "<your inteneded number> / 12".
+									// NOTE: Maintenance is per month if your wallclock mode settings are correct. 
+			PR_MAINTENANCE_STATION: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h each.
 		}
 	}
  
@@ -16465,14 +16472,14 @@ train_width_32_px = 1;
 				speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳13,240 Amp•Hours irl (6.62 loaves of bread) per 21.336 metres for wagonway
+			// ₳13,240 kA•h irl (6.62 loaves of bread) per 21.336 metres for wagonway
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳13,807 kA•h for onetrack section of 10.668 metres (1/2 tile) to 21.336 metres
 			// ₳1,324 Amp•Hours/year in-game (.662 loaves of bread) per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 Amp•Hours
+			// ~₳0 kA•h
 			// TOTAL: ~₳1,324 Amp•Hours
-				maintenance_cost:				1; // In units of ₳12 Amp•Hours per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳3,450 kA•h per tile per irl day
 			}
 		}
 	}
@@ -16512,13 +16519,13 @@ train_width_32_px = 1;
 				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳753,133,240 Amp•Hours irl per 21.336 metres of wagonway
+			// ₳753,133,240 kA•h irl per 21.336 metres of wagonway
 			// +0% for electrification = ₳0
-				construction_cost:				45968; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 Amp•Hours
+			// ~₳0 kA•h
 			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				47071 / 24; // In units of ₳1,600 Amp•Hours per tile per game day
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
@@ -16558,14 +16565,14 @@ train_width_32_px = 1;
 				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// ~₳6,025,065,920 kA•h per 21.336 metres for basic rail
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
 			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 Amp•Hours
+			// ~₳0 kA•h
 			// TOTAL: ₳602,506,592 Amp•Hours
-				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
@@ -16605,14 +16612,14 @@ train_width_32_px = 1;
 				speed_limit:					500 km/h; // SA_N - One tile per 1.536 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// ~₳6,025,065,920 kA•h per 21.336 metres for basic rail
 			// +10% for electrification = ₳6,627,572,512
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
 			// ~₳662,757,251 Amp•Hours per 21.336 metres per 21.336 metres per 24 realminute/gamehour period
 			// ALSO REQUIRES ELECTRICITY!
-			// ~₳2,160,000,000 Amp•Hours
+			// ~₳2,160,000,000 kA•h
 			// TOTAL: ~₳2,762,506,592 Amp•Hours
-				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
@@ -16652,14 +16659,14 @@ train_width_32_px = 1;
 				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
 				acceleration_model:				ACC_MODEL_MONORAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳145,407,509,164,700 Amp•Hours per 21.336 metres for monorail
+			// ~₳145,407,509,164,700 kA•h per 21.336 metres for monorail
 			// +0% for tunnel = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
-			// ~₳14,540,750,916,470 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
+			// ~₳14,540,750,916,470 kA•h per 21.336 metres per 24 realminute/gamehour period
 			// ALWAYS INCLUDES ELECTRIFICATION!
-			// ~₳600,000 Amp•Hours
-			// TOTAL: ~₳14,540,751,516,470 Amp•Hours
-				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+			// ~₳600,000 kA•h
+			// TOTAL: ~₳14,540,751,516,470 kA•h
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
@@ -16707,14 +16714,14 @@ train_width_32_px = 1;
 				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
-			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// ~₳6,025,065,920 kA•h per 21.336 metres for basic rail
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ₳16,384 Amp•Hours per tile
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
 			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 Amp•Hours
+			// ~₳0 kA•h
 			// TOTAL: ₳602,506,592 Amp•Hours
-				maintenance_cost:				1; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
 			}
 		}
 	}
