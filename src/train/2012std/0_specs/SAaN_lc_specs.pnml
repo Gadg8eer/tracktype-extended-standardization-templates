@@ -28,13 +28,13 @@
 				speed_limit:					30 km/h; // SAaN - One tile per 1.536 irl seconds
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
 				acceleration_model:				ACC_MODEL_RAIL;
-			// ~₳6,025,065,920 Amp•Hours per 21.336 metres for basic rail
+			// ~₳6,025,065,920 kA•h per 21.336 metres for basic rail
 			// +0% for electrification = ₳0
 				construction_cost:				4; // In units of ₳16,384 Amp•Hours per tile
 			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
 			// DOESN'T HAVE ELECTRIFICATION!
 			// ₳602,506,592 Amp•Hours per gameyear/realday
-				maintenance_cost:				3; // In units of ₳1600 Amp•Hours per tile per irl day
+				maintenance_cost:				3; // In units of ₳1600 kA•h per tile per irl day
 			//---
 				station_graphics:				RAILTYPE_STATION_NORMAL;
 			//---
