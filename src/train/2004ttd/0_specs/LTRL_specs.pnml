@@ -1,12 +1,16 @@
 	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Plateway Tracks
-		// "LTRL"/"SAbN"
+		// "LTRL"
+		// "SAbN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
 			property {
 				label:							"LTRL";
 				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
+				station_graphics:				RAILTYPE_STATION_NORMAL;
+				sort_order:						1;
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_RAIL;
 			}
 		}
 	}
@@ -16,13 +20,16 @@
 
 	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Iron Plateway
-		// "LTRL"/"SAbN"
+		// "LTRL"
+		// "SAbN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"LTRL";
 				introduction_date:				1799/06/31;
 				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_LTRL_2004);
+				station_graphics:				RAILTYPE_STATION_NORMAL;
+				sort_order:						1;
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
