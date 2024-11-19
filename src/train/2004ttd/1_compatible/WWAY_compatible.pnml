@@ -1,9 +1,11 @@
-	if (param_realism == 0 && (railtype_available("WWAY") && loading_stage == LOADING_STAGE_RESERVE)) {
+	if (param_axle_weight == 0 && ((railtype_available("WWAY") || railtype_available("WGWY")) && loading_stage == LOADING_STAGE_RESERVE)) {
 		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
 			property {
 				compatible_railtype_list:		[
 				//-- Railtypes that locomotives of this railtype can be pulled on by a non-electric locomotive;
 				//-- If a railtype is also listed in "powered_railtype_list", this locomotive is primarily meant for that railtype and can travel on that railtype under its own power
+					"WWAY", "LTRL",
+					"SAcN", "SAbN",
 				//-- Standard Gauge Rail, at least
 				// 1435mm: Default Railtype, RAIL
 					//"RAIL", 				
@@ -45,13 +47,13 @@
 					//	"Ss_N", "SsAN", "SsBN", "SsCN", "SsDN", "SsdN", "SsEN", "SsFN",
 					//	"SU_N", "SUAN", "SUBN", "SUCN", "SUDN", "SUdN", "SUEN",// "SUFN",
 				// 1435mm: Josef Drexler's Every Voltage Catenaries, ELRL & SAEE
-					"ELRL",
+					// "ELRL",
 				// Slowrails, SwedishRails
-					"E040", "E080",
+					// "E040", "E080",
 				// NuTracks, SwedishRails, Japanese Track Set
-					"ELOW", "EMED", "EHIG",
+					// "ELOW", "EMED", "EHIG",
 				// DBRails
-					"DBNE", "DBHE", "DBHS", 			
+					// "DBNE", "DBHE", "DBHS", 			
 					//	"SA_E", "SAAE", "SABE", "SACE", "SADE", "SAdE", "SAEE",// "SAFE",
 					//	"SK_E", "SKAE", "SKBE", "SKCE", "SKDE", "SKdE", "SKEE", "SKFE",
 					//	"Sk_E", "SkAE", "SkBE", "SkCE", "SkDE", "SkdE", "SkEE", "SkFE",
@@ -82,12 +84,12 @@
 					//	"SU_E", "SUAE", "SUBE", "SUCE", "SUDE", "SUdE", "SUEE",// "SUFE",
 				// 1435mm: Every Voltage Rails, 3rd Rail Flavor
 				// PikkaBird-compatible Metro
-					"MTRO", "MTRC", "MTRS", "MTRU",
-					"MTR0", "MTR1", "MTR2",
+					// "MTRO", "MTRC", "MTRS", "MTRU",
+					// "MTR0", "MTR1", "MTR2",
 				// NuTracks
-					"3LOW", "3MED", "3HIG",
-					"3RDR",
-					"3RDR",
+					// "3LOW", "3MED", "3HIG",
+					// "3RDR",
+				// "3RDR",
 					//	"SA_3", "SAA3", "SAB3", "SAC3", "SAD3", "SAd3", "SAE3",// "SAF3",
 					//	"SK_3", "SKA3", "SKB3", "SKC3", "SKD3", "SKd3", "SKE3", "SKF3",
 					//	"Sk_3", "SkA3", "SkB3", "SkC3", "SkD3", "Skd3", "SkE3", "SkF3",
@@ -118,7 +120,7 @@
 					//	"SU_3", "SUA3", "SUB3", "SUC3", "SUD3", "SUd3", "SUE3",// "SUF3",
 				// 1435mm: Every Voltage 3rd Rail and Drexler's Every Voltage Catenaries
 				// NuTracks
-					"3RDC",
+				//	"3RDC",
 					//	"SA_Z", "SAAZ", "SABZ", "SACZ", "SADZ", "SAdZ", "SAEZ",// "SAFZ",
 					//	"SK_Z", "SKAZ", "SKBZ", "SKCZ", "SKDZ", "SKdZ", "SKEZ", "SKFZ",
 					//	"Sk_Z", "SkAZ", "SkBZ", "SkCZ", "SkDZ", "SkdZ", "SkEZ", "SkFZ",
