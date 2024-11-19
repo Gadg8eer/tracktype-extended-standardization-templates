@@ -1,12 +1,15 @@
 	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "MONO"
+		// "MONO", "ACF1"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"MONO";
 				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+				station_graphics:				RAILTYPE_STATION_MONORAIL;
+				sort_order:						27;
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_MONORAIL;
 			}
 		}
 	}
@@ -17,12 +20,15 @@
 	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
 		// "MONO"
+		// "ACF1"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"MONO";
 				introduction_date:				1954/07/16;
 				name:							string(STR_RAILTYPE_NAME_MONO_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_MONO_2004);
+				station_graphics:				RAILTYPE_STATION_MONORAIL;
+				sort_order:						27;
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
