@@ -1,12 +1,16 @@
 	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "MONO"
+		// "MGLV"
+		// "LCAI"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
-				label:							"MONO";
-				name:							string(STR_RAILTYPE_NAME_MONO_2004);
+				label:							"MGLV";
+				name:							string(STR_RAILTYPE_NAME_MGLV_2004);
+				station_graphics:				RAILTYPE_STATION_MAGLEV;
+				sort_order:						37;
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_MAGLEV;
 			}
 		}
 	}
@@ -16,17 +20,20 @@
 
 	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Future-Proofed Tracks
-		// "MONO"
+		// "MGLV"
+		// "LCAI"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
-				label:							"MONO";
+				label:							"MGLV";
 				introduction_date:				1954/07/16;
-				name:							string(STR_RAILTYPE_NAME_MONO_2004);
-				//toolbar_caption:				string(STR_RAILTYPE_NAME_MONO_2004);
+				name:							string(STR_RAILTYPE_NAME_MGLV_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_MGLV_2004);
+				station_graphics:				RAILTYPE_STATION_MAGLEV;
+				sort_order:						37;
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
-				speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
-				acceleration_model:				ACC_MODEL_MONORAIL;
+			//	speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_MAGLEV;
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
 			// ~₳145,407,509,164,700 kA•h per 21.336 metres for monorail
 			// +0% for tunnel = ₳0
