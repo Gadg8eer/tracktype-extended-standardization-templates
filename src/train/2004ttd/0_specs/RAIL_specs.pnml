@@ -5,8 +5,11 @@
 			property {
 				label:							"RAIL";
 				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
+				station_graphics:				RAILTYPE_STATION_NORMAL;
+				sort_order:						07;
 			//---
 			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_RAIL;
 			}
 		}
 	}
@@ -23,6 +26,8 @@
 				introduction_date:				1821/04/19;
 				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2004);
+				station_graphics:				RAILTYPE_STATION_NORMAL;
+				sort_order:						07;
 			//---
 				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
 				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
