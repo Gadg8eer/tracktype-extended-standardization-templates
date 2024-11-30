@@ -2,7 +2,7 @@
 		//-- Standard Gauge, Future-Proofed Tracks
 		// "MGLV"
 		// "LCAI"
-		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+		item(FEAT_RAILTYPES, railtype_scmaglev_airfriction_unlimited_linearinduction) {
 			property {
 				label:							"MGLV";
 				name:							string(STR_RAILTYPE_NAME_MGLV_2004);
@@ -22,7 +22,7 @@
 		//-- Standard Gauge, Future-Proofed Tracks
 		// "MGLV"
 		// "LCAI"
-		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+		item(FEAT_RAILTYPES, railtype_scmaglev_airfriction_unlimited_linearinduction) {
 			property {
 				label:							"MGLV";
 				introduction_date:				1954/07/16;
