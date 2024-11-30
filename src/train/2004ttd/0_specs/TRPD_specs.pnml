@@ -1,0 +1,48 @@
+	if (((param_axle_weight == 0 && param_realism == 0) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "TRPD"
+		// "TCAS"
+		item(FEAT_RAILTYPES, railtype_transrapid_airfriction_unlimited_monolev) {
+			property {
+				label:							"TRPD";
+				name:							string(STR_RAILTYPE_NAME_MGLV_2004);
+			//	station_graphics:				RAILTYPE_STATION_MAGLEV;
+				sort_order:						37;
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_MAGLEV;
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if (((param_axle_weight == 0 && param_realism == 1) && railtype_available("ELRL")) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "TRPD"
+		// "TCAS"
+		item(FEAT_RAILTYPES, railtype_transrapid_airfriction_unlimited_monolev) {
+			property {
+				label:							"TRPD";
+				introduction_date:				1991/06/31;
+				name:							string(STR_RAILTYPE_NAME_TRPD_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_TRPD_2004);
+			//	station_graphics:				RAILTYPE_STATION_MAGLEV;
+				sort_order:						37;
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+			//	speed_limit:					50 km/h; // SA_N - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_MAGLEV;
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+			// ~₳145,407,509,164,700 kA•h per 21.336 metres for monorail
+			// +0% for tunnel = ₳0
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
+			// ~₳14,540,750,916,470 kA•h per 21.336 metres per 24 realminute/gamehour period
+			// ALWAYS INCLUDES ELECTRIFICATION!
+			// ~₳600,000 kA•h
+			// TOTAL: ~₳14,540,751,516,470 kA•h
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
+			}
+		}
+	}
