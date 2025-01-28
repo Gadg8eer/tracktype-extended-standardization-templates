@@ -1,0 +1,202 @@
+STR_RAILTYPE_NAME_SK?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SL?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SM?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SN?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SO?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SP?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQ?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SR?!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sk?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sl?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sm?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sn?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_So?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sp?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sq?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_Sr?!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+
+STR_RAILTYPE_NAME_SKd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SLd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SMd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SNd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SOd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SPd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SQd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SRd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Skd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sld@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Smd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Snd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sod@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Spd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sqd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Srd@_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+
+STR_RAILTYPE_NAME_SAA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHA!_2024										:1432mm to 1435mm, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRA!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrA!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHB!_2024										:1432mm to 1435mm, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRB!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {YELLOW}20t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrB!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHC!_2024										:1432mm to 1435mm, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRC!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {GREEN}30t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrC!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SED!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHD!_2024										:1432mm to 1435mm, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SND!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRD!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {DKGREEN}40t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrD!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SBd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SCd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SDd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SEd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SFd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SGd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SHd!_2024										:{GRAY}Standard Gauge Car with better axles, @{BLACK} - DO NOT MAKE BUILDABLE!)
+STR_RAILTYPE_NAME_SKd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SLd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SMd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SNd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SOd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SPd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SQd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SRd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Skd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sld!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Smd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Snd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sod!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Spd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Sqd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_Srd!_2024										:{GRAY}Standard Gauge Car with better axles, Rack Rail, @{BLACK} - {RED}DO NOT USE AT ALL!
+STR_RAILTYPE_NAME_SAE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHE!_2024										:1432mm to 1435mm, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SME!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRE!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {LTBLUE}50t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrE!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SAF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SBF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SCF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SDF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SEF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SFF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SGF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SHF!_2024										:1432mm to 1435mm, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SKF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SLF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SMF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SNF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SOF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SPF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SQF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SRF!_2024										:1432mm to 1435mm, Rack Rail, @{BLACK} - {BLUE}∞t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_SkF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SlF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SmF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SnF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SoF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SpF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SqF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
+STR_RAILTYPE_NAME_SrF!_2024										:1432mm to 1435mm, Rack-Only (Driving Cab), @{BLACK} - {RED}DO NOT MAKE BUILDABLE!
