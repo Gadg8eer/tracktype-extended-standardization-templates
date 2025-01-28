@@ -37,11 +37,11 @@
 				curve_speed_multiplier:			0.125; // Very low speeds
 			// ₳753,133,240 kA•h irl per 21.336 metres of wagonway
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ~₳180 kA•h per tile
+				construction_cost:				1; // In units of ~₳15,979 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
 			// DOESN'T HAVE ELECTRIFICATION!
 			// ~₳0 kA•h
 			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳399,475 mA•h per tile per irl day
 			}
 		}
 	}
