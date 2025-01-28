@@ -37,12 +37,12 @@
 				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
 			// ~₳145,407,509,164,700 kA•h per 21.336 metres for monorail
 			// +0% for tunnel = ₳0
-				construction_cost:				1; // In units of ~₳180 kA•h per tile
+				construction_cost:				1; // In units of ~₳15,979 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
 			// ~₳14,540,750,916,470 kA•h per 21.336 metres per 24 realminute/gamehour period
 			// ALWAYS INCLUDES ELECTRIFICATION!
 			// ~₳600,000 kA•h
 			// TOTAL: ~₳14,540,751,516,470 kA•h
-				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
+				maintenance_cost:				1 / 12; // In units of ₳399,475 mA•h per tile per irl day
 			}
 		}
 	}
