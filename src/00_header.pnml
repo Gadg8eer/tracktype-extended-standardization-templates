@@ -57,12 +57,15 @@ grf {
 	if (param_realism == 1) {
 		basecost {
 		// All prices should be based on the price of a loaf of bread in American Dollars in the year 2000 ($1.00 USD) converted into 2 million scientific calories (2000 food calories/kilocalories).
-		// One penny was worth 20 food calories,~₳83,680 Amp•Hours or ~₳84 kA•h. One USD was less than one GBP and OpenTTD uses GBP as the base currency, so adjustment for inflation followed by conversion from ~Y2K USD to into ~Y2K GBP is necessary.
-		// The rate in 2000 from USD to GBP was $1.00 USD = £0.70 GBP at it's peak for the year, and then from that you convert the GBP to purchasing power (how much bread and similar staples cost) and convert purchasing power into food calories; £0.01 GBP in 2000 was equal to $0.02 USD, but only due to rounding up, and the purchasing power of GBP in 2000 was 33 food calories, or 138,072 Amp•Hours, or ~₳138 kA•h, per pence. One Mill (1/10 of a pence, or "£0.001" with three decimal places) was not used in 2000 by the UK, but would have been equal to 13,807 Amp•Hours, or ~₳1.38 kA•h. Prices should be adjusted for inflation and exchange rates accordingly.
+		// One pound was worth 3300 food calories, or ~₳15,979 milliAmp•hours (mA•h). One USD was less than one GBP and OpenTTD uses GBP as the base currency, so adjustment for inflation followed by conversion from Y2K!USD to into Y2K!GBP is necessary.
+		// Unfortunately, the USD in OpenTTD is NOT equal to whatever exchange rate, but is a flat "$2 = £1" at all times.
+		// The rate in 2000 from USD to GBP was $1.00 USD = £0.70 GBP at it's peak for the year, and then from that you convert the GBP to purchasing power (how much bread and similar staples cost) and convert purchasing power into food calories; £0.01 GBP in 2000 was equal to $0.02 USD, but only due to rounding up, and the purchasing power of GBP in 2000 was 33 food calories, or 15.979 mA•h (milliAmp•Hours), per pence. One Mill (1/10 of a pence, or "£0.001" with three decimal places) was not used in 2000 by the UK, but would have been equal to just under 1.6 mA•h. Prices should be adjusted for inflation and exchange rates accordingly.
+		// The rest is included in the readme.
+		
 		// Ignore the above for electric locomotives and track! Instead, assume fuel costs for non-electric vehicles are measured in kiloAmp-Hours via statistics available online like horsepower or fuel economy.
 			// Unchanged unless noted otherwise.
 			PR_STATION_VALUE: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h each.
-			PR_BUILD_RAIL: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h for 21.336 metres of track.
+			PR_BUILD_RAIL: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳15.979 Amp•Hours, or ₳16 A•h for 21.336 metres of track.
 			PR_BUILD_SIGNALS: 0; // A unit of £0.65 GBP, worth ~₳8,974,680 Amp•Hours, or ~₳8,975 kA•h
 			PR_BUILD_BRIDGE: 0; // A unit of £2.75 GBP, worth ~₳37,969,800 Amp•Hours, or ~₳37,970 kA•h
 			PR_BUILD_DEPOT_TRAIN: 0; // A unit of £6.00 GBP, worth ~₳82,843,200 Amp•Hours, or ~₳82,843 kA•h
@@ -70,18 +73,18 @@ grf {
 			PR_BUILD_STATION_RAIL: 0; // A unit of £2.00 GBP, worth ~₳27,614,400 Amp•Hours, or ~₳27,614 kA•h
 			PR_BUILD_STATION_RAIL_LENGTH: 0; // A unit of £1.80 GBP, worth ~₳24,852,960 Amp•Hours, or ~₳24,853 kA•h
 			PR_CLEAR_RAIL: 0; // A unit of £0.70 GBP (or rather, "-£0.70"; a refund!), worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
-			PR_CLEAR_SIGNALS: 0; // A unit of £0.10 GBP, worth ~₳1,380,720 Amp•Hours, or ~₳1,381 kA•h
-			PR_CLEAR_BRIDGE: 0; // A unit of £0.50 GBP, worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
-			PR_CLEAR_DEPOT_TRAIN: 0; // A unit of £0.80 GBP, worth ~₳11,045,760 Amp•Hours, or ~₳11,045 kA•h
-			PR_CLEAR_TUNNEL: 0; // A unit of £0.30 GBP, worth ~₳4,142,160 Amp•Hours, or ~₳4,142 kA•h
-			PR_CLEAR_STATION_RAIL: 0; // A unit of £0.50 GBP, worth ~₳6,903,600 Amp•Hours, or ~₳6,904 kA•h
-			PR_BUILD_WAYPOINT_RAIL: 0; // A unit of £6.00 GBP, worth ~₳82,843,200 Amp•Hours, or ~₳82,843 kA•h
-			PR_CLEAR_WAYPOINT_RAIL: 0; // A unit of £0.80 GBP, worth ~₳11,045,760 Amp•Hours, or ~₳11,046 kA•h
-			PR_BUILD_FOUNDATION: 0; // A unit of £2.50 GBP, worth ~₳34,518,000 Amp•Hours, or ~₳34,518 kA•h
-			PR_MAINTENANCE_RAIL: 0; // 1/12 of a unit of £0.12 GBP, worth ~₳1,656,864 Amp•Hours, or ~₳1,656 kA•h
-									// NOTE: Always have "maintenance_cost" set to "<your inteneded number> / 12".
-									// NOTE: Maintenance is per month if your wallclock mode settings are correct. 
-			PR_MAINTENANCE_STATION: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳13,807,200 Amp•Hours, or ~₳13,807 kA•h each.
+			PR_CLEAR_SIGNALS: 0; // A unit of £0.10 GBP, worth ~₳2 Amp•Hours, or ~₳1,597 mA•h
+			PR_CLEAR_BRIDGE: 0; // A unit of £0.50 GBP, worth ~₳8 Amp•Hours, or ~₳7,9895 mA•h
+			PR_CLEAR_DEPOT_TRAIN: 0; // A unit of £0.80 GBP, worth ~₳13 Amp•Hours, or ~₳12,783 mA•h
+			PR_CLEAR_TUNNEL: 0; // A unit of £0.30 GBP, worth ~₳5 Amp•Hours, or ~₳4,794 mA•h
+			PR_CLEAR_STATION_RAIL: 0; // A unit of £0.50 GBP, worth ~₳8 Amp•Hours, or ~₳7,9895 mA•h
+			PR_BUILD_WAYPOINT_RAIL: 0; // A unit of £6.00 GBP, worth ~₳96 Amp•Hours, or ~₳95,874 mA•h
+			PR_CLEAR_WAYPOINT_RAIL: 0; // A unit of £0.80 GBP, worth ~₳13 Amp•Hours, or ~₳12,783 mA•h
+			PR_BUILD_FOUNDATION: 0; // A unit of £2.50 GBP, worth ~₳40 Amp•Hours, or ₳39,947 mA•h
+			PR_MAINTENANCE_RAIL: 0; // A unit of £0.10 GBP p/year (£0.01 per month), worth ~₳2 Amp•Hours, or ₳1,917 mA•h
+									// NOTE: Always have "maintenance_cost" set to "<your intended per-year cost> / 12".
+									// NOTE: Maintenance is charged p/tile each month in wallclock mode, but only yearly in calendar mode. Always use wallclock mode with realism mode. 
+			PR_MAINTENANCE_STATION: 0; // A unit of £1.00 GBP, worth ~$1.65 to ~$1.80 USD, ~₳16 Amp•Hours, or ₳15,979 mA•h each.
 		}
 	}
  
