@@ -14,6 +14,25 @@
 			}
 		}
 	}
+	
+	if (((param_earlyrail == 0 && param_realism == 0) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Wagonway Tracks
+		// "WWAY"
+		// "SAcN"
+		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
+			property {
+				label:							"WWAY";
+				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
+				station_graphics:				RAILTYPE_STATION_NORMAL;
+				sort_order:						0;
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+				acceleration_model:				ACC_MODEL_RAIL;
+			}
+			
+			
+		}
+	}
 
  /* REALISM MODE VERSION */
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
