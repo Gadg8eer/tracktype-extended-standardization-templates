@@ -20,6 +20,20 @@ grf {
 		//	};
 	//	}
 //	}
+    param 0 {
+        param_gui {
+            type:   int;
+            name:   string(str_param_gui_name);
+            desc:   string(str_param_gui_desc);
+            min_value:  0;
+            max_value:  1;
+            def_value:  0;
+            names:  {
+                    0: string(str_param_opengfx);
+                    1: string(str_param_ttd);
+                    };
+        }
+    }
 	param 1 { // 23 in U&RaTT Patch (Assume for Long Haul server that parameter is either 3 or 4)
 		param_axle_weight {
 		type: int;
