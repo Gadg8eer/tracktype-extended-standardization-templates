@@ -27,6 +27,22 @@ STR_PARAM_FORCE_REALISM_DESC									:Assumes that ALL of the following are true
 STR_PARAM_NOT_FORCE_REALISM										:(Default) No, thank you!
 STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
 
+# Interface
+str_param_gui_name              :Interface style
+str_param_gui_desc              :Select style of the buttons and cursors provided by this set.
+str_param_opengfx               :OpenGFX
+str_param_ttd                   :TTD
+str_param_opengfxplus           :OpenGFX+ Alpine
+
+str_param_customsignals_name    :Custom signals
+str_param_customsignals_desc    :Enable (default) or disable custom signals.{}{SILVER}When enabled, electric signals will be "off" (show no aspect) for lifted and planning tracks. This requires OpenTTD 1.3.0 (r24367).
+
+str_param_lifted_name           :Lifted track
+str_param_lifted_desc           :Enable or disable lifted tracks.{}{SILVER}Lifted tracks is a track type that looks like disused tracks, with the rails lifted, leaving a trail of ballast.
+
+str_param_planning_name         :Planning track
+str_param_planning_desc         :Enable or disable planning tracks.{}{SILVER}Planning tracks is a track type displayed as blue dashed lines. It's cheap to build and can therefore be used to plan new routes before converting them to an expensive real track type. This can save a lot of money if you need lots of undos and redos.
+
 # 2004
 STR_RAILTYPE_NAME_RAIL_2004										:1432mm to 1435mm
 STR_RAILTYPE_NAME_ELRL_2004										:1432mm to 1435mm, Universal Catenary
@@ -53,6 +69,22 @@ STR_RAILTYPE_NAME_WGWY_2012										:Wood Wagonway{BLACK} - 1t p/axle{BLACK}, {
 STR_RAILTYPE_NAME_LIHT_2012										:Iron Plateway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 ### LTRL = SAbN
 STR_RAILTYPE_NAME_LTRL_2012										:Plateway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+# Decorative Railbed
+### LFTD = 0___
+STR_RAILTYPE_NAME_0_tripleunderscore        :Railbed
+str_lifted_toolbar_caption                  :Railbed Construction
+str_lifted_menu_text                        :Railbed construction
+str_lifted_build_window_caption             :New Rail Trail Vehicles
+str_lifted_autoreplace_text                 :Rail Trail Vehicles
+str_lifted_new_engine_text                  :rail trail
+# Construction of Right-of-Way
+### PLAN = 0_F_
+STR_RAILTYPE_NAME_0_underscore_F_underscore :Planned Transport Corridor
+str_planning_toolbar_caption                :Transport Planning
+str_planning_menu_text                      :Transport planning
+str_planning_build_window_caption           :New Planned Transport Vehicles
+str_planning_autoreplace_text               :Planned Transport Vehicles
+str_planning_new_engine_text                :planned transport corridor
 
 ### RAIL
 STR_RAILTYPE_NAME_RAIL_2012										:1432mm to 1435mm{BLACK} - {GRAY}(FIX THE 2012 RAIL CODE!{BLACK} - Default STRING)
