@@ -42,5 +42,17 @@
 			// TOTAL: ₳602,506,592 Amp•Hours
 				maintenance_cost:				1 / 12; // In units of ₳399,475 mA•h per tile per irl day
 			}
+			graphics {
+				track_overlay:	 				switch_SAAN_overlay;
+				precombined:					switch_SAAN_precombined;
+				underlay:						switch_SAAN_underlay;
+				bridge_surfaces: 				switch_SAAN_bridge;
+				level_crossings: 				switch_SAAN_level_crossings;
+				tunnels:		 				switch_SAAN_tunnel;
+				depots:							switch_SAAN_depots;
+			//	signals:						;
+				fences:							switch_SAAN_fences;
+				gui:							switch_SAAN_gui;
+			}
 		}
 	}
