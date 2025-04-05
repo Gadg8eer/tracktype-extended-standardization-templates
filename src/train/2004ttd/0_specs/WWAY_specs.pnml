@@ -1,67 +1,58 @@
-	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Wagonway Tracks
-		// "WWAY"
-		// "SAcN"
-		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
-			property {
-				label:							"WWAY";
-				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
-				station_graphics:				RAILTYPE_STATION_NORMAL;
-				sort_order:						0;
-			//---
-			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
-				acceleration_model:				ACC_MODEL_RAIL;
+
+	if (param_axle_weight == 0 && param_realism == 0) {
+		if (param_earlyrail == 0 && ((railtype_available("WWAY") || railtype_available("WGWY")) && loading_stage == LOADING_STAGE_RESERVE) || (param_earlyrail == 2 || param_earlyrail == 4)) {
+			//-- Standard Gauge, Wagonway Tracks
+			// "WWAY"
+			// "SAcN"
+			item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
+				property {
+					label:							"WWAY";
+					name:							string(STR_RAILTYPE_NAME_WWAY_2004);
+					station_graphics:				RAILTYPE_STATION_NORMAL;
+					sort_order:						0;
+				//---
+				//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+					acceleration_model:				ACC_MODEL_RAIL;
+				}
 			}
-		}
-	}
-	
-	if (((param_earlyrail == 0 && param_realism == 0) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Standard Gauge, Wagonway Tracks
-		// "WWAY"
-		// "SAcN"
-		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
-			property {
-				label:							"WWAY";
-				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
-				station_graphics:				RAILTYPE_STATION_NORMAL;
-				sort_order:						0;
-			//---
-			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
-				acceleration_model:				ACC_MODEL_RAIL;
-			}
-			
-			
 		}
 	}
 
  /* REALISM MODE VERSION */
  // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
 
-	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("WWAY") || railtype_available("WGWY"))) && loading_stage == LOADING_STAGE_RESERVE) {
-		//-- Wooden Wagonway
-		// "WWAY"
-		// "SAcN"
-		item(FEAT_RAILTYPES, railtype_earlyrail_wagonway_1metrictonne_selfpower) {
-			property {
-				label:							"WWAY";
-				introduction_date:				1594/01/01;
-				name:							string(STR_RAILTYPE_NAME_WWAY_2004);
-				//toolbar_caption:				string(STR_RAILTYPE_NAME_WWAY_2004);
-				station_graphics:				RAILTYPE_STATION_NORMAL;
-				sort_order:						0;
-			//---
-				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
-				speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
-				acceleration_model:				ACC_MODEL_RAIL;
-				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳6,411,600 mA•h irl (6.62 loaves of bread) per 21.336 metres for wagonway
-			// +0% for building electrification = ₳0
-				construction_cost:				5; // In units of ~₳1,374,194 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
-			// ₳641,160 mA•h/year in-game (.662 loaves of bread) per 0.5-1.0 tiles (exactly 112.644 feet for reference) per 1440 minutes
-			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 kA•h to power electrification
-			// TOTAL: ~₳1,324 Amp•Hours
-				maintenance_cost:				1 / 12; // In units of ₳4,793,700 mA•h per tile per irl day
+	if (param_axle_weight == 0 && param_realism == 1) {
+		if ((param_earlyrail == 0 && ((railtype_available("WWAY") || railtype_available("WGWY")) && loading_stage == LOADING_STAGE_RESERVE)) || (param_earlyrail == 2 || param_earlyrail == 4)) {
+			//-- Wooden Wagonway
+			// "WWAY"
+			// "SAcN"
+			item(FEAT_RAILTYPES, railtype_earlyrail_wagonway_1metrictonne_selfpower) {
+				property {
+					label:							"WWAY";
+					introduction_date:				1594/01/01;
+					name:							string(STR_RAILTYPE_NAME_WWAY_2004);
+					//toolbar_caption:				string(STR_RAILTYPE_NAME_WWAY_2004);
+					station_graphics:				RAILTYPE_STATION_NORMAL;
+					sort_order:						0;
+				//---
+					railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+					speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
+					acceleration_model:				ACC_MODEL_RAIL;
+					curve_speed_multiplier:			0.125; // Very low speeds
+				// ₳6,411,600 mA•h irl (6.62 loaves of bread) per 21.336 metres for wagonway
+				// +0% for building electrification = ₳0
+					construction_cost:				5; // In units of ~₳1,374,194 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
+				// ₳641,160 mA•h/year in-game (.662 loaves of bread) per 0.5-1.0 tiles (exactly 112.644 feet for reference) per 1440 minutes
+				// DOESN'T HAVE ELECTRIFICATION!
+				// ~₳0 kA•h to power electrification
+				// TOTAL: ~₳1,324 Amp•Hours
+					maintenance_cost:				1 / 12; // In units of ₳4,793,700 mA•h per tile per irl day
 			}
+		}
+	}
+
+	if (param_revenge == 1) {
+		item(FEAT_RAILTYPES, railtype_earlyrail_wagonway_1metrictonne_selfpower) {
+			
 		}
 	}
