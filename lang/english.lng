@@ -12,6 +12,15 @@ STR_PARAM_COLOUR_SCHEME_1CC										:One company color
 STR_PARAM_COLOUR_SCHEME_2CC										:Two company colors
 STR_PARAM_COLOUR_SCHEME_REAL									:Real-world colors
 
+STR_PARAM_FENCES_NAME											:Fences
+STR_PARAM_FENCES_DESC											:Replaces or deactivates the default fences for railways.
+STR_PARAM_FENCES_0												:None
+STR_PARAM_FENCES_1												:Original
+STR_PARAM_FENCES_2												:Only for all urban, veryhighspeed, monorail and maglev
+STR_PARAM_FENCES_2_MINI											:Only for all urban, monorail and maglev
+STR_PARAM_FENCES_3												:All railtypes
+STR_PARAM_FENCES_4												:All railtypes with color company
+
 STR_PARAM_AXLE_WEIGHT_NAME										:Axle weight scheme
 STR_PARAM_AXLE_WEIGHT_DESC										:Select the system of axle weights provided by your railtype newgrf.{}{}{RED}Default:{BLACK} RAIL = RAIL.{}{}{ORANGE}Full 2012 Standard:{BLACK} RAIL = SHEN.{}{}{YELLOW}Innsbruck 2022 Convention:{BLACK} RAIL = SHAN; a partially-compliant version of 2012 Standard, without making use of axle weights, for use with most legacy vehicle sets (pre-2022).{}{}{GREEN}"Flux Capacitor":{BLACK} RAIL = SH_N; extended support for voltages and possibilities, as well as an undefined axle load for an ideal world where we could go back to 2012 and warn ourselves that the axle loads would be ignored if we didn't set "_" as an "undefined" axle load.{}{}{BLUE}Advanced:{BLACK} RAIL = SHFN; extended support for voltages and possibilities, compatible with rail vehicles from post-2024, no underscore reservations.
 STR_PARAM_AXLE_WEIGHT_NONE										:(Default) Vanilla
@@ -22,26 +31,48 @@ STR_PARAM_AXLE_WEIGHT_UPDATE_2024								:Advanced 2024 Extension (Recommended!)
 STR_ERROR_AXLE_WEIGHT_TRIGGER_ERROR								:Debug Message (Don't use!)
 STR_ERROR_AXLE_WEIGHT_ERROR										:Uh oh! Looks like you encountered a bug! This message is to reveal that the result of setting the axle weight parameter to the option you're using has somehow caused this error. Please contact Gadg8eer via, or modify the source code found at, the GRF's website to get it updated. {GREEN}Or, if you purposefully chose the Debug Message option for axle weight, just select another option and start a new game and this should work.{BLACK}
 
+STR_PARAM_3RD_NAME												:Allow non-metro trains on metro railways
+STR_PARAM_3RD_DESC												:Select what other train types (by railtype) to allow on metro railways. Trains will only be powered if a compatible power source is available on the metro railway of choice. This feature only works correctly for default and supported railway sets.
+STR_PARAM_3RD_0													:Off (Default)
+STR_PARAM_3RD_1													:Unelectrified rail only
+STR_PARAM_3RD_2													:Electrified rail only
+STR_PARAM_3RD_3													:Both options
+STR_PARAM_3RD_4													:On (2024 Standardization)
+STR_PARAM_3RD_5													:No Metro Railtypes (Iron Horse & U&RaTT2 Metro)
+
 STR_PARAM_FORCE_REALISM_NAME									:Force true-to-life tracktype stats?
 STR_PARAM_FORCE_REALISM_DESC									:Assumes that ALL of the following are true...{}{}a) a custom currency with an exchange rate of 1000 = £1 (see readme). This will mean GRFs created before this GRF are not balanced for use with it. To calculate stats for vehicles for a parameter that enables a compatibility mode, you should treat the single pound unit as equal to $0.01 USD, and price according to the energy required to build/maintain a vehicle. For reference, the bread price of $1.00 USD in 2000 is used to peg costs to the price of energy (~2000 kilocalories per loaf) regardless of time and space by comparing a household staple{}c) inflation is turned off{}d) one tile is considered{BLACK} - based on vanilla bus lengths{BLACK} - to be 21.336 metres long and 21.336 metres wide{}e) this mod is loaded AFTER all train sets and tracktype sets in the GRF list.{}{}This option modifies the stats of all auto-detected railtypes to stats heavily researched via wikipedia and the internet, and is not tested for balance. {RED}Use at your own risk!
 STR_PARAM_NOT_FORCE_REALISM										:(Default) No, thank you!
 STR_PARAM_FORCE_REALISM											:Sure, I'll try this!
 
+STR_PARAM_TUNNEL_NAME											:Custom tunnel
+STR_PARAM_TUNNEL_DESC											:if this option is disabled, the default graphics for tunnel portals will be used with the original.
+
 # Interface
-str_param_gui_name              :Interface style
-str_param_gui_desc              :Select style of the buttons and cursors provided by this set.
-str_param_opengfx               :OpenGFX
-str_param_ttd                   :TTD
-str_param_opengfxplus           :OpenGFX+ Alpine
+str_param_gui_name              								:Interface style
+str_param_gui_desc              								:Select style of the buttons and cursors provided by this set.
+str_param_opengfx               								:OpenGFX
+str_param_ttd                   								:TTD
+str_param_opengfxplus           								:OpenGFX+ Alpine
 
-str_param_customsignals_name    :Custom signals
-str_param_customsignals_desc    :Enable (default) or disable custom signals.{}{SILVER}When enabled, electric signals will be "off" (show no aspect) for lifted and planning tracks. This requires OpenTTD 1.3.0 (r24367).
+str_param_customsignals_name    								:Custom signals
+str_param_customsignals_desc    								:Enable (default) or disable custom signals.{}{SILVER}When enabled, electric signals will be "off" (show no aspect) for lifted and planning tracks. This requires OpenTTD 1.3.0 (r24367).
 
-str_param_lifted_name           :Lifted track
-str_param_lifted_desc           :Enable or disable lifted tracks.{}{SILVER}Lifted tracks is a track type that looks like disused tracks, with the rails lifted, leaving a trail of ballast.
+str_param_lifted_name           								:Lifted track
+str_param_lifted_desc           								:Enable or disable lifted tracks.{}{SILVER}Lifted tracks is a track type that looks like disused tracks, with the rails lifted, leaving a trail of ballast.
 
-str_param_planning_name         :Planning track
-str_param_planning_desc         :Enable or disable planning tracks.{}{SILVER}Planning tracks is a track type displayed as blue dashed lines. It's cheap to build and can therefore be used to plan new routes before converting them to an expensive real track type. This can save a lot of money if you need lots of undos and redos.
+str_param_planning_name         								:Planning track
+str_param_planning_desc         								:Enable or disable planning tracks.{}{SILVER}Planning tracks is a track type displayed as blue dashed lines. It's cheap to build and can therefore be used to plan new routes before converting them to an expensive real track type. This can save a lot of money if you need lots of undos and redos.
+
+# Early Rail
+STR_PARAM_NAME_EARLY_RAIL										:Enable antiquated railtypes
+STR_PARAM_DESC_EARLY_RAIL										:Enables Wooden Wagonways from 1594 and Plateways from 1799.
+
+STR_PARAM_EARLY_RAIL_AUTO										:Auto-Detection (Default)
+STR_PARAM_EARLY_RAIL_NONE										:Manually Disabled
+STR_PARAM_EARLY_RAIL_WWAY										:Force Wooden Wagonway, only
+STR_PARAM_EARLY_RAIL_LTRL										:Force Plateway, only
+STR_PARAM_EARLY_RAIL_BOTH										:Force all Early Rails
 
 # 2004
 STR_RAILTYPE_NAME_RAIL_2004										:1432mm to 1435mm
@@ -62,15 +93,15 @@ STR_RAILTYPE_NAME_LTRL_2004										:Plateway{BLACK} - {WHITE}Max. {VELOCITY}
 # 2012
 ### Early Rail Set
 ### WWAY = SAcN
-STR_RAILTYPE_NAME_WWAY_2012										:Wagonway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_WWAY_2012										:Wood Wagonway{BLACK} - {RED}1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 ### WGWY = SAcN
-STR_RAILTYPE_NAME_WGWY_2012										:Wood Wagonway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_WGWY_2012										:Wood Wagonway{BLACK} - {RED}1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 ### LIHT = SAbN
-STR_RAILTYPE_NAME_LIHT_2012										:Iron Plateway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_LIHT_2012										:Iron Plateway{BLACK} - {RED}1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 ### LTRL = SAbN
-STR_RAILTYPE_NAME_LTRL_2012										:Plateway{BLACK} - 1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
+STR_RAILTYPE_NAME_LTRL_2012										:Iron Plateway{BLACK} - {RED}1t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 # Decorative Railbed
-### LFTD = 0___
+### LFTD = 0t_-
 STR_RAILTYPE_NAME_0_tripleunderscore        :Railbed
 str_lifted_toolbar_caption                  :Railbed Construction
 str_lifted_menu_text                        :Railbed construction
@@ -78,7 +109,7 @@ str_lifted_build_window_caption             :New Rail Trail Vehicles
 str_lifted_autoreplace_text                 :Rail Trail Vehicles
 str_lifted_new_engine_text                  :rail trail
 # Construction of Right-of-Way
-### PLAN = 0_F_
+### PLAN = 0z_-
 STR_RAILTYPE_NAME_0_underscore_F_underscore :Planned Transport Corridor
 str_planning_toolbar_caption                :Transport Planning
 str_planning_menu_text                      :Transport planning
@@ -89,6 +120,7 @@ str_planning_new_engine_text                :planned transport corridor
 ### RAIL
 STR_RAILTYPE_NAME_RAIL_2012										:1432mm to 1435mm{BLACK} - {GRAY}(FIX THE 2012 RAIL CODE!{BLACK} - Default STRING)
 ### RAIL = SHEN
+STR_RAILTYPE_NAME_SAaN_2012										:1432mm to 1435mm{BLACK} - {RED}5t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SAAN_2012										:1432mm to 1435mm{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SBAN_2012										:1432mm to 1435mm{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_SCAN_2012										:1432mm to 1435mm{BLACK} - {GOLD}10t p/axle{BLACK}, {WHITE}Max. {VELOCITY}
@@ -23277,3 +23309,6 @@ STR_RAILTYPE_NAME_TEFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLA
 STR_RAILTYPE_NAME_TFFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_TGFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
 STR_RAILTYPE_NAME_THFI_2024										:SUMA Maglev Rail{BLACK} - {PURPLE}∞t{BLACK}, {WHITE}Max. {VELOCITY}
+
+STR_PARAM_NAME_REVENGE											:I agree that Gadg8eer did nothing wrong before December 2024, and licences should be respected.
+STR_PARAM_DESC_REVENGE											:Disable if you disagree and have no care for the OpenTTD "community".
