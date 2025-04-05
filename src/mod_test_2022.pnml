@@ -1,0 +1,88 @@
+
+//=======================================================================
+//              Track Module, 2022 Innsbruck Convention
+//=======================================================================
+//#include "src/train/2022con/0_specs/WWAY_specs.pnml"
+//#include "src/train/2022con/1_compatible/WWAY_compatible.pnml"
+//#include "src/train/2022con/2_powered/WWAY_powered.pnml"
+//#include "src/train/2022con/3_alternative/WWAY_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/WGWY_specs.pnml"
+//#include "src/train/2022con/1_compatible/WGWY_compatible.pnml"
+//#include "src/train/2022con/2_powered/WGWY_powered.pnml"
+//#include "src/train/2022con/3_alternative/WGWY_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/WAcN_specs.pnml"
+//#include "src/train/2022con/1_compatible/WAcN_compatible.pnml"
+//#include "src/train/2022con/2_powered/WAcN_powered.pnml"
+//#include "src/train/2022con/3_alternative/WAcN_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/LTRL_specs.pnml"
+//#include "src/train/2022con/1_compatible/LTRL_compatible.pnml"
+//#include "src/train/2022con/2_powered/LTRL_powered.pnml"
+//#include "src/train/2022con/3_alternative/LTRL_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/LIHT_specs.pnml"
+//#include "src/train/2022con/1_compatible/LIHT_compatible.pnml"
+//#include "src/train/2022con/2_powered/LIHT_powered.pnml"
+//#include "src/train/2022con/3_alternative/LIHT_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/WAbN_specs.pnml"
+//#include "src/train/2022con/1_compatible/WAbN_compatible.pnml"
+//#include "src/train/2022con/2_powered/WAbN_powered.pnml"
+//#include "src/train/2022con/3_alternative/WAbN_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/IRON_specs.pnml"
+//#include "src/train/2022con/1_compatible/IRON_compatible.pnml"
+//#include "src/train/2022con/2_powered/IRON_powered.pnml"
+//#include "src/train/2022con/3_alternative/IRON_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/WAaN_specs.pnml"
+//#include "src/train/2022con/1_compatible/WAaN_compatible.pnml"
+//#include "src/train/2022con/2_powered/WAaN_powered.pnml"
+//#include "src/train/2022con/3_alternative/WAaN_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/RAIL_specs.pnml"
+//#include "src/train/2022con/1_compatible/RAIL_compatible.pnml"
+//#include "src/train/2022con/2_powered/RAIL_powered.pnml"
+//#include "src/train/2022con/3_alternative/RAIL_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/SHAN_specs.pnml"
+//#include "src/train/2022con/1_compatible/SHAN_compatible.pnml"
+//#include "src/train/2022con/2_powered/SHAN_powered.pnml"
+//#include "src/train/2022con/3_alternative/SHAN_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/ELRL_specs.pnml"
+//#include "src/train/2022con/1_compatible/ELRL_compatible.pnml"
+//#include "src/train/2022con/2_powered/ELRL_powered.pnml"
+//#include "src/train/2022con/3_alternative/ELRL_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/SHAE_specs.pnml"
+//#include "src/train/2022con/1_compatible/SHAE_compatible.pnml"
+//#include "src/train/2022con/2_powered/SHAE_powered.pnml"
+//#include "src/train/2022con/3_alternative/SHAE_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/MONO_specs.pnml"
+//#include "src/train/2022con/1_compatible/MONO_compatible.pnml"
+//#include "src/train/2022con/2_powered/MONO_powered.pnml"
+//#include "src/train/2022con/3_alternative/MONO_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/MGLV_specs.pnml"
+//#include "src/train/2022con/1_compatible/MGLV_compatible.pnml"
+//#include "src/train/2022con/2_powered/MGLV_powered.pnml"
+//#include "src/train/2022con/3_alternative/MGLV_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/LHEI_specs.pnml"
+//#include "src/train/2022con/1_compatible/LHEI_compatible.pnml"
+//#include "src/train/2022con/2_powered/LHEI_powered.pnml"
+//#include "src/train/2022con/3_alternative/LHEI_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/THEI_specs.pnml"
+//#include "src/train/2022con/1_compatible/THEI_compatible.pnml"
+//#include "src/train/2022con/2_powered/THEI_powered.pnml"
+//#include "src/train/2022con/3_alternative/THEI_alternative.pnml"
+
+//#include "src/train/2022con/0_specs/VACT_specs.pnml"
+//#include "src/train/2022con/1_compatible/VACT_compatible.pnml"
+//#include "src/train/2022con/2_powered/VACT_powered.pnml"
+//#include "src/train/2022con/3_alternative/VACT_alternative.pnml"

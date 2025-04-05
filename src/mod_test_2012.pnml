@@ -1,0 +1,47 @@
+//=======================================================================
+//               Track Module, 2012 OG Standard
+//=======================================================================
+//#include "src/train/2012std/0_specs/WWAY_specs.pnml"
+//#include "src/train/2012std/1_compatible/WWAY_compatible.pnml"
+//#include "src/train/2012std/2_powered/WWAY_powered.pnml"
+//#include "src/train/2012std/3_alternative/WWAY_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/LTRL_specs.pnml"
+//#include "src/train/2012std/1_compatible/LTRL_compatible.pnml"
+//#include "src/train/2012std/2_powered/LTRL_powered.pnml"
+//#include "src/train/2012std/3_alternative/LTRL_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/RAIL_specs.pnml"
+//#include "src/train/2012std/1_compatible/RAIL_compatible.pnml"
+//#include "src/train/2012std/2_powered/RAIL_powered.pnml"
+//#include "src/train/2012std/3_alternative/RAIL_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SHEN_specs.pnml"
+//#include "src/train/2012std/1_compatible/SHEN_compatible.pnml"
+//#include "src/train/2012std/2_powered/SHEN_powered.pnml"
+//#include "src/train/2012std/3_alternative/SHEN_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/ELRL_specs.pnml"
+//#include "src/train/2012std/1_compatible/ELRL_compatible.pnml"
+//#include "src/train/2012std/2_powered/ELRL_powered.pnml"
+//#include "src/train/2012std/3_alternative/ELRL_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/SHEE_specs.pnml"
+//#include "src/train/2012std/1_compatible/SHEE_compatible.pnml"
+//#include "src/train/2012std/2_powered/SHEE_powered.pnml"
+//#include "src/train/2012std/3_alternative/SHEE_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/MONO_specs.pnml"
+//#include "src/train/2012std/1_compatible/MONO_compatible.pnml"
+//#include "src/train/2012std/2_powered/MONO_powered.pnml"
+//#include "src/train/2012std/3_alternative/MONO_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/MGLV_specs.pnml"
+//#include "src/train/2012std/1_compatible/MGLV_compatible.pnml"
+//#include "src/train/2012std/2_powered/MGLV_powered.pnml"
+//#include "src/train/2012std/3_alternative/MGLV_alternative.pnml"
+
+//#include "src/train/2012std/0_specs/VACT_specs.pnml"
+//#include "src/train/2012std/1_compatible/VACT_compatible.pnml"
+//#include "src/train/2012std/2_powered/VACT_powered.pnml"
+//#include "src/train/2012std/3_alternative/VACT_alternative.pnml"
