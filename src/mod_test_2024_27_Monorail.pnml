@@ -1,0 +1,33 @@
+//=======================================================================
+//				Track Module, 2024 Standard Revision
+//=======================================================================
+
+//#include "src/train/2024fix/0_specs/MONO_specs.pnml"
+//#include "src/train/2024fix/1_compatible/MONO_compatible.pnml"
+//#include "src/train/2024fix/2_powered/MONO_powered.pnml"
+//#include "src/train/2024fix/3_alternative/MONO_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/AHF1_specs.pnml"
+//#include "src/train/2024fix/1_compatible/1HFN_compatible.pnml"
+//#include "src/train/2024fix/2_powered/1HFN_powered.pnml"
+//#include "src/train/2024fix/3_alternative/1HFN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/UHF1_specs.pnml"
+//#include "src/train/2024fix/1_compatible/UHF1_compatible.pnml"
+//#include "src/train/2024fix/2_powered/UHF1_powered.pnml"
+//#include "src/train/2024fix/3_alternative/UHF1_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/UHFE_specs.pnml"
+//#include "src/train/2024fix/1_compatible/UHFE_compatible.pnml"
+//#include "src/train/2024fix/2_powered/UHFE_powered.pnml"
+//#include "src/train/2024fix/3_alternative/UHFE_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/1HFN_specs.pnml"
+//#include "src/train/2024fix/1_compatible/1HFN__compatible.pnml"
+//#include "src/train/2024fix/2_powered/1HFN__powered.pnml"
+//#include "src/train/2024fix/3_alternative/1HFN__alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/GHF1_specs.pnml"
+//#include "src/train/2024fix/1_compatible/GHF1_compatible.pnml"
+//#include "src/train/2024fix/2_powered/GHF1_powered.pnml"
+//#include "src/train/2024fix/3_alternative/GHF1_alternative.pnml"
