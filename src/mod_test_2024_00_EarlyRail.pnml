@@ -1,0 +1,43 @@
+//=======================================================================
+//				Track Module, 2024 Standard Revision
+//=======================================================================
+
+//#include "src/train/2024fix/0_specs/WWAY_specs.pnml"
+//#include "src/train/2024fix/1_compatible/WWAY_compatible.pnml"
+//#include "src/train/2024fix/2_powered/WWAY_powered.pnml"
+//#include "src/train/2024fix/3_alternative/WWAY_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/WGWY_specs.pnml"
+//#include "src/train/2024fix/1_compatible/WGWY_compatible.pnml"
+//#include "src/train/2024fix/2_powered/WGWY_powered.pnml"
+//#include "src/train/2024fix/3_alternative/WGWY_alternative.pnml"
+
+#include "src/train/2024fix/0_specs/WAcN_specs.pnml"
+#include "src/train/2024fix/1_compatible/WAcN_compatible.pnml"
+#include "src/train/2024fix/2_powered/WAcN_powered.pnml"
+#include "src/train/2024fix/3_alternative/WAcN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/LTRL_specs.pnml"
+//#include "src/train/2024fix/1_compatible/LTRL_compatible.pnml"
+//#include "src/train/2024fix/2_powered/LTRL_powered.pnml"
+//#include "src/train/2024fix/3_alternative/LTRL_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/LIHT_specs.pnml"
+//#include "src/train/2024fix/1_compatible/LIHT_compatible.pnml"
+//#include "src/train/2024fix/2_powered/LIHT_powered.pnml"
+//#include "src/train/2024fix/3_alternative/LIHT_alternative.pnml"
+
+#include "src/train/2024fix/0_specs/WAbN_specs.pnml"
+#include "src/train/2024fix/1_compatible/WAbN_compatible.pnml"
+#include "src/train/2024fix/2_powered/WAbN_powered.pnml"
+#include "src/train/2024fix/3_alternative/WAbN_alternative.pnml"
+
+//#include "src/train/2024fix/0_specs/IRON_specs.pnml"
+//#include "src/train/2024fix/1_compatible/IRON_compatible.pnml"
+//#include "src/train/2024fix/2_powered/IRON_powered.pnml"
+//#include "src/train/2024fix/3_alternative/IRON_alternative.pnml"
+
+#include "src/train/2024fix/0_specs/WAaN_specs.pnml"
+#include "src/train/2024fix/1_compatible/WAaN_compatible.pnml"
+#include "src/train/2024fix/2_powered/WAaN_powered.pnml"
+#include "src/train/2024fix/3_alternative/WAaN_alternative.pnml"
