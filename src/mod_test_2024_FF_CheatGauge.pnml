@@ -1,0 +1,13 @@
+//=======================================================================
+//				Track Module, 2024 Standard Revision
+//=======================================================================
+
+//#include "src/train/2024fix/0_specs/_R_c_specs.pnml"
+//#include "src/train/2024fix/1_compatible/_R_c_compatible.pnml"
+//#include "src/train/2024fix/2_powered/_R_c_powered.pnml"
+//#include "src/train/2024fix/3_alternative/_R_c_alternative.pnml"
+
+#include "src/train/2024fix/0_specs/_R_t_specs.pnml"
+#include "src/train/2024fix/1_compatible/_R_t_compatible.pnml"
+#include "src/train/2024fix/2_powered/_R_t_powered.pnml"
+#include "src/train/2024fix/3_alternative/_R_t_alternative.pnml"
