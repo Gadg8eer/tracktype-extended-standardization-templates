@@ -66,6 +66,158 @@ grf {
 			};
 		}
 	}
+	param 3 {
+		param_3rd {
+			type: int;
+			name: string(STR_PARAM_3RD_NAME);
+			desc: string(STR_PARAM_3RD_DESC);
+			min_value: 0;
+			max_value: 5;
+			def_value: 0;
+			names: {
+					0: string(STR_PARAM_3RD_0);
+					1: string(STR_PARAM_3RD_1);
+					2: string(STR_PARAM_3RD_2);
+					3: string(STR_PARAM_3RD_3);
+					4: string(STR_PARAM_3RD_4);
+					5: string(STR_PARAM_3RD_5);
+			};
+		}
+	}
+	param 4 {
+		param_fences {
+			type: int;
+			name: string(STR_PARAM_FENCES_NAME);
+			desc: string(STR_PARAM_FENCES_DESC);
+			min_value: 0;
+			max_value: 4;
+			def_value: 2;
+			names: {
+					0: string(STR_PARAM_FENCES_0);
+					1: string(STR_PARAM_FENCES_1);
+					2: string(STR_PARAM_FENCES_2);
+					3: string(STR_PARAM_FENCES_3);
+					4: string(STR_PARAM_FENCES_4);
+			};
+		}
+	}
+	param 5 {
+		param_tunnel {
+			type: bool;
+			name: string(STR_PARAM_TUNNEL_NAME);
+			desc: string(STR_PARAM_TUNNEL_DESC);
+			def_value: 0;
+		}
+	}
+	param 6 {
+		param_earlyrail {
+			type: int;
+			min_value: 0;
+			max_value: 4;
+			def_value: 0;
+			name:   string(STR_PARAM_NAME_EARLY_RAIL);
+            desc:   string(STR_PARAM_DESC_EARLY_RAIL);
+            names: {
+                        0: string(STR_PARAM_EARLY_RAIL_AUTO);
+                        1: string(STR_PARAM_EARLY_RAIL_NONE);
+                        2: string(STR_PARAM_EARLY_RAIL_WWAY);
+                        3: string(STR_PARAM_EARLY_RAIL_LTRL);
+                        4: string(STR_PARAM_EARLY_RAIL_BOTH);
+            };
+		}
+	}
+	param 6 {
+        param_ufiby_purchase_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 2;
+            def_value: 1;
+            name:   string(STR_PARAM_NAME_PURCHASE_COST);
+            desc:   string(STR_PARAM_DESC_PURCHASE_COST);
+            names: {
+                        0: string(STR_PARAM_COST_H);
+                        1: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
+            };
+        }
+    }
+    param 7 {
+        param_ufiby_running_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 2;
+            def_value: 1;
+            name:   string(STR_PARAM_NAME_RUNNING_COST);
+            desc:   string(STR_PARAM_DESC_RUNNING_COST);
+            names: {
+                        0: string(STR_PARAM_COST_H);
+                        1: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
+            };
+        }
+    }
+    param 8 {
+        param_ufiby_build_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 2;
+            def_value: 1;
+            name:   string(STR_PARAM_NAME_BUILD_COST);
+            desc:   string(STR_PARAM_DESC_BUILD_COST);
+            names: {
+                        0: string(STR_PARAM_COST_H);
+                        1: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
+            };
+        }
+    }
+    param 9 {
+        param_ufiby_infra_cost {
+            type:   int;
+            min_value: 0;
+            max_value: 2;
+            def_value: 1;
+            name:   string(STR_PARAM_NAME_INFRA_COST);
+            desc:   string(STR_PARAM_DESC_INFRA_COST);
+            names: {
+                        0: string(STR_PARAM_COST_H);
+                        1: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
+            };
+        }
+    }
+    param 10 {
+        param_ufiby_keep_old_vehs {
+            type: bool;
+            name: string(STR_PARAM_NAME_KEEP_OLD_VEHS);
+            desc: string(STR_PARAM_DESC_KEEP_OLD_VEHS);
+		def_value: 0;
+        }
+    }
+    param 11 {
+        param_ufiby_disable_attach {
+            type: bool;
+            name: string(STR_PARAM_NAME_FORBID_ATTACH);
+            desc: string(STR_PARAM_DESC_FORBID_ATTACH);
+		def_value: 0;
+        }
+    }
+    param 12 {
+        param_ufiby_enable_electric {
+            type: bool;
+            name: string(STR_PARAM_NAME_ENABLE_ELECTRIC);
+            desc: string(STR_PARAM_DESC_ENABLE_ELECTRIC);
+	    def_value: 1;
+        }
+    }
+	param {
+        param_revenge {
+            type: bool;
+            name: string(STR_PARAM_NAME_REVENGE);
+            desc: string(STR_PARAM_DESC_REVENGE);
+	    def_value: 1;
+        }
+    }
 }
 
 	if (param_realism == 1) {
@@ -171,3 +323,11 @@ template tmpl_vehicle_1_views_purchase_acs(x,y){
 
 traininfo_y_offset = 2;
 train_width_32_px = 1;
+
+/*
+ * This file is part of the 600mm narrow gauge Set.
+ * 600mm narrow gauge Set is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, version 2 or - upon your discretion - any later version.
+ * 600mm narrow gauge Set is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with 600mm narrow gauge Set. If not, see <http://www.gnu.org/licenses/>.
+ */
