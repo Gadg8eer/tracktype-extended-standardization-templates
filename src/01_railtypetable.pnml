@@ -58,7 +58,7 @@
 	"_Rit", // ISR concrete tunnel (with rack)
 	
 //--- Eyecandy
-	"0gf-", // Subway grass fill
+	"0gf-", // Vanilla grass fill
 	"0df-", // CHIPS dirt fill
 	"0sf-", // CHIPS cobblestone fill
 	"0pf-", // CHIPS pavement fill
@@ -68,29 +68,30 @@
 	"0Uk-", // South Korean concrete fill
 	
 //--- Ukranian Monorail
-	"UHFN",
-	"UHF1",
-	"UHFE",
+//	"UHFN",
+//	"UHF1",
+//	"UHFE",
+    "UHFu",
 	//--- Unpowered "engine" rolling stock
 	//"UH_-",
 	
 //--- Early Monorail
-	"1HFN",
-	"1HF1",
-	"1HFE",
+//	"1HFN",
+//	"1HF1",
+//	"1HFE",
 	//--- Unpowered "engine" rolling stock
 	//"1H_-",
 	
 //--- Gyrail
-	"GHFN",
-	"GHF1",
-	"GHFE",
+//	"GHFN",
+//	"GHF1",
+//	"GHFE",
 	//--- Unpowered "engine" rolling stock
 	//"GH_-",
 	
 //--- Alweg-based Monorail
-	"MONO",
-	"AHF1",
+//	"MONO",
+//	"AHF1",
 
 //--- Minimum Gauge Rail (381 mm to 508mm)
 //	"mA_N", "mAAN", "mABN", "mACN", "mADN", "mAdN", "mAEN",// "mAFN",
@@ -5818,7 +5819,7 @@
 //--- 1435mm Prototype Rail
 	"SAaN",
 //--- 1435mm Rail (Standard Gauge)
-	"RAIL",// "SA_N",
+//	"RAIL",// "SA_N",
 
 
 //	"SA_N",
@@ -5826,28 +5827,28 @@
 			//		"SABN", "SACN", "SADN", "SAdN", "SAEN",// "SAFN",
 //	"SK_N", "SKAN", "SKBN", "SKCN", "SKDN", "SKdN", "SKEN",// "SKFN",
 //	"SB_N",
-			"SBAN", "SBBN",
-						//	"SBCN", "SBDN", "SBdN", "SBEN",// "SBFN",
+			"SBAN", "SBBN", "SBCN",
+                            // "SBDN", "SBdN", "SBEN",// "SBFN",
 //	"SL_N", "SLAN", "SLBN", "SLCN", "SLDN", "SLdN", "SLEN",// "SLFN",
 //	"SC_N",
-			"SCAN",	"SCBN",
-						//	"SCCN", "SCDN", "SCdN", "SCEN",// "SCFN",
+			"SCAN",	"SCBN", "SCCN",
+                        // "SCDN", "SCdN", "SCEN",// "SCFN",
 //	"SM_N", "SMAN", "SMBN", "SMCN", "SMDN", "SMdN", "SMEN",// "SMFN",
 //	"SD_N",
-			"SDAN", "SDBN",
-						//	"SDCN", "SDDN", "SDdN", "SDEN",// "SDFN",
+			"SDAN", "SDBN", "SDCN",
+                                   // "SDDN", "SDdN", "SDEN",// "SDFN",
 //	"SN_N", "SNAN", "SNBN", "SNCN", "SNDN", "SNdN", "SNEN",// "SNFN",
 //	"SE_N",
-			"SEAN", "SEBN",
-						 //	"SECN", "SEDN", "SEdN", "SEEN",// "SEFN",
+			"SEAN", "SEBN", "SECN",
+                         // "SEDN", "SEdN", "SEEN",// "SEFN",
 //	"SO_N", "SOAN", "SOBN", "SOCN", "SODN", "SOdN", "SOEN",// "SOFN",
 //	"SF_N", "SFAN",
 					"SFBN", "SFCN",
 								//	"SFDN", "SFdN", "SFEN",// "SFFN",
 //	"SP_N", "SPAN", "SPBN", "SPCN", "SPDN", "SPdN", "SPEN",// "SPFN",
-//	"SG_N", "SGAN", "SGBN", "SGCN",
-									"SGDN",
-										//	"SGdN", "SGEN",// "SGFN",
+//	"SG_N", "SGAN",
+                    "SGBN",
+                            // "SGCN", "SGDN", "SGdN", "SGEN",// "SGFN",
 //	"SQ_N", "SQAN", "SQBN", "SQCN", "SQDN", "SQdN", "SQEN",// "SQFN",
 //	"SH_N", "SHAN", "SHBN", "SHCN", "SHDN", "SHdN", "SHEN",
 															"SHFN",
@@ -17321,7 +17322,6 @@
 											"LUFI",
 //---- SCMaglev VacTrain
 //	"VACT",
-	"LHFV",
 //	"LAAV", "LABV", "LACV", "LADV", "LAEV",// "LAFV",
 //	"LBAV", "LBBV", "LBCV", "LBDV", "LBEV",// "LBFV",
 //	"LCAV", "LCBV", "LCCV", "LCDV", "LCEV",// "LCFV",
