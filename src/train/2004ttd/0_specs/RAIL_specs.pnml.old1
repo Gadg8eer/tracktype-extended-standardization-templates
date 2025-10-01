@@ -1,0 +1,41 @@
+	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Future-Proofed Tracks
+		// "RAIL"/"SHEN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"RAIL";
+				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
+			//---
+			//	railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
+			}
+		}
+	}
+
+ /* REALISM MODE VERSION */
+ // See the included notes for more info. This is an EXPERIMENTAL parameter for now.
+
+	if (((param_axle_weight == 0 && param_realism == 1) && (railtype_available("RAIL") || railtype_available("ELRL"))) && loading_stage == LOADING_STAGE_RESERVE) {
+		//-- Standard Gauge, Prototype Tracks
+		// "RAIL"/"SHEN"
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+			property {
+				label:							"RAIL";
+				introduction_date:				1821/04/19;
+				name:							string(STR_RAILTYPE_NAME_RAIL_2004);
+				//toolbar_caption:				string(STR_RAILTYPE_NAME_RAIL_2004);
+			//---
+				railtype_flags:					bitmask(RAILTYPE_FLAG_DISALLOW_90DEG);
+				speed_limit:					300 km/h; // SAAN - One tile per 1.536 irl seconds
+				acceleration_model:				ACC_MODEL_RAIL;
+				curve_speed_multiplier:			2.75; // Full top speed on 12 or more tiles of "curve" "radius"
+			// ~₳6,025,065,920 kA•h per 21.336 metres for basic rail
+			// +0% for electrification = ₳0
+				construction_cost:				1; // In units of ~₳180 kA•h per tile
+			// ~₳602,506,592 Amp•Hours per 21.336 metres per 24 realminute/gamehour period
+			// DOESN'T HAVE ELECTRIFICATION!
+			// ~₳0 kA•h
+			// TOTAL: ₳602,506,592 Amp•Hours
+				maintenance_cost:				1 / 12; // In units of ₳50 kA•h per tile per irl day
+			}
+		}
+	}
