@@ -3,6 +3,8 @@ STR_GRF_NAME													:Tracktype Extended Standardization Templates r0
 STR_GRF_DESC													:Planned out by the OpenTTD community. Compiled by Gadg8eer. GPL v2, no graphics included.
 STR_WEBSITE														:https://github.com/Gadg8eer/tracktype_standards_module
 
+STR_AMPWORKS_NAME                                               :AmpWorks
+STR_AMPWORKS_SYMBOL                                             :₳
 STR_GRF_BASECOST_NAME											:Base Cost Test GRF
 STR_GRF_BASECOST_DESC											:A modifiable testing GRF by Gadg8eer. GPL v2, no graphics included.
 
