@@ -1,5 +1,5 @@
 	if (param_axle_weight == 0 && ((railtype_available("WWAY") || railtype_available("WGWY")) && loading_stage == LOADING_STAGE_RESERVE)) {
-		item(FEAT_RAILTYPES, railtype_1435mm_class10_vhigh_selfpower) {
+		item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
 			property {
 				compatible_railtype_list:		[
 				//-- Railtypes that locomotives of this railtype can be pulled on by a non-electric locomotive;
@@ -5404,10 +5404,10 @@
 			/*-----------------*/
 			/* IMPORTANT: READ */
 			/*-----------------*/
-				// "XREp",// is the					"ultimate", combination of track guages and electrification that is PHYSICALLY POSSIBLE in real life, HOWEVER...
-				// "_R_t", is NOT a potential cheat!
-				// "_R_t", is a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
-				// "_R_t", is for curved trench					"tunnels", to be disguised by anything with a foundation; railtypes (for diagonal tiles), road/tramway, buildings, etc.
+				// "XRFp" is the "ultimate" combination of track guages and electrification that is PHYSICALLY POSSIBLE in real life, HOWEVER...
+				// "_R_t" is NOT a potential cheat!
+				// "_R_t" is a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
+				// "_R_t" is for curved trench "tunnels" to be disguised by anything with a foundation; railtypes (for diagonal tiles), road/tramway, buildings, etc.
 				// "Cheat" "trench tunnels", (The non-legit ones, to save railtype labels) are also listed with all other cheat types.
 			/*------------------*/
 			/* YOU MAY CONTINUE */
@@ -5444,8 +5444,8 @@
 				// COMPATIBLE with SAAN/SAAE, SAAN/SAAE, MAA1 and LAAI respectively.
 				// POWERED on _AAp through _AFp, _AAE through _AFE, _AA1 through _AF1, and _AAI through _AFI respectively.
 				//
-				// "_R_t", is NOT a potential cheat, but a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
-				// "_R_t", is for curved trench	"tunnels" to be disguised by anything with a foundation; railtypes, road/tramway, buildings, etc.
+				// "_R_t" is NOT a potential cheat, but a legit standardized railtype to put in every compatible_railtype_list and powered_railtype_list!
+				// "_R_t" is for curved trench "tunnels" to be disguised by anything with a foundation; railtypes, road/tramway, buildings, etc.
 				//
 				// Now imagine that instead of only adding the bare minimum necessary railtypes, that this module also reserved them by including a full railtypetable...
 				// Well, if you did, you'd get an error about the game trying to access an invalid sprite when loading one or more of your railtype GRFs. Or if you are using the (planned) NRT version of this module, when loading one or more of your roadtype/tramtype GRFs.
@@ -5459,8 +5459,30 @@
 			/* YOU MAY CONTINUE */
 			/*==================*/
 					"_R_-", "_RA-", "_RB-", "_RC-", "_RD-", "??d-", "_RE-", "_RF-",
-				// (Tunnel) CHEAT RAILS!
+				// (Tunnel) (NOT-)CHEAT RAILS!
+				// Use _R_t only!
 					"_R_t", "_RAt", "_RBt", "_RCt", "_RDt", "??dt", "_REt", "_RFt",
+				// Curved tunnels; Full clearance and low clearance, low clearance "_s_t"
+					"_S_t", "_s_t",
+				// Urban curved tunnels
+					"_U_t", "_u_t",
+				// JP+ curved tunnels
+				//	"_j_t", // Ballast, ignore
+					"_J_t", // Urban
+				// CHIPS
+					"_d_t", "_v_t", "_p_t",
+				// ISR
+					"_I_t",
+				// DPRK Set Concrete
+					"_Z_t",
+				// South Korean Concrete
+					"_z_t",
+				// Airport Tarmac
+					"_Y_t",
+				// Light Concrete
+					"_y_t",
+				// Rails under (Fake) Roads, edge case combo that cannot serve a useful function; DO NOT USE FOR ANY RREASON!
+					"_/_t", "_\_t",
 				// (Unpowered) CHEAT RAILS!
 					"_R_N", "_RAN", "_RBN", "_RCN", "_RDN", "_GdN", "_REN", "_RFN",
 				// (Universal Catenary) CHEAT RAILS!
