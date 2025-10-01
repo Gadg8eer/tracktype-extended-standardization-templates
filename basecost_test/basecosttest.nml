@@ -1,7 +1,7 @@
 grf {
     grfid: "TEST";
-    name: string(STR_GRF_BASECOST_NAME);
-    desc: string(STR_GRF_BASECOST_DESC);
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
     version: 0;
     min_compatible_version: 0;
 	url: string(STR_WEBSITE);
@@ -32,9 +32,9 @@ grf {
 				0: string(STR_PARAM_AXLE_WEIGHT_NONE);
 				1: string(STR_PARAM_AXLE_WEIGHT_STANDARD_2012);
 				2: string(STR_PARAM_AXLE_WEIGHT_CONVENTION_2022);
-				3: string(STR_PARAM_AXLE_WEIGHT_OUTATIME);
-				4: string(STR_PARAM_AXLE_WEIGHT_PONY);
-				5: string(STR_PARAM_AXLE_WEIGHT_CLYDESDALE);
+				3: string(STR_PARAM_AXLE_WEIGHT_OUTATIME_202X);
+				4: string(STR_PARAM_AXLE_WEIGHT_UPDATE_2024);
+				5: string(STR_ERROR_AXLE_WEIGHT_TRIGGER_ERROR);
 			};
         }
     }
@@ -79,7 +79,7 @@ grf {
 		//-- Standard Gauge, Very Low Axle Load Tracks
 		// 2682 COINs
 
-		item(FEAT_RAILTYPES, railtype_1435mm_vlow_selfpower) {
+		item(FEAT_RAILTYPES, railtype_1435mm_vlow_xlow_selfpower) {
 			property {
 				label:							"RAIL";
 				introduction_date:				1825/04/01;
@@ -87,14 +87,30 @@ grf {
 		//		railtype_flags:					bitmask(RAILTYPE_FLAG_HIDDEN);
 				curve_speed_multiplier:			0.75;
 		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
-				construction_cost:				99.75;
-				speed_limit:					15 mph;
-				acceleration_model:				ACC_MODEL_RAIL;
+				construction_cost:				2508;
+				speed_limit:					30 km/h;
 		//		map_colour:						?;
 		//		requires_railtype_list:			?;
 		//		introduces_railtype_list:		"RAIL", "SA_N";
 				sort_order:						07;
-				maintenance_cost:				0.55;
+				maintenance_cost:				31;
+			}
+		}
+
+		item(FEAT_ROADTYPES, roadtype_road_lowest_vlow_selfpower) {
+			property {
+				label:							"ROAD";
+				introduction_date:				0;
+		//---
+		//		roadtype_flags:					bitmask(ROADTYPE_FLAG_HIDDEN);
+		//		station_graphics:				RAILTYPE_STATION_MONORAIL;
+				construction_cost:				50 / 20;
+				speed_limit:					15 mph;
+		//		map_colour:						?;
+		//		requires_roadtype_list:			?;
+		//		introduces_roadtype_list:		"ROAD", "ELRD";
+				sort_order:						07;
+				maintenance_cost:				1;
 			}
 		}
 	}
