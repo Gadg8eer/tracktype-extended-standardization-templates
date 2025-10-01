@@ -1,8 +1,8 @@
-	if (((param_axle_weight == 0 && param_realism == 0) && (railtype_available("LTRL") || railtype_available("LIHT"))) && loading_stage == LOADING_STAGE_RESERVE) {
+	if ((param_axle_weight == 0 && param_realism == 0) && (railtype_available("LTRL") || railtype_available("LIHT") || railtype_available("SAbN") && loading_stage == LOADING_STAGE_RESERVE) {
 		//-- Standard Gauge, Plateway Tracks
 		// "LTRL"
 		// "SAbN"
-		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_1metrictonne_selfpower) {
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
 			property {
 				label:							"LTRL";
 				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
@@ -22,9 +22,9 @@
 		//-- Iron Plateway
 		// "LTRL"
 		// "SAbN"
-		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_infinite_infinite_selfpower) {
+		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_vlow_1metrictonne_selfpower) {
 			property {
-				label:							"LTRL";
+				label:							"SbbN";
 				introduction_date:				1799/06/31;
 				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_LTRL_2004);
@@ -35,13 +35,13 @@
 				speed_limit:					30 km/h; // SAbN - One tile per 2.56 irl seconds
 				acceleration_model:				ACC_MODEL_RAIL;
 				curve_speed_multiplier:			0.125; // Very low speeds
-			// ₳753,133,240 kA•h irl per 21.336 metres of wagonway
+			// ₳677,290 Amp¤Works per 21.336 metres for wagonway
 			// +0% for electrification = ₳0
-				construction_cost:				1; // In units of ~₳15,979 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
+				construction_cost:				13547 / 60; // In units of ~₳50 Amp¤Works per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
 			// DOESN'T HAVE ELECTRIFICATION!
-			// ~₳0 kA•h
-			// TOTAL: ₳75,313,324 Amp•Hours/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
-				maintenance_cost:				1 / 12; // In units of ₳399,475 mA•h per tile per irl day
+			// ~₳0 Amp¤Works/year
+			// TOTAL: ₳33,865 Amp¤Works/year in-game per 21.336 metres (exactly 112.644 feet for reference) per 1440 minutes
+				maintenance_cost:				8128 / 12;  // In units of ~₳50 Amp¤Works per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
 			}
 		}
 	}
