@@ -106,12 +106,13 @@ if (railtype_available("6AAN") || (loading_stage == LOADING_STAGE_RESERVE)) {
 }
 
 //dual gauge 600/1435mm
-if (railtype_available("6AAd") || (loading_stage == LOADING_STAGE_RESERVE)) {
+/*
+if ((railtype_available("SAAN") && railtype_available("6AAN") && (loading_stage == LOADING_STAGE_RESERVE))) {
   item (FEAT_RAILTYPES, NG600RAIL)
   {
     property
     {
-      label: "6AAd";
+      label: "NG6R";
       introduction_date: date(1883, 1, 1);
       name: string(STR_NG6R_NAME);
       toolbar_caption: string(STR_NG6R_TOOLBAR);
@@ -145,6 +146,7 @@ if (railtype_available("6AAd") || (loading_stage == LOADING_STAGE_RESERVE)) {
     }
   }
 }
+*/
 
 if (param_enable_electric) {
 if (railtype_available("6AAE") || (loading_stage == LOADING_STAGE_RESERVE)) {
