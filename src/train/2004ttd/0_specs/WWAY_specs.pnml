@@ -6,7 +6,7 @@
 			// "SAcN"
 			item(FEAT_RAILTYPES, railtype_custom_infinite_1metrictonne_selfpower) {
 				property {
-					label:							"WWAY";
+					label:							"WAcN";
 					name:							string(STR_RAILTYPE_NAME_WWAY_2004);
 					station_graphics:				RAILTYPE_STATION_NORMAL;
 					sort_order:						0;
@@ -26,9 +26,9 @@
 			//-- Wooden Wagonway
 			// "WWAY"
 			// "SAcN"
-			item(FEAT_RAILTYPES, railtype_earlyrail_wagonway_1metrictonne_selfpower) {
+			item(FEAT_RAILTYPES, railtype_earlyrail_xlow_1metrictonne_selfpower) {
 				property {
-					label:							"WWAY";
+					label:							"WbcN";
 					introduction_date:				1594/01/01;
 					name:							string(STR_RAILTYPE_NAME_WWAY_2004);
 					//toolbar_caption:				string(STR_RAILTYPE_NAME_WWAY_2004);
@@ -39,14 +39,14 @@
 					speed_limit:					12 km/h; // SAcN - One tile per 6.41 irl seconds
 					acceleration_model:				ACC_MODEL_RAIL;
 					curve_speed_multiplier:			0.125; // Very low speeds
-				// ₳6,411,600 mA•h irl (6.62 loaves of bread) per 21.336 metres for wagonway
+				// ₳48,006 Amp¤Works per 21.336 metres for wagonway
 				// +0% for building electrification = ₳0
-					construction_cost:				5; // In units of ~₳1,374,194 mA•h per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
-				// ₳641,160 mA•h/year in-game (.662 loaves of bread) per 0.5-1.0 tiles (exactly 112.644 feet for reference) per 1440 minutes
+					construction_cost:				2508 / 60; // In units of ~₳50 Amp¤Works per section of 10.668 metres (1/2 tile) to 21.336 metres (1 tile)
+				// ₳6,408 Amp¤Works/year in-game per 0.5-1.0 tiles (exactly 112.644 feet for reference) per 1440 minutes
 				// DOESN'T HAVE ELECTRIFICATION!
-				// ~₳0 kA•h to power electrification
-				// TOTAL: ~₳1,324 Amp•Hours
-					maintenance_cost:				1 / 12; // In units of ₳4,793,700 mA•h per tile per irl day
+				// ~₳0 Amp¤Works to power electrification
+				// TOTAL: ~₳534 Amp¤Works
+					maintenance_cost:				372 / 12; // In units of ~₳50 Amp¤Works per tile per irl day
 			}
 		}
 	}
