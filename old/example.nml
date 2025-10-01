@@ -1,0 +1,34 @@
+# 1 "example_header.pnml"
+//Welcome to the example header!
+disable_item(FEAT_TRAINS);
+# 1 "src/header.pnml" 1
+# 1 "example_header.pnml" 3
+
+//#define DEAD 
+
+//#include "src/lol this will not work.pnml"
+//Rail type table
+railtypetable {
+    RAIL,
+ ELRL,
+ SAA3: [ELRL],
+ SAAZ: [ELRL],
+ SAA4: [SAA3, ELRL],
+ NAAN: [NAAN, NGRL, RAIL],
+}
+
+# 1 "src/cargo_table.pnml" 1
+# 1 "example_header.pnml" 3
+# 1 "src/train_one.pnml" 1
+# 1 "example_header.pnml" 3
+# 1 "src/train_two.pnml" 1
+# 1 "example_header.pnml" 3
+# 1 "src/train_three.pnml" 1
+# 1 "example_header.pnml" 3
+
+//Sorting the purchase list
+
+sort(FEAT_TRAINS, [
+3,
+1,
+]);
