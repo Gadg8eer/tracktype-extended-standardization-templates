@@ -55,8 +55,8 @@ railtypetable {
 //    "LTRL": { base_cost: 0; }   // No multiplier for LTRL
 //    "LIHT": { base_cost: 0; }   // No multiplier for LIHT
     "WAbN": { base_cost: 0; }   // No multiplier for WAbN
-//    "RAIL": { base_cost: 8; }   // Default multiplier for SAaN
-    "SAaN": { base_cost: 10; }   // No multiplier for SAaN
+//    "RAIL": { base_cost: 8; }   // Default multiplier for RAIL
+    "SAaN": { base_cost: 10; }   // (50 Amp¤Works x 10 = 500 AmpWorks¤) multiplier for SAaN
 //--- Cheat rail ()
 	//"_R_c",
 //--- Tunnels
@@ -87,8 +87,7 @@ railtypetable {
 	
 //--- Ukranian Monorail
 //	"UHFN",
-//	"UHF1",
-//	"UHFE",
+//	"UHFU",
 //  "UHFu",
 	"MONO",
 	//--- Unpowered "engine" rolling stock
