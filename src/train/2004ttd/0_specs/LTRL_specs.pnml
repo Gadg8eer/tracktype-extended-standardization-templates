@@ -24,7 +24,7 @@
 		// "SAbN"
 		item(FEAT_RAILTYPES, railtype_1432mmTO1435mm_vlow_1metrictonne_selfpower) {
 			property {
-				label:							"SbbN";
+				label:							"WbbN";
 				introduction_date:				1799/06/31;
 				name:							string(STR_RAILTYPE_NAME_LTRL_2004);
 				//toolbar_caption:				string(STR_RAILTYPE_NAME_LTRL_2004);
